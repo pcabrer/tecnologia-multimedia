@@ -7,6 +7,7 @@ Cambio del About con una nueva descripción acorde con nuestra web app
 Eliminación del apartado de clientes
 Cambio de las funcionalidades principales de nuestra página web con nuevos iconos titulos y descripciones.
 Cambio del protfolio de la plantilla a mostrar los monumentos principales de nuestra pagina web.
+Cambios en footer de la plantilla, con a direccion de la uib los links ahora funcionales, unas páinas de interes y una parte completamente nueva e implemtada de quienes somos donde hay el nombre que te lleva a nuestro github y una foto de nosotros.
 ----------------------------------------------------------------------------------------------------------
 Cambio de portfolio.html ------> monumentos.html
 Cambio de pricing.html   ------> mapa.html
