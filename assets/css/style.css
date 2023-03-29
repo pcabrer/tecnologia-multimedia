@@ -2123,3 +2123,195 @@ section {
 #footer .credits a:hover {
   color: white;
 }
+
+.stars {
+  text-align: right; 
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.star.checked {
+  color: #f90;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.mitexto {
+ text-align: justify;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.event {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.event h3 {
+  margin-top: 0;
+}
+
+.event a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.events-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-btn {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.slider-btn:hover {
+  color: #333;
+}
+
+.slider-btn-prev {
+  margin-right: auto;
+}
+
+.slider-btn-next {
+  margin-left: auto;
+}
+
+.mislinks {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.opening-hours {
+  margin-bottom: 20px;
+}
+
+.opening-hours h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.opening-hours ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opening-hours li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.address {
+  margin-bottom: 20px;
+}
+
+.address h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.address p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.geo-location {
+  margin-bottom: 20px;
+}
+
+.geo-location h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.geo-location p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.telephone {
+  margin-bottom: 20px;
+}
+
+.telephone h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.telephone p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.micontainer {
+  display: flex;
+  align-items: center;
+}
+
+.micontainer img {
+  flex: 1;
+  height: 250px;
+  width: 250;
+ 
+}
+
+.micontainer iframe {
+  flex: 1;
+  height: 250px;
+  width: 250;
+}
