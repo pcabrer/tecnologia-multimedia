@@ -2124,6 +2124,184 @@ section {
   color: white;
 }
 
+/*--------------------------------------------------------------
+# Monumento
+--------------------------------------------------------------*/
+
+#monumento {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(63, 73, 83, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+
+#monumento .carousel,
+#monumento .carousel-inner,
+#monumento .carousel-item,
+#monumento .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#monumento .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#monumento .carousel-item::before {
+  content: "";
+
+}
+
+#monumento .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+}
+
+#monumento .container {
+  text-align: center;
+}
+
+#monumento h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#monumento p {
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#monumento .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#monumento .carousel-inner .carousel-item,
+#monumento .carousel-inner .active.carousel-item-start,
+#monumento .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#monumento .carousel-inner .active,
+#monumento .carousel-inner .carousel-item-next.carousel-item-start,
+#monumento .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#monumento .carousel-inner .carousel-item-next,
+#monumento .carousel-inner .carousel-item-prev,
+#monumento .carousel-inner .active.carousel-item-start,
+#monumento .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#monumento .carousel-control-next-icon,
+#monumento .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#monumento .carousel-control-next-icon:hover,
+#monumento .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#monumento .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#monumento .carousel-indicators li.active {
+  opacity: 1;
+  background: #d9232d;
+}
+
+#monumento .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  animation-delay: 0.8s;
+  background: #d9232d;
+}
+
+#monumento .btn-get-started:hover {
+  background: #df3740;
+}
+
+@media (max-width: 992px) {
+  #monumento {
+    height: 100vh;
+  }
+
+  #monumento .carousel-container {
+    top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #monumento h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #monumento .carousel-control-prev,
+  #monumento .carousel-control-next {
+    width: 5%;
+  }
+}
+
+@media (max-height: 500px) {
+  #monumento {
+    height: 120vh;
+  }
+}
+
 .stars {
   text-align: right; 
 }

@@ -8,6 +8,11 @@ Eliminación del apartado de clientes
 Cambio de las funcionalidades principales de nuestra página web con nuevos iconos titulos y descripciones.
 Cambio del protfolio de la plantilla a mostrar los monumentos principales de nuestra pagina web.
 Cambios en footer de la plantilla, con a direccion de la uib los links ahora funcionales, unas páinas de interes y una parte completamente nueva e implemtada de quienes somos donde hay el nombre que te lleva a nuestro github y una foto de nosotros.
+Insertado el header y el footer en todos los html.
+El filtro de los monumentos del index permite filtrarlos si están dentro de Palma o no.
+Del html de catedral cambiado las imágenes y quitado el fondo oscuro que tenian.
+Cambios mínims en la hoja de contacto.
+
 ----------------------------------------------------------------------------------------------------------
 Cambio de portfolio.html ------> monumentos.html
 Cambio de pricing.html   ------> mapa.html
