@@ -12,6 +12,7 @@ Insertado el header y el footer en todos los html.
 El filtro de los monumentos del index permite filtrarlos si están dentro de Palma o no.
 Del html de catedral cambiado las imágenes y quitado el fondo oscuro que tenian.
 Cambios mínims en la hoja de contacto.
+Quitado en el footer que esta diseñada con bootsrap made
 
 ----------------------------------------------------------------------------------------------------------
 Cambio de portfolio.html ------> monumentos.html
