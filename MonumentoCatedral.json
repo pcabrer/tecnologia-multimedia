@@ -130,7 +130,7 @@
           "@type": "Event",
           "name": "Entrada Regular",
           "description": "Entrada regular adulto para ver el interior del castillo de Bellver",
-          "url": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76695&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247",
+          "url": "https://catedraldemallorca.org/visitas/horarios/",
           "offers": {
             "@type": "Offer",
             "price": 4.00,
@@ -148,7 +148,7 @@
         {
           "@type": "ImageObject",
           "url": "https://arsmagnahotel.com/content/uploads/2020/11/Castillo-de-Belver-scaled.jpeg"
-        }
+        },
         {
           "@type": "ImageObject",
           "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/interior-castillo-de-Bellver-en-Palma.jpg"
