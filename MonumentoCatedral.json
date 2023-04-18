@@ -1,0 +1,176 @@
+{
+  "@context": "https://schema.org",
+  "@type": "itemList",
+  "itemListElement": [
+    {
+      "@type": "CivicStructure",
+      "name": "Catedral de Palma",
+      "description": "La Catedral de Palma, también conocida como la Catedral de Santa María de Palma, es un impresionante edificio gótico situado en la ciudad de Palma de Mallorca, España. Su construcción comenzó en el siglo XIII y se completó en el siglo XIX. Destacan su rosetón de 13 metros de diámetro, su altar mayor barroco y su imponente nave central.",
+      "openingHours": [
+        "Mo-Fr 10:00-17:15",
+        "Sa 10:00-14:15"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07001",
+        "streetAddress": "Plaça de la Seu, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5671",
+        "longitude": "2.6468"
+      },
+      "telephone": "971713133",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "40047"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular",
+          "description": "Entrada regular adulto para ver el interior de la catedral",
+          "url": "https://catedraldemallorca.org/visitas/horarios/",
+          "offers": {
+            "@type": "Offer",
+            "price": 9.00,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Visita guiada a la Catedral de Mallorca",
+          "description": "Descubre uno de los edificios más emblemáticos de Baleares, la Catedral de Mallorca, a través de un recorrido donde conocerás lugares especiales y la historia que esconden. Apúntate a esta visita guiada disponible en 4 idiomas (castellano, inglés, alemán y francés). ¡No dejes escapar esta oportunidad! ¡Las plazas son limitadas!",
+          "startDate": "2022-04-22T12:00",
+          "url": "https://catedraldemallorca.entradasdemuseos.com/visit/visita-guiada-a-la-catedral-de-mallorca",
+          "offers": {
+            "@type": "Offer",
+            "price": 25.00,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Dia de la Luz",
+          "description": "En la Fiesta de la Luz, los rosetones mayor y menor de la Seu se alinean y forman un 8 debido a la entrada de la luz solar en el impresionante escenario gótico de la Catedral. Esta proyección cromática del monumental rosetón que preside el altar mayor sobre la parte interna de la fachada principal podrá ser apreciado por la ciudadanía.",
+          "startDate": "2024-02-02T7:30",
+          "url": "https://catedraldemallorca.org/noticias/la-fiesta-de-la-luz-en-la-catedral-de-mallorca/",
+          "offers": {
+            "@type": "Offer",
+            "price": 15.00,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://catedraldemallorca.org/",
+      "sameAs": "https://es.wikipedia.org/wiki/Catedral_de_Santa_Mar%C3%ADa_de_Palma_de_Mallorca",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://viajes.nationalgeographic.com.es/medio/2022/11/11/la-catedral-de-palma-y-sus-curiosidades_110da95b_2000x1498.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/1f/ea/5d/palma-de-mallorca.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Catedral",
+            "contentUrl": "https://www.youtube.com/watch?v=jo6EsPC1mFo"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio Catedral",
+            "contentUrl": "https://go.ivoox.com/rf/84954408"
+          }
+        ]
+      }
+    },
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "Castillo de Bellver",
+      "description": "El Castillo de Bellver es un castillo de estilo gótico situado a unos 2,5 kilómetros al suroeste de la ciudad de Palma. Construido en el siglo XIV por el Rey Jaime II de Mallorca destaca por su forma circular única, con tres torres circulares de menor tamaño y una torre del homenaje más grande ubicada en uno de sus extremos. El castillo ha sido utilizado como prisión, museo y actualmente es un importante sitio turístico. En su interior se encuentra el Museo de Historia de la Ciudad de Palma y también se pueden admirar impresionantes vistas panorámicas de la ciudad y del mar Mediterráneo. El patio central rodeado de galerías es un rasgo distintivo del castillo. Su construcción con piedra arenisca le da una apariencia majestuosa y robusta. El Castillo de Bellver es uno de los pocos castillos circulares de Europa y es considerado uno de los monumentos más emblemáticos de Mallorca. Su ubicación en una colina boscosa a unos 3 kilómetros del centro de Palma ofrece vistas panorámicas impresionantes.",
+      "openingHours": [
+        "Tu-Sa 10:00-19:00",
+        "Su 10:00-15:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07014",
+        "streetAddress": "Camilo José Cela, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5671",
+        "longitude": "2.6178"
+      },
+      "telephone": "971735065",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "16654"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular",
+          "description": "Entrada regular adulto para ver el interior del castillo de Bellver",
+          "url": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76695&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247",
+          "offers": {
+            "@type": "Offer",
+            "price": 4.00,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://castelldebellver.palma.cat/",
+      "sameAs": "https://es.wikipedia.org/wiki/Castillo_de_Bellver",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.visitpalma.com/media/site1/cache/images/foto-aerea-castell-de-bellver-cultura-12-feb.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://arsmagnahotel.com/content/uploads/2020/11/Castillo-de-Belver-scaled.jpeg"
+        }
+        {
+          "@type": "ImageObject",
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/interior-castillo-de-Bellver-en-Palma.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Castillo de Bellver",
+            "contentUrl": "https://www.youtube.com/watch?v=9jfPqK1O0XU&ab_channel=VisitPalma"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio Castillo de Bellver",
+            "contentUrl": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76703&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247"
+          }
+        ]
+      }
+    }
+  ]
+}
