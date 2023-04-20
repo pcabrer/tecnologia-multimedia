@@ -171,6 +171,178 @@
           }
         ]
       }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Santuario de Lluc",
+      "description": "Es un centro religioso y cultural muy importante para la comunidad mallorquina, y alberga la imagen de la Virgen de Lluc, patrona de la isla. El santuario cuenta con una impresionante iglesia barroca, así como con un museo, un monasterio y numerosos jardines y espacios naturales. Es un lugar de gran belleza y serenidad que atrae a muchos visitantes cada año.",
+      "openingHours": [
+        "Tu-Su 8:30 a 19:30"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lluc",
+        "addressRegion": "ES",
+        "postalCode": "07315",
+        "streetAddress": "Plaça del Peregrins, 1"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.8188",
+        "longitude": "2.8535"
+      },
+      "telephone": "971871525",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "5551"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Habitación 1 Noche",
+          "description": "Hospedarte una noche en en una de las celdas de la Hostatgeria del Santuario de LLuc",
+          "url": "https://www.lluc.net/",
+          "offers": {
+            "@type": "Offer",
+            "price": 81,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.lluc.net/",
+      "sameAs": "https://es.wikipedia.org/wiki/Monasterio_de_Lluch",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FMonasterio_de_Lluch&psig=AOvVaw26dJ3YfTjseXI4QvYIgpba&ust=1682091358139000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjI--DkuP4CFQAAAAAdAAAAABAE"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.lluc.net/dms/monoHotel-HospederiaLluc/hero/hero-santuario-de-lluc.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/06/monasterio-de-lluc-mallorca.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://perdidoenmallorca.files.wordpress.com/2016/03/dsc05612-2.jpg?w=460"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://fotos.hoteles.net/articulos/santuario-lluc-mallorca-5881-3.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Castillo de Bellver",
+            "contentUrl": "https://www.youtube.com/watch?v=QMFAJQOnFIs"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio Santuario de Lluc",
+            "contentUrl": "https://go.ivoox.com/rf/88221942"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Cartuja de Valldemossa",
+      "description": "La Cartuja de Valldemossa es un antiguo monasterio ubicado en el pueblo de Valldemossa, en la isla de Mallorca, España. Fue construido en el siglo XIV como un palacio real, pero luego fue donado a los monjes cartujos en el siglo XV. La cartuja es conocida por ser el lugar donde el famoso compositor y pianista Frédéric Chopin pasó un invierno con su amante, la escritora francesa George Sand, en 1838-1839. La cartuja cuenta con una iglesia barroca, celdas de monjes, una farmacia antigua y numerosos patios y jardines.",
+      "openingHours": [
+        "Tu-Fr 10:00 a 17:00",
+        "Sa 10:00-16:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valldemossa",
+        "addressRegion": "ES",
+        "postalCode": "07170",
+        "streetAddress": "Plaça Cartoixa, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.7114",
+        "longitude": "2.6094"
+      },
+      "telephone": "971612106",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "2760"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada General",
+          "description": "Entrada general para la Cartoixa de Valldemossa",
+          "url": "https://cartoixadevalldemossa.com/product/general/",
+          "offers": {
+            "@type": "Offer",
+            "price": 12,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Entrada General + Torre",
+          "description": "Entrada general + visita a la Torre de Homenatge para la Cartoixa de Valldemossa",
+          "url": "https://cartoixadevalldemossa.com/product/general-torre/",
+          "offers": {
+            "@type": "Offer",
+            "price": 14.50,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://cartoixadevalldemossa.com/",
+      "sameAs": "https://es.wikipedia.org/wiki/Monasterio_de_Lluch",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Cartuja1.JPG"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media.mallorca-touristguide.com/imagenes/1360/la%20cartuja%206.9.19%20-%20009.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.cartoixadevalldemossa.com/wp-content/uploads/2017/09/cartoixa-de-valldemossa-esglesia.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://tuhobbietuviaje.files.wordpress.com/2016/10/valldemossa-3.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Castillo de Bellver",
+            "contentUrl": "https://www.youtube.com/watch?v=rDIDJflo7Tw"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio La Cartuja de Valldemossa y la visita de Chopin y George Sand",
+            "contentUrl": "https://cadenaser.com/audio/001RD010000005730618/?ssm=tw"
+          }
+        ]
+      }
     }
   ]
 }
