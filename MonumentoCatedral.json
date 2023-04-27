@@ -343,6 +343,82 @@
           }
         ]
       }
+    },
+   
+    {
+      "@type": "CivicStructure",
+      "name": "Santuario Sant Salvador",
+      "description": "El Santuario de la Mare de Déu de Sant Salvador es un monasterio de mediados del siglo XIV. Fue construido alrededor de la época de la peste negra, cuando se creía que la altitud mantendría a raya la enfermedad. Está situado en el municipio de Felanitx, en la cima del Puig de Salvador, a 509 metros sobre el nivel del mar. Las vistas son espectaculares. El monasterio fue completamente restaurado en el siglo XVIII, y dentro de la iglesia hay un retablo gótico y coloridas pinturas de imaginería religiosa. En una sala junto al patio se encuentra el santuario a la Mare de Déu repleto de ofrendas, aunque la veneración de la Virgen María también es evidente en la pequeña capilla de camino al monasterio. Delante del monasterio encontramos el monumento a Cristo Rey, inaugurado en 1934, que es estatua de cobre de 7 metros se encuentra sobre una plataforma de 37 metros. La Cruz de Picot, de 14 metros, es otro impresionante mirador que está a 15 minutos a pie. Las amplias llanuras, la costa sureste, el castillo de Santueri y, en un buen día, la isla de Cabrera, son visibles desde aquí. ",
+      "openingHours": [
+        "Fr-Mo 9:00-20:00",
+        "Tu 9:00-18:00",
+        "We 9:00-20:00",
+        "Th 9:00-18:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Felanitx",
+        "addressRegion": "ES",
+        "postalCode": "07200",
+        "streetAddress": "Ctra. Porto Colom, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.45569654997326",
+        "longitude": "3.1858658529279515"
+      },
+      "telephone": "971827282",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "0",
+        "reviewCount": "0"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Fiesta Patronal",
+          "description": "El 8 de septiembre hay una fiesta patronal en honor a la Mare de Déu de la Salut."
+        }
+      ],
+      "mainEntityOfPage": "",
+      "sameAs": "https://mallorqueando.com/pueblos-y-lugares/santuario-de-sant-salvador/",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador-3.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://viagallica.com/baleares/img/ville_felanitx_-_sanctuaire_sant_salvador_010_(creu_picot_depuis_christ_roi,_2011-09-17).jpg"
+        }
+        {
+          "@type": "ImageObject",
+          "url": "https://www.hotel.de/de/media/image/f4/48/15/Sant_Salvador_Petit_Hotel_Hostatgeria-Felanitx-Ausblick-5-455011_600x600@2x.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Castillo de Bellver",
+            "contentUrl": "https://www.youtube.com/watch?v=9jfPqK1O0XU&ab_channel=VisitPalma"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio Castillo de Bellver",
+            "contentUrl": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76703&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247"
+          }
+        ]
+      }
     }
+   
   ]
 }
