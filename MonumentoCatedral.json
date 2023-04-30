@@ -347,6 +347,82 @@
    
     {
       "@type": "CivicStructure",
+      "name": "Basílica de San Francisco",
+      "description": "El Convento de San Francisco de Palma de Mallorca es un conjunto formado por la basílica menor del mismo nombre, el claustro y varias edificaciones adosadas. Se inició la construcción a finales de siglo XIII.​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
+      "openingHours": [
+        "Mo-St 10:00-18:00",
+        "Sn 10:30-13:30"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07001",
+        "streetAddress": "Plaça de Sant Francesc, 7"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.56888889",
+        "longitude": "2.65305556"
+      },
+      "telephone": "971712695",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4,5",
+        "reviewCount": "718"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada General",
+          "description": "Un conjunto histórico iniciado en 1281. El claustro más extraordinario de Palma. Una basílica única donde descansa el mallorquín más universal, Ramon Llull.",
+          "url": "https://www.spiritualmallorca.com/tickets",
+          "offers": {
+            "@type": "Offer",
+            "price": 5,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.spiritualmallorca.com/santfrancesc",
+      "sameAs": "https://es.wikipedia.org/wiki/Convento_de_San_Francisco_(Palma_de_Mallorca)",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://static.wixstatic.com/media/6a9fbf_397bf7b1cd55411ebfd70c7e680f49dd~mv2_d_1899_1260_s_2.png/v1/fill/w_659,h_438,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6a9fbf_397bf7b1cd55411ebfd70c7e680f49dd~mv2_d_1899_1260_s_2.png"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://static.wixstatic.com/media/6a9fbf_acf501c893f449649270e4ec28b06b94~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_658,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6a9fbf_acf501c893f449649270e4ec28b06b94~mv2_d_5760_3840_s_4_2.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://static.wixstatic.com/media/6a9fbf_1579773a9e0f4b928bd3705d34ef87f7~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_658,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6a9fbf_1579773a9e0f4b928bd3705d34ef87f7~mv2_d_5760_3840_s_4_2.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://static.wixstatic.com/media/6a9fbf_7975615e995144c383cab40b96373372~mv2_d_5617_3841_s_4_2.jpg/v1/fill/w_660,h_451,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6a9fbf_7975615e995144c383cab40b96373372~mv2_d_5617_3841_s_4_2.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://static.wixstatic.com/media/6a9fbf_f20cd0fcf498491488454d307f2821f8~mv2_d_4701_3134_s_4_2.jpg/v1/fill/w_658,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6a9fbf_f20cd0fcf498491488454d307f2821f8~mv2_d_4701_3134_s_4_2.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Basílica de San Francisco",
+            "contentUrl": "https://www.youtube.com/watch?v=zGxl25vAxA4"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
       "name": "Santuario Sant Salvador",
       "description": "El Santuario de la Mare de Déu de Sant Salvador es un monasterio de mediados del siglo XIV. Fue construido alrededor de la época de la peste negra, cuando se creía que la altitud mantendría a raya la enfermedad. Está situado en el municipio de Felanitx, en la cima del Puig de Salvador, a 509 metros sobre el nivel del mar. Las vistas son espectaculares. El monasterio fue completamente restaurado en el siglo XVIII, y dentro de la iglesia hay un retablo gótico y coloridas pinturas de imaginería religiosa. En una sala junto al patio se encuentra el santuario a la Mare de Déu repleto de ofrendas, aunque la veneración de la Virgen María también es evidente en la pequeña capilla de camino al monasterio. Delante del monasterio encontramos el monumento a Cristo Rey, inaugurado en 1934, que es estatua de cobre de 7 metros se encuentra sobre una plataforma de 37 metros. La Cruz de Picot, de 14 metros, es otro impresionante mirador que está a 15 minutos a pie. Las amplias llanuras, la costa sureste, el castillo de Santueri y, en un buen día, la isla de Cabrera, son visibles desde aquí. ",
       "openingHours": [
@@ -370,15 +446,15 @@
       "telephone": "971827282",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "0",
-        "reviewCount": "0"
+        "ratingValue": "4,7",
+        "reviewCount": "4852"
       },
       "isAccessibleForFree": true,
       "event": [
         {
           "@type": "Event",
           "name": "Fiesta Patronal",
-          "description": "El 8 de septiembre hay una fiesta patronal en honor a la Mare de Déu de la Salut."
+          "description": "Un conjunto histórico iniciado en 1281. El claustro más extraordinario de Palma. Una basílica única donde descansa el mallorquín más universal, Ramon Llull."
         }
       ],
       "mainEntityOfPage": "",
@@ -395,7 +471,7 @@
         {
           "@type": "ImageObject",
           "url": "https://viagallica.com/baleares/img/ville_felanitx_-_sanctuaire_sant_salvador_010_(creu_picot_depuis_christ_roi,_2011-09-17).jpg"
-        }
+        },
         {
           "@type": "ImageObject",
           "url": "https://www.hotel.de/de/media/image/f4/48/15/Sant_Salvador_Petit_Hotel_Hostatgeria-Felanitx-Ausblick-5-455011_600x600@2x.jpg"
@@ -415,6 +491,222 @@
             "@type": "AudioObject",
             "name": "Audio Castillo de Bellver",
             "contentUrl": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76703&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "S'Almudaina",
+      "description": "La Almudaina es el palacio real o alcázar real de la ciudad de Palma de Mallorca, en España, y una de las residencias de la familia real española, gestionada por el organismo público Patrimonio Nacional. Recoge en sus muros la historia de las islas desde los asentamientos megalíticos.",
+      "openingHours": [
+        "Mo-Sn 10:00-19:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07001",
+        "streetAddress": "Carrer del Palau Reial, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": " 39.5675",
+        "longitude": "2.64722"
+      },
+      "telephone": "902044454",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4,5",
+        "reviewCount": "4620"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada General",
+          "description": "Entrada general, visita libre, hay que seleccionar hora ",
+          "url": "https://tickets.patrimonionacional.es/es-ES/venta-entradas/13/palacio-almudaina/2023-05-03/10/publico-general",
+          "offers": {
+            "@type": "Offer",
+            "price": 7,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.spiritualmallorca.com/santfrancesc",
+      "sameAs": "https://es.wikipedia.org/wiki/Convento_de_San_Francisco_(Palma_de_Mallorca)",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.patrimonionacional.es/sites/default/files/styles/full/public/2020-05/05-20170124_162843.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://a.cdn-hotels.com/gdcs/production86/d369/0a09e152-8559-46dd-bc16-d83d3df93d28.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.turismodeobservacion.com/media/fotografias/0022-palacio-de-la-almudaina-palma-de-mallorca-70924-xl.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2018/02/palma-almudaina-01.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/07/Inside-Almudaina-Royal-Palace.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Basílica Palacio de la Almudaina",
+            "contentUrl": "https://www.youtube.com/watch?v=DEXknGOMjGo"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio Castillo de Bellver",
+            "contentUrl": "https://www.audioguia.org/static/es_200049.mp3"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "La Lonja",
+      "description": "La Lonja de Palma de Mallorca o Sa Llotja es una de las obras maestras de la arquitectura gótica en Mallorca. Fue construida por Guillem Sagrera entre 1420 y 1452 y fue la sede del Colegio de Mercaderes.",
+      "openingHours": [
+        "Tu-St 10:30-13:30",
+        "Tu-St 17:30-21:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07012",
+        "streetAddress": "Plaça de la Llotja, 5"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.56833333",
+        "longitude": "2.64430556"
+      },
+      "telephone": "971711705",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4,5",
+        "reviewCount": "3526"
+      },
+      "isAccessibleForFree": true,
+      "mainEntityOfPage": "https://www.palma.cat/portal/PALMA/contenedor1.jsp?seccion=s_floc_d4_v1.jsp&contenido=319&tipo=1&nivel=1400&codResi=1&language=es",
+      "sameAs": "https://es.wikipedia.org/wiki/Lonja_de_Palma_de_Mallorca",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_pal.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.visitpalma.com/media/site1/cache/images/cultura-389-j4um3.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/fachada-lonja-de-Palma-en-Mallorca.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Llotja_palma.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_888.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo La Lonja de Palma",
+            "contentUrl": "https://www.youtube.com/watch?v=u5qt-CsmyCI"
+          }
+        ],
+        "audio": [
+          {
+            "@type": "AudioObject",
+            "name": "Audio de La Lonja",
+            "contentUrl": "https://soundcloud.com/sofia-azorin-moreno/la-lonja-de-palma-azorin-moreno-sofia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Torre de Canyamel",
+      "description": "La Torre de Canyamel es una torre de defensa medieval situada en la costa noreste de Mallorca, cerca de la localidad de Canyamel. Fue construida en el siglo XIII para proteger la costa de los ataques piratas y es una de las pocas torres de este tipo que todavía se conservan en la isla.",
+      "openingHours": [
+        "Tu-St 10:00-14:00",
+        "Tu-St 17:00-20:00",
+        "Sn 10:00-15:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Capdepera",
+        "addressRegion": "ES",
+        "postalCode": "07580",
+        "streetAddress": "Carretera Artá, Ctra. de Canyamel, km 5 5"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.668260598686665",
+        "longitude": "3.4129500388416867"
+      },
+      "telephone": "971841134",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4,3",
+        "reviewCount": "274"
+      },
+      "isAccessibleForFree": false,
+      "mainEntityOfPage": "https://www.torredecanyamel.com/",
+      "sameAs": "https://mallorca-touristguide.com/que-visitar/capdepera-torre-de-canyamel",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1e/83/ed/torre-de-canyamel-vista.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20001.JPG"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Capdepera_-_Torre_de_Canyamel_07_ies.jpg/2560px-Capdepera_-_Torre_de_Canyamel_07_ies.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20011.JPG"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo La Lonja de Palma",
+            "contentUrl": "https://youtu.be/r9S6KtFSmYA"
           }
         ]
       }
