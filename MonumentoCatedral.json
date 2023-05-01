@@ -19,8 +19,9 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.5671",
-        "longitude": "2.6468"
+        "latitude": "39.56741356378317",
+        "longitude": "2.6482931797436122"
+        
       },
       "telephone": "971713133",
       "aggregateRating": {
@@ -115,8 +116,9 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.5671",
-        "longitude": "2.6178"
+        "latitude": "39.56381292628105",
+        "longitude": "2.619454029416261"
+        
       },
       "telephone": "971735065",
       "aggregateRating": {
@@ -136,6 +138,17 @@
             "price": 4.00,
             "priceCurrency": "EUR"
           }
+        },
+        {
+          "@type": "Event",
+          "name": "Entrada gratuita domingo",
+          "description": "En domingo se puede interior del castillo de Bellver de forma gratuita",
+          "url": "https://catedraldemallorca.org/visitas/horarios/",
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "EUR"
+          }
         }
       ],
       "mainEntityOfPage": "https://castelldebellver.palma.cat/",
@@ -152,7 +165,13 @@
         {
           "@type": "ImageObject",
           "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/interior-castillo-de-Bellver-en-Palma.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://fotografias.lasexta.com/clipping/cmsimages01/2021/09/12/3C479A82-E8DF-4961-8A02-816BEDCA119E/98.jpg?crop=1920,1080,x0,y32&width=1900&height=1069&optimize=high&format=webply"
         }
+
+        
       ],
       "subjectOf": {
         "@type": "CreativeWork",
@@ -175,6 +194,61 @@
 
     {
       "@type": "CivicStructure",
+      "name": "Ciudad Romana de Pollentia",
+      "description": "La Ciudad Romana de Pollentia es el yacimineto arqueológico de la época romana más importante de la isla de Mallorca. Se encuentra ubicado en el exterior de las murallas medievales del centro histórico de Alcudia, cerca de la Iglesia. Está abierto al público y posee una amplia zona de aparcamiento junto a él. La Ciudad Romana de Pollentia fue fundada en el año 123 antes de Cristo y durante un tiempo fue la capital romana de las islas Baleares debido a su situación estratégica y también por la geografía de su costa, donde sus puertos albergaban un tránsito naval importante. La Ciudad Romana de Pollentia por aquel entonces era una ciudad moderna y estaba dotada de agua potable y alcantarillado. Entre los restos de la ciudad se puede ver claramente el área residencial llamado La Portella y la plaza de la ciudad llamado El Forum. Además de los restos de la ciudad, también se encuentra el Teatro Romano de Pollentia, ubicado a las afueras de la ciudad, cerca del antiguo Puerto Romano y es uno de los elementos más representativos. Su característica principal es que está excavado en la roca, por lo cual a día de hoy se conserva en muy buen estado, tiene una capacidad de 2.000 personas, actualmente en verano se realizan algunos actos. En Alcudia, cerca de las Ruinas Romanas de Pollentia se puede visitar El Museo de Pollentia, en el se pueden ver materiales recuperados en las excavaciones realizadas en la Ciudad Romana de Pollentia tales como esculturas, cerámicas o monedas.",
+      "openingHours": [
+        "Tu-Fr 9:30-15:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alcúdia",
+        "addressRegion": "ES",
+        "postalCode": "07400",
+        "streetAddress": "Av. Prínceps d'Espanya, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.850279449260036",
+        "longitude": "3.121405044458029"
+      },
+      "telephone": "971547004",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "0",
+        "reviewCount": "0"
+      },
+      "isAccessibleForFree": true,
+      "mainEntityOfPage": "https://www.alcudia.net/Pollentia/es/la-ciutat-romana/",
+      "sameAs": "https://es.wikipedia.org/wiki/Pollentia",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.alcudia.net/export/sites/default/Pollentia/ca/Imagenes/casa-dels-dos-tresors.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.alcudia.net/export/sites/default/Pollentia/ca/albumes/Pollentia/teatre-de-Pollentia.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://tusdestinos.net/wp-content/uploads/2021/02/MG_9276-1200x799.jpg"
+        }
+        
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo Ciudad Romana de Pollentia",
+            "contentUrl": "https://www.youtube.com/watch?v=EZvLe7uxQIM&ab_channel=PollentiaCiudadRomana"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
       "name": "Santuario de Lluc",
       "description": "Es un centro religioso y cultural muy importante para la comunidad mallorquina, y alberga la imagen de la Virgen de Lluc, patrona de la isla. El santuario cuenta con una impresionante iglesia barroca, así como con un museo, un monasterio y numerosos jardines y espacios naturales. Es un lugar de gran belleza y serenidad que atrae a muchos visitantes cada año.",
       "openingHours": [
@@ -189,9 +263,10 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.8188",
-        "longitude": "2.8535"
+        "latitude": "39.82250976599997",
+        "longitude": "2.8842204021515614"
       },
+       
       "telephone": "971871525",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -272,9 +347,10 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.7114",
-        "longitude": "2.6094"
+        "latitude": "39.7094564106832",
+        "longitude": "2.622373595271531"
       },
+      
       "telephone": "971612106",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -362,9 +438,9 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.56888889",
-        "longitude": "2.65305556"
-      },
+        "latitude": "39.56882092467238",
+        "longitude": "2.652908337691012"
+      }, 
       "telephone": "971712695",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -440,9 +516,10 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.45569654997326",
-        "longitude": "3.1858658529279515"
+        "latitude": "39.45551277808182",
+        "longitude": "3.185837385720501"
       },
+
       "telephone": "971827282",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -454,10 +531,14 @@
         {
           "@type": "Event",
           "name": "Fiesta Patronal",
-          "description": "Un conjunto histórico iniciado en 1281. El claustro más extraordinario de Palma. Una basílica única donde descansa el mallorquín más universal, Ramon Llull."
+          "description": "El 8 de septiembre hay una fiesta patronal en honor a la Mare de Déu de la Salut.",
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "EUR"
+          }
         }
       ],
-      "mainEntityOfPage": "",
       "sameAs": "https://mallorqueando.com/pueblos-y-lugares/santuario-de-sant-salvador/",
       "image": [
         {
@@ -482,15 +563,8 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo Castillo de Bellver",
-            "contentUrl": "https://www.youtube.com/watch?v=9jfPqK1O0XU&ab_channel=VisitPalma"
-          }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio Castillo de Bellver",
-            "contentUrl": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76703&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247"
+            "name": "Vídeo Santuario Sant Salvador",
+            "contentUrl": "https://www.youtube.com/watch?v=Sf9d2X3f_WU&ab_channel=NEGRITADRONEFILMS"
           }
         ]
       }
@@ -512,8 +586,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": " 39.5675",
-        "longitude": "2.64722"
+        "latitude": "39.567864535002236",
+        "longitude": "2.6470201343061177"
       },
       "telephone": "902044454",
       "aggregateRating": {
@@ -595,8 +669,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.56833333",
-        "longitude": "2.64430556"
+        "latitude": "39.568421614999",
+        "longitude": " 2.6444489225037517"
       },
       "telephone": "971711705",
       "aggregateRating": {
@@ -666,8 +740,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.668260598686665",
-        "longitude": "3.4129500388416867"
+        "latitude": "39.667385822630486",
+        "longitude": "3.411688022250928"
       },
       "telephone": "971841134",
       "aggregateRating": {
