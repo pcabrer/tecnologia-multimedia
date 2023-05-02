@@ -708,6 +708,8 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+
+ 
 }
 
 .portfolio #portfolio-flters {
@@ -715,6 +717,7 @@ section {
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+
 }
 
 .portfolio #portfolio-flters li {
@@ -729,6 +732,7 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
+
 }
 
 .portfolio #portfolio-flters li:hover,

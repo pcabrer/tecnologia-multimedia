@@ -292,12 +292,13 @@
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FMonasterio_de_Lluch&psig=AOvVaw26dJ3YfTjseXI4QvYIgpba&ust=1682091358139000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjI--DkuP4CFQAAAAAdAAAAABAE"
+          "url": "https://www.lluc.net/dms/monoHotel-HospederiaLluc/hero/hero-santuario-de-lluc.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://www.lluc.net/dms/monoHotel-HospederiaLluc/hero/hero-santuario-de-lluc.jpg"
+          "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FMonasterio_de_Lluch&psig=AOvVaw26dJ3YfTjseXI4QvYIgpba&ust=1682091358139000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjI--DkuP4CFQAAAAAdAAAAABAE"
         },
+     
         {
           "@type": "ImageObject",
           "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/06/monasterio-de-lluc-mallorca.jpg"
@@ -541,9 +542,10 @@
       ],
       "sameAs": "https://mallorqueando.com/pueblos-y-lugares/santuario-de-sant-salvador/",
       "image": [
+
         {
           "@type": "ImageObject",
-          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador.jpg"
+          "url": "https://viagallica.com/baleares/img/ville_felanitx_-_sanctuaire_sant_salvador_010_(creu_picot_depuis_christ_roi,_2011-09-17).jpg"
         },
         {
           "@type": "ImageObject",
@@ -551,8 +553,9 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://viagallica.com/baleares/img/ville_felanitx_-_sanctuaire_sant_salvador_010_(creu_picot_depuis_christ_roi,_2011-09-17).jpg"
+          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador.jpg"
         },
+    
         {
           "@type": "ImageObject",
           "url": "https://www.hotel.de/de/media/image/f4/48/15/Sant_Salvador_Petit_Hotel_Hostatgeria-Felanitx-Ausblick-5-455011_600x600@2x.jpg"
@@ -753,6 +756,11 @@
       "mainEntityOfPage": "https://www.torredecanyamel.com/",
       "sameAs": "https://mallorca-touristguide.com/que-visitar/capdepera-torre-de-canyamel",
       "image": [
+
+        {
+          "@type": "ImageObject",
+          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
+        },
         {
           "@type": "ImageObject",
           "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1e/83/ed/torre-de-canyamel-vista.jpg"
@@ -761,10 +769,7 @@
           "@type": "ImageObject",
           "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20001.JPG"
         },
-        {
-          "@type": "ImageObject",
-          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
-        },
+       
         {
           "@type": "ImageObject",
           "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Capdepera_-_Torre_de_Canyamel_07_ies.jpg/2560px-Capdepera_-_Torre_de_Canyamel_07_ies.jpg"
