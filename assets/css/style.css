@@ -709,7 +709,7 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 
- 
+
 }
 
 .portfolio #portfolio-flters {
@@ -2306,28 +2306,10 @@ section {
   }
 }
 
-.stars {
-  text-align: right; 
-}
 
-.star {
-  font-size: 20px;
-  color: #ccc;
-}
-
-.star.checked {
-  color: #f90;
-}
-
-.rating {
-  display: inline-block;
-  font-size: 20px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 
 .mitexto {
- text-align: justify;
+  text-align: justify;
 }
 
 .events {
@@ -2489,11 +2471,199 @@ section {
   flex: 1;
   height: 250px;
   width: 250;
- 
+
 }
 
 .micontainer iframe {
   flex: 1;
   height: 250px;
   width: 250;
+}
+
+.card-image {
+
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+
+
+}
+
+/*--------------------------------------------------------------
+# Lista Monumentos cartas
+--------------------------------------------------------------*/
+.contenedor-monumentos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+.mi-carta {
+
+  max-height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  align-self: center;
+  transition: transform 500ms ease;
+
+  overflow: hidden;
+}
+
+.mi-carta:hover {
+
+  transform: scale(1.03);
+}
+
+
+
+.monumentos-card-imagen {
+
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+
+
+}
+
+.monumentos-card-link {
+
+
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.monumentos-card-link:hover {
+  color: inherit;
+  text-decoration: none;
+
+
+}
+
+.monumentos-card-contenido {
+
+
+  position: absolute;
+  padding: 20px;
+  padding-top: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(85%);
+  transition: transform 600ms ease, padding-top 600ms ease;
+  pointer-events: none;
+}
+
+.mi-carta:hover .monumentos-card-contenido {
+
+  transform: translateY(0%);
+  padding-top: 55px;
+
+}
+
+
+.monumentos-card-titulo {
+
+  position: absolute;
+  transform: translateY(-10%);
+ 
+}
+
+.monumentos-card-descripcion {
+
+  position: absolute;
+  text-align: justify;
+  padding-top: 45px;
+  padding-right: 20px;
+}
+
+.monumentos-card-ciudad {
+
+  position: absolute;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  font-style: italic;
+
+}
+
+.monumentos-card-abierto {
+
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  font-size: 15px;
+  color: #00a70b;
+
+}
+
+.monumentos-card-cerrado {
+
+  position: absolute;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  font-size: 15px;
+  color: #be0000;
+
+}
+
+.stars {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 12px;
+  padding-right: 20px;
+
+}
+
+.star {
+  font-size: 20px;
+  color: #9a9a9a;
+  padding: 2px;
+
+
+}
+
+.star.checked {
+  color: rgb(255, 158, 3);
+  font-weight: bold;
+
+}
+
+
+.star.halfchecked {
+ 
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(255, 158, 3) 50%, #9a9a9a 50% 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+ 
+}
+
+.rating {
+
+  display: none;
+  padding-bottom: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+
 }

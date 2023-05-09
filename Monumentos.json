@@ -123,7 +123,7 @@
       "telephone": "971735065",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.4",
+        "ratingValue": "1.2",
         "reviewCount": "16654"
       },
       "isAccessibleForFree": false,
@@ -214,7 +214,7 @@
       "telephone": "971547004",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "0",
+        "ratingValue": "2.6",
         "reviewCount": "0"
       },
       "isAccessibleForFree": true,
@@ -252,7 +252,7 @@
       "name": "Santuario de Lluc",
       "description": "Es un centro religioso y cultural muy importante para la comunidad mallorquina, y alberga la imagen de la Virgen de Lluc, patrona de la isla. El santuario cuenta con una impresionante iglesia barroca, así como con un museo, un monasterio y numerosos jardines y espacios naturales. Es un lugar de gran belleza y serenidad que atrae a muchos visitantes cada año.",
       "openingHours": [
-        "Tu-Su 8:30 a 19:30"
+        "Tu-Su 8:30-19:30"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -270,7 +270,7 @@
       "telephone": "971871525",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.4",
+        "ratingValue": "3",
         "reviewCount": "5551"
       },
       "isAccessibleForFree": true,
@@ -336,7 +336,7 @@
       "name": "Cartuja de Valldemossa",
       "description": "La Cartuja de Valldemossa es un antiguo monasterio ubicado en el pueblo de Valldemossa, en la isla de Mallorca, España. Fue construido en el siglo XIV como un palacio real, pero luego fue donado a los monjes cartujos en el siglo XV. La cartuja es conocida por ser el lugar donde el famoso compositor y pianista Frédéric Chopin pasó un invierno con su amante, la escritora francesa George Sand, en 1838-1839. La cartuja cuenta con una iglesia barroca, celdas de monjes, una farmacia antigua y numerosos patios y jardines.",
       "openingHours": [
-        "Tu-Fr 10:00 a 17:00",
+        "Tu-Fr 10:00-17:00",
         "Sa 10:00-16:00"
       ],
       "address": {
@@ -355,7 +355,7 @@
       "telephone": "971612106",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.4",
+        "ratingValue": "5",
         "reviewCount": "2760"
       },
       "isAccessibleForFree": true,
@@ -427,8 +427,8 @@
       "name": "Basílica de San Francisco",
       "description": "El Convento de San Francisco de Palma de Mallorca es un conjunto formado por la basílica menor del mismo nombre, el claustro y varias edificaciones adosadas. Se inició la construcción a finales de siglo XIII.​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
       "openingHours": [
-        "Mo-St 10:00-18:00",
-        "Sn 10:30-13:30"
+        "Mo-Sa 10:00-18:00",
+        "Su 10:30-13:30"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -445,7 +445,7 @@
       "telephone": "971712695",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4,5",
+        "ratingValue": "2.5",
         "reviewCount": "718"
       },
       "isAccessibleForFree": false,
@@ -524,7 +524,7 @@
       "telephone": "971827282",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4,7",
+        "ratingValue": "3.7",
         "reviewCount": "4852"
       },
       "isAccessibleForFree": true,
@@ -578,7 +578,7 @@
       "name": "S'Almudaina",
       "description": "La Almudaina es el palacio real o alcázar real de la ciudad de Palma de Mallorca, en España, y una de las residencias de la familia real española, gestionada por el organismo público Patrimonio Nacional. Recoge en sus muros la historia de las islas desde los asentamientos megalíticos.",
       "openingHours": [
-        "Mo-Sn 10:00-19:00"
+        "Mo-Su 10:00-19:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -595,7 +595,7 @@
       "telephone": "902044454",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4,5",
+        "ratingValue": "4.5",
         "reviewCount": "4620"
       },
       "isAccessibleForFree": false,
@@ -660,8 +660,8 @@
       "name": "La Lonja",
       "description": "La Lonja de Palma de Mallorca o Sa Llotja es una de las obras maestras de la arquitectura gótica en Mallorca. Fue construida por Guillem Sagrera entre 1420 y 1452 y fue la sede del Colegio de Mercaderes.",
       "openingHours": [
-        "Tu-St 10:30-13:30",
-        "Tu-St 17:30-21:00"
+        "Tu-Sa 10:30-13:30",
+        "Tu-Sa 17:30-21:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -678,7 +678,7 @@
       "telephone": "971711705",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4,5",
+        "ratingValue": "4.5",
         "reviewCount": "3526"
       },
       "isAccessibleForFree": true,
@@ -730,9 +730,9 @@
       "name": "Torre de Canyamel",
       "description": "La Torre de Canyamel es una torre de defensa medieval situada en la costa noreste de Mallorca, cerca de la localidad de Canyamel. Fue construida en el siglo XIII para proteger la costa de los ataques piratas y es una de las pocas torres de este tipo que todavía se conservan en la isla.",
       "openingHours": [
-        "Tu-St 10:00-14:00",
-        "Tu-St 17:00-20:00",
-        "Sn 10:00-15:00"
+        "Tu-Sa 10:00-14:00",
+        "Tu-Sa 17:00-20:00",
+        "Su 10:00-15:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -749,7 +749,7 @@
       "telephone": "971841134",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4,3",
+        "ratingValue": "4.3",
         "reviewCount": "274"
       },
       "isAccessibleForFree": false,
