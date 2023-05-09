@@ -1,9 +1,6 @@
 
 
 function cargaListaMonumentos() {
-
-
-
     // div que contiene la lista de monumentos
 
     const monumentList = document.getElementById('contenedor-monumentos');
@@ -14,7 +11,7 @@ function cargaListaMonumentos() {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-            datos.itemListElement.forEach(function (monumento) {
+            datos.itemListElement.forEach(function (monumento, idx) {
 
 
 
@@ -41,7 +38,7 @@ function cargaListaMonumentos() {
 
                 // Crear enlace con atributos href y clase monumentos-card-link
                 const enlace = document.createElement('a');
-                enlace.setAttribute('href', 'catedral.html');
+                enlace.setAttribute('href', `monumento.html?monumento=${idx}`);
                 enlace.classList.add('monumentos-card-link');
 
                 // Crear elemento div con clases card mi-carta

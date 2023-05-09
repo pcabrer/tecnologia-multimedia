@@ -30,6 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="./monumento.js"></script>
+
   <!-- =======================================================
   * Template Name: Sailor
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -39,7 +41,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body  onload="loadedPage()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -74,11 +76,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Catedral de Palma</h2>
+          <h2 id="tituloMonumento"></h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="monumentos.html">Monumentos</a></li>
-            <li>Catedral de Palma</li>
+            <li id="monumentoActual">Catedral de Palma</li>
           </ol>
         </div>
 
