@@ -10,7 +10,7 @@ function ObtenerNumeroMonumento() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('monumento');
 }
-  
+
 
 
 function cargaMonumento(idxMonumento) {
@@ -23,15 +23,38 @@ function cargaMonumento(idxMonumento) {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-            console.log(datos.itemListElement[idxMonumento]);
+            const monumento = datos.itemListElement[idxMonumento];
+            console.log(monumento.name);
 
             const titulo = document.getElementById('tituloMonumento');
-            titulo.innerText = datos.itemListElement[idxMonumento].name;
+            titulo.innerText = monumento.name;
 
             const monumentoActual = document.getElementById('monumentoActual');
-            monumentoActual.innerText = datos.itemListElement[idxMonumento].name;
+            monumentoActual.innerText = monumento.name;
+
+            const textoMonumento = document.getElementById('textoMonumento');
+            textoMonumento.innerText = monumento.description;
+
+            const contenedorImagenes = document.getElementById('textoMonumento');
 
 
+            monumento.image.forEach(function (imagen) {
+
+
+                // Crea el elemento <div>
+                const div = document.createElement('div');
+
+                // Agrega las clases "carousel-item" y "active" al elemento <div>
+                div.classList.add('carousel-item', 'active');
+
+                // Agrega el atributo "style" con el valor "background-image: url(assets/img/slide/slide1.jpg)" al elemento <div>
+                div.setAttribute('style', `background-image: url(${imagen})`);
+
+                // Agrega el elemento <div> al DOM
+                document.body.appendChild(div);
+
+
+            });
 
         };
 
