@@ -11,7 +11,47 @@ function ObtenerNumeroMonumento() {
     return urlParams.get('monumento');
 }
 
+function obtenerTemperatura(latitud, longitud) {
+    var apiKey = '91f45d91a911c4e90b86b1d46fdee1cc';
+    var url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latitud + '&lon=' + longitud + '&units=metric&appid=' + apiKey;
 
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+
+
+
+            const temperatura = data.main.temp;
+            const sensacionTermica = data.main.feels_like;
+            const humedad = data.main.humidity;
+            const velocidadViento = data.wind.speed;
+            const descripcion = data.weather[0].description;
+            const icono = data.weather[0].icon;
+
+            const temperaturaElemento = document.getElementById('temperatura');
+            temperaturaElemento.innerHTML =  `
+                <img src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
+                <p>Temperatura: ${temperatura}°C</p>
+                <p>Sensación térmica: ${sensacionTermica}°C</p>
+                <p>Humedad: ${humedad}%</p>
+                <p>Velocidad del viento: ${velocidadViento} km/h</p>
+                `;
+            /*
+            const temperatura = data.main.temp;
+            const icono = data.weather[0].icon;
+            const descripcion = data.weather[0].description;
+
+            const temperaturaElemento = document.getElementById('temperatura');
+            temperaturaElemento.innerHTML = `
+                <img src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
+                ${temperatura}°C
+                `;
+            */
+        })
+        .catch(error => {
+            console.error('Ocurrió un error al obtener la temperatura:', error);
+        });
+}
 
 function cargaMonumento(idxMonumento) {
     // div que contiene la lista de monumentos
@@ -55,6 +95,10 @@ function cargaMonumento(idxMonumento) {
 
 
             });
+
+            //Para el Tiempo
+            obtenerTemperatura(monumento.geo.latitude, monumento.geo.longitude);
+
 
         };
 

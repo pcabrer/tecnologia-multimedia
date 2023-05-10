@@ -17,40 +17,22 @@ function mapaLeaflet() {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-            /*
-            var markersLayer = L.layerGroup();
+            datos.itemListElement.forEach(function (monumento, idx) {
 
-            // Iterar sobre los monumentos y agregar un marcador para cada uno
-            datos.itemListElement.forEach(function (monumento) {
-                var marker = L.marker([monumento.geo.latitude, monumento.geo.longitude]);
+                const marker = L.marker([monumento.geo.latitude, monumento.geo.longitude]).addTo(mymap);
 
-                // Crear el contenido del popup con el nombre del monumento y el enlace al HTML correspondiente
-                var popupContent = '<div>' +
-                    '<h3>' + monumento.name + '</h3>' +
-                    '<a href="monumento.html?id=' + monumento.id + '">Ver detalles</a>' +
-                    '</div>';
+                // Crear el popup con la información del monumento
+                const popupContent = `
+                    <div>
+                    <h2>${monumento.name}</h2>
+                    <img src="${monumento.image[0].url}" style="width: 100%;" >
 
-                // Establecer el contenido del popup y un controlador de eventos para abrir el HTML correspondiente al hacer clic en el popup
-                marker.bindPopup(popupContent).on('click', function () {
-                    window.location.href = 'detalle.html?id=' + monumento.id;
-                });
-
-                // Agregar el marcador a la capa de marcadores
-                markersLayer.addLayer(marker);
+                    <p><a href='monumento.html?monumento=${idx}' target="_blank">Más información</a></p>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
             });
 
-            // Agregar la capa de marcadores al mapa
-            markersLayer.addTo(map);
-            */
-            
-            datos.itemListElement.forEach(function (monumento, layer) {
-
-                
-                var marker = L.marker([monumento.geo.latitude, monumento.geo.longitude]).addTo(mymap);
-                marker.bindPopup(monumento.name);
-              
-            });
-            
 
 
 
