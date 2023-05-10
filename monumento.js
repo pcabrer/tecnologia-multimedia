@@ -29,7 +29,7 @@ function obtenerTemperatura(latitud, longitud) {
             const icono = data.weather[0].icon;
 
             const temperaturaElemento = document.getElementById('temperatura');
-            temperaturaElemento.innerHTML =  `
+            temperaturaElemento.innerHTML = `
                 <img src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
                 <p>Temperatura: ${temperatura}°C</p>
                 <p>Sensación térmica: ${sensacionTermica}°C</p>
@@ -72,29 +72,85 @@ function cargaMonumento(idxMonumento) {
             const monumentoActual = document.getElementById('monumentoActual');
             monumentoActual.innerText = monumento.name;
 
+            const val = document.getElementById('valoracion');
+            // creamos el elemento span con clase "rating" y contenido de texto "4,1"
+            var ratingSpan = document.createElement("span");
+            ratingSpan.classList.add("rating-monumento");
+            ratingSpan.innerText = monumento.aggregateRating.ratingValue;
+
+            var numero = parseFloat(monumento.aggregateRating.ratingValue);
+            var entero = Math.floor(numero); // obtiene la parte entera (4)
+            var decimal = parseInt((numero - entero) * 10); // obtiene la parte decimal (7)
+            console.log(numero);
+            val.appendChild(ratingSpan);
+
+            // creamos cinco elementos span con clase "star", de los cuales los primeros cuatro tienen clase "checked" y contenido de texto "&#9733;"
+            for (var i = 0; i < 5; i++) {
+                var starSpan = document.createElement("span");
+                starSpan.classList.add("star");
+                if (i < entero) {
+                    starSpan.classList.add("checked");
+
+                } else if (decimal >= 5) {
+                    starSpan.classList.add("halfchecked");
+                    decimal = 0;
+
+                }
+                starSpan.innerHTML = "&#9733;";
+                val.appendChild(starSpan);
+
+
+            }
+
+
             const textoMonumento = document.getElementById('textoMonumento');
             textoMonumento.innerText = monumento.description;
 
-            const contenedorImagenes = document.getElementById('textoMonumento');
+
+            // Obtener el elemento que contiene los slides del carrusel
+            const carousel = document.getElementById('contenidoCarousel');
+            const opciones = document.getElementById('mi-hero-carousel-indicators');
 
 
-            monumento.image.forEach(function (imagen) {
+            monumento.image.forEach(function (imagen, idx) {
 
 
-                // Crea el elemento <div>
-                const div = document.createElement('div');
 
-                // Agrega las clases "carousel-item" y "active" al elemento <div>
-                div.classList.add('carousel-item', 'active');
+                var div = document.createElement("div");
+                if (idx == 0) {
 
-                // Agrega el atributo "style" con el valor "background-image: url(assets/img/slide/slide1.jpg)" al elemento <div>
-                div.setAttribute('style', `background-image: url(${imagen})`);
+                    div.className = "carousel-item active";
 
-                // Agrega el elemento <div> al DOM
-                document.body.appendChild(div);
+
+                } else {
+
+                    div.className = "carousel-item";
+
+                }
+
+                div.style.backgroundImage = "url(" + imagen.url + ")";
+
+
+                carousel.appendChild(div);
+
+                // Crear el elemento li
+                var li = document.createElement("li");
+                li.setAttribute("data-bs-target", "#heroCarousel");
+                li.setAttribute("data-bs-slide-to", idx);
+                if (idx == 0) {
+                    li.className = "active";
+                }
+
+
+
+                // Agregar el elemento li al contenedor de los indicadores del carrusel
+                opciones.appendChild(li);
+
 
 
             });
+
+
 
             //Para el Tiempo
             obtenerTemperatura(monumento.geo.latitude, monumento.geo.longitude);
