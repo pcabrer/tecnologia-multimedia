@@ -387,6 +387,11 @@ h6 {
   background-color: rgba(30, 35, 40, 0.6);
 }
 
+#hero .carousel-item::before {
+  content: "";
+
+}
+
 #hero .carousel-container {
   display: flex;
   justify-content: center;
@@ -535,7 +540,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -545,7 +550,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .section-title h2 {
@@ -1100,14 +1105,20 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
 .pricing .box {
+  
   padding: 20px;
   background: #fff;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
+  text-align: justify;
   position: relative;
   overflow: hidden;
+  word-wrap: break-word; /* Permite que las palabras se dividan en varias líneas */
+  /* O, en versiones más recientes de CSS, puedes usar la propiedad overflow-wrap: */
+  overflow-wrap: break-word; /* Permite que las palabras se dividan en varias líneas */
 }
 
 .pricing h3 {
@@ -1121,7 +1132,7 @@ section {
 }
 
 .pricing h4 {
-  font-size: 36px;
+  font-size: 25px;
   color: #d9232d;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -1129,7 +1140,7 @@ section {
 }
 
 .pricing h4 sup {
-  font-size: 20px;
+  font-size: 15px;
   top: -15px;
   left: -3px;
 }
@@ -1140,6 +1151,13 @@ section {
   font-weight: 300;
 }
 
+.pricing p {
+  font-size: 14px;
+  
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
 .pricing ul {
   padding: 0;
   list-style: none;
@@ -1148,6 +1166,7 @@ section {
   line-height: 20px;
   font-size: 14px;
 }
+
 
 .pricing ul li {
   padding-bottom: 16px;
@@ -1165,9 +1184,11 @@ section {
 }
 
 .pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
+ 
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #686767;
   text-align: center;
 }
 
@@ -1206,6 +1227,7 @@ section {
   background: #d9232d;
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -2146,10 +2168,13 @@ section {
 
 #monumento {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
 #monumento .carousel,
@@ -2714,4 +2739,17 @@ section {
 
 
   font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# titulos secciones
+--------------------------------------------------------------*/
+.tituloSection{
+
+padding-bottom: 20px;
+font-size: 30px;
+font-weight: bold;
+color: #727272;
+
 }

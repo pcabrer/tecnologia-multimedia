@@ -150,10 +150,96 @@ function cargaMonumento(idxMonumento) {
 
             });
 
-
-
             //Para el Tiempo
             obtenerTemperatura(monumento.geo.latitude, monumento.geo.longitude);
+
+            // Actividades
+
+            const seccionActividades = document.getElementById('actividades');
+           
+            if (monumento.event) {
+
+                // Crear el elemento <section>
+                var section = document.createElement("section");
+                section.id = "pricing";
+                section.className = "pricing section-bg";
+
+                // Crear el elemento <div> con la clase "container"
+                var divContainer = document.createElement("div");
+                divContainer.className = "container";
+
+                // Crear el elemento <h2> con la clase "tituloSection"
+                var h2 = document.createElement("h2");
+                h2.className = "tituloSection";
+                h2.textContent = "Actividades";
+
+                // Crear el elemento <div> con la clase "row g-5" y el id "contenedorActividades"
+                var divRow = document.createElement("div");
+                divRow.className = "row g-5";
+                divRow.id = "contenedorActividades";
+
+                // Agregar los elementos al árbol DOM
+                divContainer.appendChild(h2);
+                divContainer.appendChild(divRow);
+                section.appendChild(divContainer);
+
+                // Agregar el código HTML generado al documento
+               seccionActividades.appendChild(section);
+
+
+                const contenedorActividades = document.getElementById('contenedorActividades');
+
+
+                console.log("La lista de eventos no está vacía.");
+                monumento.event.forEach(function (evento, idx) {
+
+
+                    var divCol = document.createElement("div");
+                    divCol.className = "col-lg-4 col-md-6";
+
+                    var divBox = document.createElement("div");
+                    divBox.className = "box featured h-100";
+
+                    var h3 = document.createElement("h3");
+                    h3.textContent = evento.name;
+
+
+                    var p = document.createElement("p");
+                    p.textContent = evento.description;
+
+
+                    var h4 = document.createElement("h4");
+                    h4.textContent = evento.offers.price;
+                    var sup = document.createElement("sup");
+                    sup.innerHTML = "&#8364";
+                    h4.appendChild(sup);
+                    var span = document.createElement("span");
+                    h4.appendChild(span);
+
+                    var a = document.createElement("a");
+                    a.href = "https://catedraldemallorca.org/visitas/horarios/";
+                    a.textContent = "Más información";
+
+                    divBox.appendChild(h3);
+                    divBox.appendChild(p);
+                    divBox.appendChild(h4);
+                    divBox.appendChild(a);
+
+                    divCol.appendChild(divBox);
+
+
+                    contenedorActividades.appendChild(divCol);
+
+
+
+
+                });
+
+            } else {
+
+                console.log("La lista de eventos está vacía.");
+            }
+
 
 
         };
