@@ -753,6 +753,18 @@
         "reviewCount": "274"
       },
       "isAccessibleForFree": false,
+      "event": [
+          {
+            "@type": "Event",
+            "name": "Entrada General",
+            "description": "Entrada general, visita libre",
+            "offers": {
+              "@type": "Offer",
+              "price": 10,
+              "priceCurrency": "EUR"
+            }
+          }
+        ],
       "mainEntityOfPage": "https://www.torredecanyamel.com/",
       "sameAs": "https://mallorca-touristguide.com/que-visitar/capdepera-torre-de-canyamel",
       "image": [
@@ -789,7 +801,254 @@
           }
         ]
       }
-    }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Iglesia de Santa Eulalia",
+      "description": "La iglesia de Santa Eulalia de Palma es una iglesia católica ubicada en el casco antiguo de Palma de Mallorca. Combina diferentes estilos arquitectónicos, como la torre románica del siglo XIII y la nave central gótica con un rosetón del siglo XV. También cuenta con una capilla barroca del siglo XVIII y una sacristía neoclásica. El altar mayor es neogótico y hay numerosas obras de arte en su interior. Es una de las iglesias más importantes de la ciudad y es frecuentada por residentes y turistas por su belleza arquitectónica y religiosa.",
+      "openingHours": [
+        "Mo-Sa 11:00-12:30",
+        "Mo-Sa 14:00-17:30"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07001",
+        "streetAddress": "Plaça de Santa Eulàlia, 2"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5695",
+        "longitude": "2.65123"
+      },
+      "telephone": "971714625",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "372"
+      },
+      "isAccessibleForFree": true,
+      "mainEntityOfPage": "https://www.conferenciaepiscopal.es/parroquias-de-la-diocesis-de-mallorca/",
+      "sameAs": "https://es.wikipedia.org/wiki/Iglesia_de_Santa_Eulalia_(Palma_de_Mallorca)",
+      "image": [
+
+        {
+          "@type": "ImageObject",
+          "url": "https://live.staticflickr.com/8530/8597940661_7ef935da66_b.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://life-globe.com/image/cache/catalog/spain/mallorca/church-santa-eulalia/iglesia-santa-eulalia-palma-mallorca-3-500x326.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.visitpalma.com/media/site1/cache/images/35m-7903.jpg"
+        },
+       
+        {
+          "@type": "ImageObject",
+          "url": "https://media.voicemap.me/uploads/sound_bite/image/54022/original/24-La-Iglesia-de-Santa-Eulalia.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://farm8.staticflickr.com/7880/47486900881_c589020fbe_k.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "contentUrl": "https://www.youtube.com/watch?v=PgBxPtTmEBY"
+          }
+        ]
+      }
+    },
    
+    {
+      "@type": "CivicStructure",
+      "name": "Baños Árabes",
+      "description": "Los Baños Árabes de Palma son un conjunto de baños históricos de estilo islámico ubicados en el casco antiguo de Palma de Mallorca. Construidos en el siglo X por los gobernantes musulmanes, los baños presentan una arquitectura fascinante con una cúpula central, arcos de herradura, estucos y mosaicos. Aunque los baños no han estado en uso desde la Edad Media, han sido restaurados y abiertos al público para su visita, ofreciendo una experiencia única y evocadora de la vida bajo la cultura musulmana en Mallorca.",
+      "openingHours": [
+        "Mo-Sa 10:00-18:30",
+        "Sn 10:00-18:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07001",
+        "streetAddress": "Carrer de Can Serra, 7"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5685",
+        "longitude": "2.6475"
+      },
+      "telephone": "637046534",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.7",
+        "reviewCount": "3942"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+          {
+            "@type": "Event",
+            "name": "Entrada General",
+            "description": "Entrada general a los baños árabes ",
+            "url": "https://www.illesbalears.travel/articulo/es/mallorca/los-banos-arabes-de-palma-de-mallorca",
+            "offers": {
+              "@type": "Offer",
+              "price": 2,
+              "priceCurrency": "EUR"
+            }
+          }
+        ],
+      "mainEntityOfPage": "https://www.illesbalears.travel/articulo/es/mallorca/los-banos-arabes-de-palma-de-mallorca",
+      "sameAs": "https://es.wikipedia.org/wiki/Ba%C3%B1os_%C3%A1rabes_(Palma_de_Mallorca)",
+      "image": [
+
+        {
+          "@type": "ImageObject",
+          "url": "https://www.visitpalma.com/media/site1/cache/images/banos-arabes-interior.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/b8/4c.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.caleiatalayotspahotel.com/wp-content/blogs.dir/1564/files/cultura/BANOS_ARABES.jpg"
+        },
+       
+        {
+          "@type": "ImageObject",
+          "url": "https://www.hotelpalladium.com/static/bloques/listados_noticias/noticias/599.m.jpg?1610652714"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "contentUrl": "https://www.youtube.com/watch?v=X20OZidNows"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Torre del Verger",
+      "description": "La Torre del Verger es una torre de vigilancia costera situada en la costa norte de la isla de Mallorca, en las Islas Baleares, España. Construida en el siglo XVI, la torre fue utilizada para defender la costa y alertar a la población ante la llegada de piratas y corsarios. De forma circular, cuenta con dos pisos y una terraza en la parte superior, desde la que se puede disfrutar de impresionantes vistas panorámicas del mar Mediterráneo y de la costa mallorquina. Actualmente, la torre está abierta al público y es un lugar popular para los visitantes que buscan explorar la rica historia de la isla.",
+      "openingHours": [
+        "Mo-Sn 00:00-23:59"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Banyalbufar",
+        "addressRegion": "ES",
+        "postalCode": "07191",
+        "streetAddress": " calle Verger, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.6915",
+        "longitude": "2.6475"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "2076"
+      },
+      "isAccessibleForFree": true,
+      "sameAs": "https://ca.wikipedia.org/wiki/Talaia_de_ses_%C3%80nimes",
+      "image": [
+
+        {
+          "@type": "ImageObject",
+          "url": "https://www.ruralzoom.com/wp-content/uploads/2020/01/Torre-del-Vergel.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://img.remediosdigitales.com/2ef47d/mir2/1366_2000.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://live.staticflickr.com/4219/34910632816_9a5ac21d40_b.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "contentUrl": "https://www.holamallorca.com/images/es/mallorca/guia-de-viaje/lugares-de-interes/miradores/torredelverger/torre-del-verger.mp4"
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "CivicStructure",
+      "name": "Iglesia de Santa Maria",
+      "description": "La iglesia de Santa María la Mayor es una iglesia gótica ubicada en el centro de Inca, una ciudad en el centro de Mallorca, España. Construida en el siglo XIII, la iglesia presenta una impresionante fachada de estilo neoclásico y cuenta con numerosas capillas laterales, algunas de las cuales están adornadas con frescos y esculturas de gran valor artístico e histórico. Destacan también sus vidrieras, que iluminan la nave central y los detalles arquitectónicos de estilo gótico, como los arcos ojivales y las bóvedas de crucería. La iglesia de Santa María es uno de los lugares de culto más importantes de la isla y es frecuentada tanto por residentes como por visitantes que buscan admirar su belleza y rica historia.",
+      "openingHours": [
+        "Mo-Sa 10:00-13:30",
+        "Mo-Sa 18:30-20:30"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Inca",
+        "addressRegion": "ES",
+        "postalCode": "07300",
+        "streetAddress": "Plaça Santa Maria la Major, 1"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5685",
+        "longitude": "2.6475"
+      },
+      "telephone": "671643548",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "192"
+      },
+      "isAccessibleForFree": true,
+      "mainEntityOfPage": "https://upmarededeu.com/",
+      "sameAs": "https://ca.wikipedia.org/wiki/Santa_Maria_la_Major_d%27Inca",
+      "image": [
+
+        {
+          "@type": "ImageObject",
+          "url": "https://www.ferrocaib.org/wp-content/uploads/2013/06/inc_iglesia_maria.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/01/interior-santa-maria-la-mayor.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "contentUrl": "https://youtu.be/-a2KoeP7q-A"
+          }
+        ]
+      }
+    }
+
+    
+
+
   ]
 }
