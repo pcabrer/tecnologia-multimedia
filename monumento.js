@@ -72,6 +72,15 @@ function cargaMonumento(idxMonumento) {
             const monumentoActual = document.getElementById('monumentoActual');
             monumentoActual.innerText = monumento.name;
 
+            const titulo1 = document.getElementById('tituloMonumento1');
+            titulo1.innerText = monumento.name;
+
+            const puebloMonumento = document.getElementById('puebloMonumento');
+            puebloMonumento.innerText = monumento.address.addressLocality;;
+
+            
+            
+
             const val = document.getElementById('valoracion');
             // creamos el elemento span con clase "rating" y contenido de texto "4,1"
             var ratingSpan = document.createElement("span");
@@ -101,6 +110,11 @@ function cargaMonumento(idxMonumento) {
 
 
             }
+
+            var numValoraciones= document.createElement("span");
+            numValoraciones.innerText = monumento.aggregateRating.reviewCount+" Valoraciones";
+            numValoraciones.classList.add("valoracionesTexto");
+            val.appendChild(numValoraciones);
 
 
             const textoMonumento = document.getElementById('textoMonumento');
@@ -162,7 +176,7 @@ function cargaMonumento(idxMonumento) {
                 // Crear el elemento <section>
                 var section = document.createElement("section");
                 section.id = "pricing";
-                section.className = "pricing section-bg";
+                section.className = "pricing";
 
                 // Crear el elemento <div> con la clase "container"
                 var divContainer = document.createElement("div");

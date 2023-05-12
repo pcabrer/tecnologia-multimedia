@@ -73,111 +73,175 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="monumentos.html">Monumentos</a></li>
-            <li id="monumentoActual">Catedral de Palma</li>
+            <li id="monumentoActual"></li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= About Sectio n ======= -->
+    <!-- ======= Hero ======= -->
 
-    <div class="container">
-      <br>
+    <section id="monumento" class="d-flex justify-content-center">
+      <div id="monumentoCarousel" data-bs-interval="5000" class="carousel slide carousel-fade " data-bs-ride="carousel">
 
-      <div class="stars-monumento" id="valoracion">
+        <ol class="carousel-indicators" id="mi-hero-carousel-indicators">
+
+        </ol>
+
+        <div id="contenidoCarousel" class="carousel-inner" role="listbox">
+
+
+
+        </div>
+
+        <a class="carousel-control-prev" href="#monumentoCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#monumentoCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
 
       </div>
+    </section><!-- End Hero -->
 
-      <p id="textoMonumento" class="mitexto">
-      </p><br>
-
-      <!-- ======= Image Section ======= -->
-
-      <section id="monumento">
-        <div id="monumentoCarousel" data-bs-interval="5000" class="carousel slide carousel-fade"
-          data-bs-ride="carousel">
-
-          <ol class="carousel-indicators" id="mi-hero-carousel-indicators">
-
-          </ol>
-
-          <div id="contenidoCarousel" class="carousel-inner" role="listbox">
-
+    <!-- ======= About Section ======= -->
+    <section id="monumentoInfo" class="monumentoInfo">
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-9">
+            <h2 id="tituloMonumento1"></h2>
+            <h3 id="puebloMonumento"></h3>
+          </div>
+          <div class="col-lg-3">
+            <a href="#team">
+              <div class="stars-monumento" id="valoracion"></div>
+            </a>
 
 
           </div>
-
-          <a class="carousel-control-prev" href="#monumentoCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-
-          <a class="carousel-control-next" href="#monumentoCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-
         </div>
-      </section><!-- End Hero -->
 
-      <br>
+        <p id="textoMonumento">
 
-      <table>
-        <tr>
-          <th>Día</th>
-          <th>Horario</th>
-        </tr>
-        <tr>
-          <td>Lunes</td>
-          <td>10:00–17:15</td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td>10:00–17:15</td>
-        </tr>
-        <tr>
-          <td>Miércoles</td>
-          <td>10:00–17:15</td>
-        </tr>
-        <tr>
-          <td>Jueves</td>
-          <td>10:00–17:15</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>10:00–17:15</td>
-        </tr>
-        <tr>
-          <td>Sabado</td>
-          <td>10:00–14:15</td>
-        </tr>
-        <tr>
-          <td>Domingo</td>
-          <td>Cerrado</td>
-        </tr>
-      </table>
 
-      <br>
-      <p>Teléfono: 971 71 31 33</p>
-      <br>
+      </div>
 
-      <a href="https://catedraldemallorca.org/" class="mislinks">Visitar página principal</a>
-      <br>
-      <a href="https://es.wikipedia.org/wiki/Catedral_de_Santa_Mar%C3%ADa_de_Palma_de_Mallorca" class="mislinks">Más
-        información</a>
+      </p>
 
-      <br><br>
-    </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+    <!-- ======= Image Section ======= -->
+
+    <section id="horario" class="horario">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <div class="container-fluid">
+              <h1>Horario</h1>
+              <table>
+                <tr class="monday fvl-d">
+                  <td><span>Monday</span></td>
+                  <td>8.00-11.30</td>
+                  <td>14.30-18.00</td>
+                </tr>
+                <tr class="tuesday fvl-d">
+                  <td><span>Tuesday</span></td>
+                  <td>8.00-11.30</td>
+                  <td>14.30-18.00</td>
+                </tr>
+                <tr class="wednesday fvl-d">
+                  <td><span>Wednesday</span></td>
+                  <td>8.00-12.00</td>
+                </tr>
+                <tr class="thursday fvl-d">
+                  <td><span>Thursday</span></td>
+                  <td>8.00-11.30</td>
+                  <td>14.30-18.00</td>
+                </tr>
+                <tr class="friday fvl-d">
+                  <td><span>Friday</span></td>
+                  <td>12.00-22.00</td>
+                </tr>
+                <tr class="saturday fvl-d">
+                  <td><span>Saturday</span></td>
+                  <td>17.00-22.00</td>
+                </tr>
+                <tr class="sunday fvl-d">
+                  <td><span>Sunday</span></td>
+                  <td>closed</td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <section id="services" class="services">
+              <div class="container">
+        
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="icon-box">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4><a href="#">Ubicacion en la isla</a></h4>
+                      <p>Se dispondrá de un mapa de la isla donde indicará donde están situados los diferentes monumentos.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mt-4 mt-md-0">
+                    <div class="icon-box">
+                      <i class="bi bi-cash-coin"></i>
+                      <h4><a href="#">Precios</a></h4>
+                      <p>Si la entrada al monumento no es gratuita o hay algún tipo de evento especial se podrá consultar el precio</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mt-4 mt-md-0">
+                    <div class="icon-box">
+                      <i class="bi bi-building"></i>
+                      <h4><a href="#">Hoteles</a></h4>
+                      <p>Se podrá consultar que hoteles hay cercanos en cada uno de los monumentos.</p>
+                    </div>
+                  </div>
+              
+                </div>
+        
+              </div>
+            </section><!-- End Services Section -->
+            <p>Teléfono: 971 71 31 33</p>
+
+
+
+            <a href="https://catedraldemallorca.org/" class="mislinks">Visitar página principal</a>
+    
+            <a href="https://es.wikipedia.org/wiki/Catedral_de_Santa_Mar%C3%ADa_de_Palma_de_Mallorca" class="mislinks">Más
+              información</a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- ======= Actividades ======= -->
     <div id="actividades">
 
-      
+
     </div>
 
 
     <!-- ======= Our Skills Section ======= -->
     <section id="skills" class="skills">
-
 
       <div class="container">
 
@@ -205,7 +269,7 @@
 
 
     <!-- ======= Comentarios ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team" class="team">
 
       <section id="blog" class="blog">
         <div class="container" data-aos="fade-up">
