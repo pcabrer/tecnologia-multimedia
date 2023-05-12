@@ -5,7 +5,7 @@
     {
       "@type": "CivicStructure",
       "name": "Catedral de Palma",
-      "description": "La Catedral de Palma, también conocida como la Catedral de Santa María de Palma, es un impresionante edificio gótico situado en la ciudad de Palma de Mallorca, España. Su construcción comenzó en el siglo XIII y se completó en el siglo XIX. Destacan su rosetón de 13 metros de diámetro, su altar mayor barroco y su imponente nave central.",
+      "description": "La Catedral de Santa María de Palma de Mallorca, también conocida como La Seu, es uno de los monumentos más emblemáticos de la isla. Esta majestuosa catedral de estilo gótico levantada en la orilla del mar es impresionante tanto por fuera como por dentro. En su exterior destaca la espectacular rosácea que se encuentra sobre el gran rosetón, así como su imponente fachada y las torres gemelas que se elevan hacia el cielo.\n\n En su interior, la catedral es igualmente impresionante, con sus altas columnas, bóvedas de crucería y numerosas capillas y altares. También es famosa por su espectacular rosetón mayor, que es uno de los más grandes y hermosos del mundo. Además, la Catedral de Palma cuenta con una importante colección de arte, que incluye obras de grandes artistas como Gaudí o Miquel Barceló. Sin duda, la Catedral de Palma es una visita imprescindible para cualquier persona que visite la isla.",
       "openingHours": [
         "Mo-Fr 10:00-17:15",
         "Sa 10:00-14:15"
@@ -72,11 +72,27 @@
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://viajes.nationalgeographic.com.es/medio/2022/11/11/la-catedral-de-palma-y-sus-curiosidades_110da95b_2000x1498.jpg"
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kathedrale_von_Palma_II.jpg/1200px-Kathedrale_von_Palma_II.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/1f/ea/5d/palma-de-mallorca.jpg"
+          "url": "https://live.staticflickr.com/65535/47999207898_03bd7f6666_b.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://catedraldemallorca.org/wp-content/uploads/2021/10/Visita_Catedral_de_Mallorca.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.turismepetit.com/wp-content/uploads/2020/05/DSC_6518.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://static.abc.es/media/viajar/2017/11/08/EspectaculodelOcho_CatedralMallorca_3-k9qD--1240x698@abc.JPG"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://viajes.nationalgeographic.com.es/medio/2020/11/09/119063944-3211354918919948-369981968298807634-o_ba1ba3a9_2000x1333.jpg"
         }
       ],
       "subjectOf": {
@@ -102,7 +118,7 @@
     {
       "@type": "CivicStructure",
       "name": "Castillo de Bellver",
-      "description": "El Castillo de Bellver es un castillo de estilo gótico situado a unos 2,5 kilómetros al suroeste de la ciudad de Palma. Construido en el siglo XIV por el Rey Jaime II de Mallorca destaca por su forma circular única, con tres torres circulares de menor tamaño y una torre del homenaje más grande ubicada en uno de sus extremos. El castillo ha sido utilizado como prisión, museo y actualmente es un importante sitio turístico. En su interior se encuentra el Museo de Historia de la Ciudad de Palma y también se pueden admirar impresionantes vistas panorámicas de la ciudad y del mar Mediterráneo. El patio central rodeado de galerías es un rasgo distintivo del castillo. Su construcción con piedra arenisca le da una apariencia majestuosa y robusta. El Castillo de Bellver es uno de los pocos castillos circulares de Europa y es considerado uno de los monumentos más emblemáticos de Mallorca. Su ubicación en una colina boscosa a unos 3 kilómetros del centro de Palma ofrece vistas panorámicas impresionantes.",
+      "description": "El Castillo de Bellver es un castillo de estilo gótico situado a unos 2,5 kilómetros al suroeste de la ciudad de Palma. Construido en el siglo XIV por el Rey Jaime II de Mallorca destaca por su forma circular única, con tres torres circulares de menor tamaño y una torre del homenaje más grande ubicada en uno de sus extremos. El castillo ha sido utilizado como prisión, museo y actualmente es un importante sitio turístico.\n\n En su interior se encuentra el Museo de Historia de la Ciudad de Palma y también se pueden admirar impresionantes vistas panorámicas de la ciudad y del mar Mediterráneo. El patio central rodeado de galerías es un rasgo distintivo del castillo. Su construcción con piedra arenisca le da una apariencia majestuosa y robusta. El Castillo de Bellver es uno de los pocos castillos circulares de Europa y es considerado uno de los monumentos más emblemáticos de Mallorca. Su ubicación en una colina boscosa a unos 3 kilómetros del centro de Palma ofrece vistas panorámicas impresionantes.",
       "openingHours": [
         "Tu-Sa 10:00-19:00",
         "Su 10:00-15:00"
@@ -195,7 +211,7 @@
     {
       "@type": "CivicStructure",
       "name": "Ciudad Romana de Pollentia",
-      "description": "La Ciudad Romana de Pollentia es el yacimineto arqueológico de la época romana más importante de la isla de Mallorca. Se encuentra ubicado en el exterior de las murallas medievales del centro histórico de Alcudia, cerca de la Iglesia. Está abierto al público y posee una amplia zona de aparcamiento junto a él. La Ciudad Romana de Pollentia fue fundada en el año 123 antes de Cristo y durante un tiempo fue la capital romana de las islas Baleares debido a su situación estratégica y también por la geografía de su costa, donde sus puertos albergaban un tránsito naval importante. La Ciudad Romana de Pollentia por aquel entonces era una ciudad moderna y estaba dotada de agua potable y alcantarillado. Entre los restos de la ciudad se puede ver claramente el área residencial llamado La Portella y la plaza de la ciudad llamado El Forum. Además de los restos de la ciudad, también se encuentra el Teatro Romano de Pollentia, ubicado a las afueras de la ciudad, cerca del antiguo Puerto Romano y es uno de los elementos más representativos. Su característica principal es que está excavado en la roca, por lo cual a día de hoy se conserva en muy buen estado, tiene una capacidad de 2.000 personas, actualmente en verano se realizan algunos actos. En Alcudia, cerca de las Ruinas Romanas de Pollentia se puede visitar El Museo de Pollentia, en el se pueden ver materiales recuperados en las excavaciones realizadas en la Ciudad Romana de Pollentia tales como esculturas, cerámicas o monedas.",
+      "description": "La Ciudad Romana de Pollentia es el yacimineto arqueológico de la época romana más importante de la isla de Mallorca. Se encuentra ubicado en el exterior de las murallas medievales del centro histórico de Alcudia, cerca de la Iglesia. Está abierto al público y posee una amplia zona de aparcamiento junto a él. La Ciudad Romana de Pollentia fue fundada en el año 123 antes de Cristo y durante un tiempo fue la capital romana de las islas Baleares debido a su situación estratégica y también por la geografía de su costa, donde sus puertos albergaban un tránsito naval importante. La Ciudad Romana de Pollentia por aquel entonces era una ciudad moderna y estaba dotada de agua potable y alcantarillado.\n\nEntre los restos de la ciudad se puede ver claramente el área residencial llamado La Portella y la plaza de la ciudad llamado El Forum. Además de los restos de la ciudad, también se encuentra el Teatro Romano de Pollentia, ubicado a las afueras de la ciudad, cerca del antiguo Puerto Romano y es uno de los elementos más representativos. Su característica principal es que está excavado en la roca, por lo cual a día de hoy se conserva en muy buen estado, tiene una capacidad de 2.000 personas, actualmente en verano se realizan algunos actos. En Alcudia, cerca de las Ruinas Romanas de Pollentia se puede visitar El Museo de Pollentia, en el se pueden ver materiales recuperados en las excavaciones realizadas en la Ciudad Romana de Pollentia tales como esculturas, cerámicas o monedas.",
       "openingHours": [
         "Tu-Fr 9:30-15:00"
       ],
@@ -250,7 +266,7 @@
     {
       "@type": "CivicStructure",
       "name": "Santuario de Lluc",
-      "description": "Es un centro religioso y cultural muy importante para la comunidad mallorquina, y alberga la imagen de la Virgen de Lluc, patrona de la isla. El santuario cuenta con una impresionante iglesia barroca, así como con un museo, un monasterio y numerosos jardines y espacios naturales. Es un lugar de gran belleza y serenidad que atrae a muchos visitantes cada año.",
+      "description": "El Santuario de Lluc es un lugar sagrado y emblemático de Mallorca situado en el corazón de la Serra de Tramuntana. Se trata de un complejo religioso compuesto por una iglesia, un monasterio y varios edificios anexos, rodeado de un entorno natural de gran belleza. La iglesia es de estilo neogótico y destaca por su torre de 50 metros de altura y su amplio interior, que alberga numerosos altares y una impresionante imagen de la Virgen de Lluc.\n\nEl monasterio es un lugar de peregrinación y retiro espiritual que cuenta con numerosas habitaciones, un claustro y un comedor. Además, el Santuario de Lluc dispone de un museo en el que se pueden ver piezas de arte sacro y objetos relacionados con la historia del lugar. Los jardines que rodean el Santuario de Lluc son también un lugar de gran belleza, con fuentes, estatuas y un entorno natural excepcional en el que se pueden realizar actividades al aire libre. En resumen, el Santuario de Lluc es un lugar de gran importancia cultural y religiosa en Mallorca que merece la pena visitar.",
       "openingHours": [
         "Tu-Su 8:30-19:30"
       ],
@@ -270,7 +286,7 @@
       "telephone": "971871525",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "3",
+        "ratingValue": "3.1",
         "reviewCount": "5551"
       },
       "isAccessibleForFree": true,
@@ -334,7 +350,7 @@
     {
       "@type": "CivicStructure",
       "name": "Cartuja de Valldemossa",
-      "description": "La Cartuja de Valldemossa es un antiguo monasterio ubicado en el pueblo de Valldemossa, en la isla de Mallorca, España. Fue construido en el siglo XIV como un palacio real, pero luego fue donado a los monjes cartujos en el siglo XV. La cartuja es conocida por ser el lugar donde el famoso compositor y pianista Frédéric Chopin pasó un invierno con su amante, la escritora francesa George Sand, en 1838-1839. La cartuja cuenta con una iglesia barroca, celdas de monjes, una farmacia antigua y numerosos patios y jardines.",
+      "description": "La Cartuja de Valldemossa es un monasterio situado en el municipio de Valldemossa, en la isla de Mallorca. Este monasterio fue fundado en el siglo XIV y se convirtió en una cartuja en el siglo XV. La cartuja es conocida por ser el lugar donde residió el compositor Frederic Chopin y la escritora George Sand durante el invierno de 1838-1839.\n\nLa cartuja es una construcción de estilo gótico, con numerosos patios interiores, jardines y una iglesia. El claustro principal está decorado con frescos de la vida de San Bruno, fundador de la orden de los cartujos. Además, en la cartuja se pueden encontrar numerosas salas de exposiciones y museos dedicados a la vida y obra de Chopin y Sand. La Cartuja de Valldemossa es uno de los monumentos más visitados de Mallorca y es considerado como uno de los lugares más emblemáticos de la isla.",
       "openingHours": [
         "Tu-Fr 10:00-17:00",
         "Sa 10:00-16:00"
@@ -388,6 +404,10 @@
       "image": [
         {
           "@type": "ImageObject",
+          "url": "https://www.gulliveria.com/wp-content/uploads/2016/01/RealCartujadeValldemossa.jpg"
+        },
+        {
+          "@type": "ImageObject",
           "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Cartuja1.JPG"
         },
         {
@@ -425,7 +445,7 @@
     {
       "@type": "CivicStructure",
       "name": "Basílica de San Francisco",
-      "description": "El Convento de San Francisco de Palma de Mallorca es un conjunto formado por la basílica menor del mismo nombre, el claustro y varias edificaciones adosadas. Se inició la construcción a finales de siglo XIII.​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
+      "description": "La Basílica de San Francisco de Palma es un templo católico situado en el centro histórico de Palma de Mallorca, en la isla de Mallorca. La iglesia es de estilo gótico y fue construida en el siglo XIII, aunque ha sufrido varias modificaciones a lo largo de los siglos. En su interior se pueden encontrar numerosas obras de arte, entre ellas la imagen de la Virgen de la Soledad, patrona de Palma.\n\nTambién destaca el retablo mayor, obra del artista mallorquín Miquel Barceló. La basílica es famosa por sus famosos claustros, que están considerados como uno de los patios góticos más bonitos de Europa. La Basílica de San Francisco de Palma es uno de los lugares más visitados de la ciudad y es un importante centro de culto para la comunidad católica de la isla. ​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
       "openingHours": [
         "Mo-Sa 10:00-18:00",
         "Su 10:30-13:30"
@@ -501,7 +521,7 @@
     {
       "@type": "CivicStructure",
       "name": "Santuario Sant Salvador",
-      "description": "El Santuario de la Mare de Déu de Sant Salvador es un monasterio de mediados del siglo XIV. Fue construido alrededor de la época de la peste negra, cuando se creía que la altitud mantendría a raya la enfermedad. Está situado en el municipio de Felanitx, en la cima del Puig de Salvador, a 509 metros sobre el nivel del mar. Las vistas son espectaculares. El monasterio fue completamente restaurado en el siglo XVIII, y dentro de la iglesia hay un retablo gótico y coloridas pinturas de imaginería religiosa. En una sala junto al patio se encuentra el santuario a la Mare de Déu repleto de ofrendas, aunque la veneración de la Virgen María también es evidente en la pequeña capilla de camino al monasterio. Delante del monasterio encontramos el monumento a Cristo Rey, inaugurado en 1934, que es estatua de cobre de 7 metros se encuentra sobre una plataforma de 37 metros. La Cruz de Picot, de 14 metros, es otro impresionante mirador que está a 15 minutos a pie. Las amplias llanuras, la costa sureste, el castillo de Santueri y, en un buen día, la isla de Cabrera, son visibles desde aquí. ",
+      "description": "El Santuario de la Mare de Déu de Sant Salvador es un monasterio de mediados del siglo XIV. Fue construido alrededor de la época de la peste negra, cuando se creía que la altitud mantendría a raya la enfermedad. Está situado en el municipio de Felanitx, en la cima del Puig de Salvador, a 509 metros sobre el nivel del mar. Las vistas son espectaculares. El monasterio fue completamente restaurado en el siglo XVIII, y dentro de la iglesia hay un retablo gótico y coloridas pinturas de imaginería religiosa.\n\nEn una sala junto al patio se encuentra el santuario a la Mare de Déu repleto de ofrendas, aunque la veneración de la Virgen María también es evidente en la pequeña capilla de camino al monasterio. Delante del monasterio encontramos el monumento a Cristo Rey, inaugurado en 1934, que es estatua de cobre de 7 metros se encuentra sobre una plataforma de 37 metros. La Cruz de Picot, de 14 metros, es otro impresionante mirador que está a 15 minutos a pie. Las amplias llanuras, la costa sureste, el castillo de Santueri y, en un buen día, la isla de Cabrera, son visibles desde aquí. ",
       "openingHours": [
         "Fr-Mo 9:00-20:00",
         "Tu 9:00-18:00",
@@ -576,7 +596,7 @@
     {
       "@type": "CivicStructure",
       "name": "S'Almudaina",
-      "description": "La Almudaina es el palacio real o alcázar real de la ciudad de Palma de Mallorca, en España, y una de las residencias de la familia real española, gestionada por el organismo público Patrimonio Nacional. Recoge en sus muros la historia de las islas desde los asentamientos megalíticos.",
+      "description": "La Almudaina de Palma es un antiguo palacio real situado en el casco antiguo de la ciudad de Palma, en la isla de Mallorca. El edificio fue construido durante la época musulmana, pero después de la conquista de la isla por parte de los catalanes, se convirtió en la residencia de los monarcas de Mallorca y de la Corona de Aragón. La Almudaina es un magnífico ejemplo de la arquitectura gótica, con su impresionante patio de armas, sus salones de estilo renacentista y sus magníficas bóvedas de crucería.\n\nEn su interior se pueden admirar numerosas obras de arte, entre ellas una gran colección de tapices flamencos. Además, la Almudaina también cuenta con hermosos jardines que ofrecen una vista panorámica de la ciudad y de la bahía de Palma. Hoy en día, la Almudaina es la residencia oficial de la Familia Real Española en Mallorca y está abierta al público para visitas turísticas.",
       "openingHours": [
         "Mo-Su 10:00-19:00"
       ],
@@ -658,7 +678,7 @@
     {
       "@type": "CivicStructure",
       "name": "La Lonja",
-      "description": "La Lonja de Palma de Mallorca o Sa Llotja es una de las obras maestras de la arquitectura gótica en Mallorca. Fue construida por Guillem Sagrera entre 1420 y 1452 y fue la sede del Colegio de Mercaderes.",
+      "description": "La Lonja de Palma es un impresionante edificio de estilo gótico situado en el centro histórico de la ciudad de Palma, en la isla de Mallorca. Fue construido en el siglo XV como una sede de la poderosa gremial de mercaderes de la ciudad, y destaca por su impresionante arquitectura, especialmente en su fachada principal y en su amplio salón central, que cuenta con un techo abovedado y varias columnas decoradas con intrincados detalles.\n\nAdemás de su belleza arquitectónica, la Lonja de Palma también es famosa por su historia como centro comercial y por ser un lugar de reunión para los mercaderes y comerciantes de la ciudad. Actualmente, la Lonja es un centro cultural y es utilizado como espacio para exposiciones y otros eventos culturales.",
       "openingHours": [
         "Tu-Sa 10:30-13:30",
         "Tu-Sa 17:30-21:00"
@@ -728,7 +748,7 @@
     {
       "@type": "CivicStructure",
       "name": "Torre de Canyamel",
-      "description": "La Torre de Canyamel es una torre de defensa medieval situada en la costa noreste de Mallorca, cerca de la localidad de Canyamel. Fue construida en el siglo XIII para proteger la costa de los ataques piratas y es una de las pocas torres de este tipo que todavía se conservan en la isla.",
+      "description": "La Torre de Canyamel es una fortificación de origen medieval ubicada en el municipio de Capdepera, al este de Mallorca. Construida en el siglo XIII, durante la época de la reconquista de la isla por parte de los cristianos, la torre es un impresionante ejemplo de la arquitectura militar de la época. Se encuentra en una colina con vistas al mar y a la costa noreste de la isla, y es una de las torres más grandes y mejor conservadas de la isla.\n\nDesde su posición estratégica, la torre se utilizaba para vigilar y proteger la costa de los ataques de los piratas. La torre cuenta con tres plantas y una terraza superior, y se puede visitar para aprender más sobre su historia y disfrutar de las vistas panorámicas desde la cima.",
       "openingHours": [
         "Tu-Sa 10:00-14:00",
         "Tu-Sa 17:00-20:00",
@@ -805,7 +825,7 @@
     {
       "@type": "CivicStructure",
       "name": "Iglesia de Santa Eulalia",
-      "description": "La iglesia de Santa Eulalia de Palma es una iglesia católica ubicada en el casco antiguo de Palma de Mallorca. Combina diferentes estilos arquitectónicos, como la torre románica del siglo XIII y la nave central gótica con un rosetón del siglo XV. También cuenta con una capilla barroca del siglo XVIII y una sacristía neoclásica. El altar mayor es neogótico y hay numerosas obras de arte en su interior. Es una de las iglesias más importantes de la ciudad y es frecuentada por residentes y turistas por su belleza arquitectónica y religiosa.",
+      "description": "La iglesia de Santa Eulalia de Palma es una iglesia católica ubicada en el casco antiguo de Palma de Mallorca. Combina diferentes estilos arquitectónicos, como la torre románica del siglo XIII y la nave central gótica con un rosetón del siglo XV. También cuenta con una capilla barroca del siglo XVIII y una sacristía neoclásica. El altar mayor es neogótico y hay numerosas obras de arte en su interior.\n\nEs una de las iglesias más importantes de la ciudad y es frecuentada por residentes y turistas por su belleza arquitectónica y religiosa.",
       "openingHours": [
         "Mo-Sa 11:00-12:30",
         "Mo-Sa 14:00-17:30"
@@ -870,7 +890,7 @@
     {
       "@type": "CivicStructure",
       "name": "Baños Árabes",
-      "description": "Los Baños Árabes de Palma son un conjunto de baños históricos de estilo islámico ubicados en el casco antiguo de Palma de Mallorca. Construidos en el siglo X por los gobernantes musulmanes, los baños presentan una arquitectura fascinante con una cúpula central, arcos de herradura, estucos y mosaicos. Aunque los baños no han estado en uso desde la Edad Media, han sido restaurados y abiertos al público para su visita, ofreciendo una experiencia única y evocadora de la vida bajo la cultura musulmana en Mallorca.",
+      "description": "Los Baños Árabes de Palma son un vestigio de la época islámica en la ciudad de Palma de Mallorca. Se trata de una construcción de estilo mudéjar que data del siglo X y que se utilizaba como baño público. Los baños están compuestos por varias salas, entre las que destacan la sala fría, la sala templada y la sala caliente, todas ellas decoradas con arcos de herradura y motivos geométricos.\n\nEn el centro de los baños se encuentra una cúpula de estilo bizantino que permitía la entrada de luz natural. Los Baños Árabes de Palma son un ejemplo excepcional de la arquitectura islámica en la isla de Mallorca y son uno de los monumentos más visitados de la ciudad. Además, su excelente estado de conservación permite imaginar cómo era la vida cotidiana en la época islámica y disfrutar de un lugar de gran belleza y valor histórico.",
       "openingHours": [
         "Mo-Sa 10:00-18:30",
         "Sn 10:00-18:00"
@@ -1382,6 +1402,154 @@
             "@type": "VideoObject",
             "name": "Video Coves del Drach",
             "contentUrl": "https://youtu.be/PeLk4v-C9N4"
+          }
+        ]
+      }
+    },
+
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "Castillo del Santueri",
+      "description": "El Castell de Santueri es una fortaleza situada en la cima de una colina en Felanitx, en el sureste de Mallorca. Esta fortificación se construyó en el siglo XIV, y aunque en la actualidad se encuentra en ruinas, todavía se puede apreciar su imponente estructura y su ubicación estratégica, desde donde se tiene una vista panorámica de gran parte de la isla. El castillo está rodeado de leyendas y anécdotas históricas, y en el pasado fue un importante punto de vigilancia y defensa durante las diversas guerras y conflictos que afectaron a la isla. Sin duda, el Castell de Santueri es uno de los lugares más interesantes e impresionantes de Mallorca, que merece la pena visitar por su valor histórico y por las vistas espectaculares que ofrece.",
+      "openingHours": [
+        "Mo-Sa 10:30-18:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Felanitx",
+        "addressRegion": "ES",
+        "postalCode": "07208",
+        "streetAddress": "Camí des Castell"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.4427649",
+        "longitude": "3.1616772"
+        
+      },
+      "telephone": "971820753",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "39919"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular Adulto Gratuita",
+          "description": "La entrada al castillo de Santueri es gratuita",
+          "url": "http://www.santueri.org/home/es/Recorrido-de-la-visita/",
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "http://www.santueri.org/",
+      "sameAs": "https://es.wikipedia.org/wiki/Castillo_de_Santueri",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://uh.gsstatic.es/sfAttachPlugin/1996031.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2020/06/castillo-santueri-felanitx-mallorca-img01.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/a1/e3/64/castillo-de-santueri.jpg?w=1200&h=-1&s=1"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://i.ytimg.com/vi/aB98bOusFsk/maxresdefault.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Coves del Drach",
+            "contentUrl": "https://www.youtube.com/watch?v=WOf2K7W9Zj8"
+          }
+        ]
+      }
+    },
+
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "S'Albufera",
+      "description": "El Parque Natural de la Albufera de Alcudia es una reserva natural ubicada en el noreste de Mallorca. Este parque es el hogar de una gran variedad de fauna y flora autóctona, y es uno de los humedales más importantes de Europa. La Albufera cuenta con una gran cantidad de lagunas, pantanos, dunas y bosques de pinos, así como una extensa playa. Además, en la Albufera se pueden avistar más de 200 especies de aves diferentes, algunas de ellas migratorias, lo que convierte a este parque en un lugar ideal para el avistamiento de aves. La Albufera es también un importante destino para los amantes del senderismo y el ciclismo, ya que cuenta con diversas rutas y senderos para explorar la naturaleza de la zona. En definitiva, la Albufera de Alcudia es un lugar mágico y lleno de vida que vale la pena visitar para disfrutar de la naturaleza en todo su esplendor.",
+      "openingHours": [
+        "Mo-St 9:00-18:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alcúdia",
+        "addressRegion": "ES",
+        "postalCode": "07458",
+        "streetAddress": "Av. de s'Albufera"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.783834",
+        "longitude": "3.093109"
+        
+      },
+      "telephone": "971892250",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "2102"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular Adulto Gratuita",
+          "description": "La entrada al la albufera es gratuita",
+          "url": "https://ca.balearsnatura.com/parque_natural/parc-natural-de-salbufera-de-mallorca/#normas",
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://ca.balearsnatura.com/parque_natural/parc-natural-de-salbufera-de-mallorca/",
+      "sameAs": "https://es.wikipedia.org/wiki/Parque_natural_de_la_Albufera_de_Mallorca",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://balearsnatura.com//wp-content/uploads/2016/11/img-1438.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/07/Albufera-Natural-Park.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://balearsnatura.com//wp-content/uploads/2016/11/img-1438.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/ca/59/c8/fantastisch-vergezicht.jpg?w=1200&h=-1&s=1"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video de S'Albufera",
+            "contentUrl": "https://www.youtube.com/watch?v=GdBVTwr3wVQ"
           }
         ]
       }
