@@ -296,7 +296,7 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FMonasterio_de_Lluch&psig=AOvVaw26dJ3YfTjseXI4QvYIgpba&ust=1682091358139000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjI--DkuP4CFQAAAAAdAAAAABAE"
+          "url": "https://www.turismepetit.com/wp-content/uploads/2020/05/santuari-de-lluc.jpg"
         },
      
         {
@@ -545,15 +545,15 @@
 
         {
           "@type": "ImageObject",
-          "url": "https://viagallica.com/baleares/img/ville_felanitx_-_sanctuaire_sant_salvador_010_(creu_picot_depuis_christ_roi,_2011-09-17).jpg"
+          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2020/06/monasterio-sant-salvador-felanitx-1.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador-3.jpg"
+          "url": "https://e8s3v3w7.rocketcdn.me/wp-content/uploads/2017/11/spanien-blick-auf-den-hucc88gel-des-klosters-sant-salvador-mit-dem-steinkreuz-creu-des-picot-und-dem-christkocc88nig-monument-mallorca-spanien-james-camel-franks-travelbox.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://mallorqueando.com/wp-content/uploads/2020/09/santuario-de-Sant-Salvador.jpg"
+          "url": "https://www.holamallorca.com/images/es/mallorca/guia-de-viaje/lugares-de-interes/historicos-edificios/santuari-de-sant-salvador/santuari-de-sant-salvador-monasterio-felanitx-mallorca-imagen-1.jpg"
         },
     
         {
@@ -687,7 +687,7 @@
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_pal.jpg"
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/fachada-lonja-de-Palma-en-Mallorca.jpg"
         },
         {
           "@type": "ImageObject",
@@ -695,7 +695,7 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/fachada-lonja-de-Palma-en-Mallorca.jpg"
+          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_pal.jpg"
         },
         {
           "@type": "ImageObject",
@@ -771,17 +771,16 @@
 
         {
           "@type": "ImageObject",
-          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1e/83/ed/torre-de-canyamel-vista.jpg"
-        },
-        {
-          "@type": "ImageObject",
           "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20001.JPG"
         },
-       
+        {
+          "@type": "ImageObject",
+          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-medieval-torre-de-canyamel.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
+        },         
         {
           "@type": "ImageObject",
           "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Capdepera_-_Torre_de_Canyamel_07_ies.jpg/2560px-Capdepera_-_Torre_de_Canyamel_07_ies.jpg"
@@ -1045,8 +1044,348 @@
           }
         ]
       }
-    }
+    },
 
+    {
+      "@type": "CivicStructure",
+      "name": "Es Baluard",
+      "description": "Es Baluard es un museo de arte moderno y contemporáneo ubicado en Palma de Mallorca, España. El museo se encuentra dentro de las antiguas murallas de la ciudad, y cuenta con una amplia colección de arte, incluyendo obras de artistas locales e internacionales. El edificio que alberga el museo es en sí mismo una obra de arte moderna, con una arquitectura sorprendente que combina el uso del vidrio, acero y hormigón. Desde su terraza, los visitantes pueden disfrutar de impresionantes vistas del puerto de Palma y del casco antiguo de la ciudad. Es Baluard es un lugar popular para los amantes del arte y los visitantes que buscan explorar la vibrante escena artística de Mallorca.",
+      "openingHours": [
+        "Mo-Sa 10:00-20:05",
+        "Sn 10:00-15:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma",
+        "addressRegion": "ES",
+        "postalCode": "07012",
+        "streetAddress": "Plaça de la Porta de Santa Catalina, 10"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.5668856",
+        "longitude": "2.6468759"
+        
+      },
+      "telephone": "971908200",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "3300"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular",
+          "description": "Entrada general al museo",
+          "url": "https://www.esbaluard.org/visita/#rates",
+          "offers": {
+            "@type": "Offer",
+            "price": 6.00,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Maria Lai. La escritura tejida",
+          "description": "«Maria Lai. La escritura tejida» es la primera exposición de carácter retrospectivo de la artista italiana Maria Lai (Ulassai, 1919 – Cardedu, 2013), que se presenta en España. El proyecto curatorial reconstruye la trayectoria de una de las figuras más importantes del arte de la segunda mitad del siglo XX en Europa, asumiendo que su peculiar perfil está enraizado en un paisaje mediterráneo que responde a códigos y frecuencias concretas: el corazón de Cerdeña, en un pueblo de Ogliastra, situado entre montañas de piedra y el mar.",
+          "startDate": "2022-05-12T12:00",
+          "url": "https://www.esbaluard.org/exposicion/maria-lai-lescriptura-teixida/",
+          "offers": {
+            "@type": "Offer",
+            "price": 4.00,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Susy Gómez. Gesto contra el olvido",
+          "description": "Adentrarse en la memoria. Permear y ser permeado por imágenes, palabras, por gestos. Nebulosas que calcan historia no siempre recordada. La pregunta se formula en múltiples direcciones, por ello, apuntar a la necesidad de llevar a cabo un ejercicio que se nutre de recuerdos exige que sepamos que queremos recuperar algo que no conocemos en presente. De ahí que nombrar la memoria nos acerque a una dimensión en la que lo íntimo y lo público caminan de la mano. La memoria entendida como parte esencial de nuestra historia: de nuestra historia… ¿plural? ¿Significa entonces que aquello que olvidamos pertenece también a otros? ¿Qué seríamos sin memoria?",
+          "startDate": "2023-02-02T10:30",
+          "url": "https://www.esbaluard.org/exposicion/susy-gomez-gest-contra-loblit/",
+          "offers": {
+            "@type": "Offer",
+            "price": 4.00,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.esbaluard.org/",
+      "sameAs": "https://es.wikipedia.org/wiki/Es_Baluard",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.esbaluard.org/wp-content/uploads/2020/05/reobertura-1024x682.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://img.remediosdigitales.com/ae9ac7/esbaluard2/1366_2000.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Interior_museu_Es_Baluard.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.esbaluard.org/wp-content/uploads/2020/06/DSC8689c.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video es Baluard",
+            "contentUrl": "https://www.youtube.com/watch?v=ktM2MUJRgjA"
+          }
+        ]
+      }
+    },
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "Ses Païsses",
+      "description": "Ses Païsses es un yacimiento arqueológico en la ciudad de Artà, en la costa este de Mallorca, España. El sitio contiene los restos de una antigua ciudad prehistórica, que data de la Edad del Hierro, y es considerado uno de los sitios arqueológicos más importantes de Mallorca. Los visitantes pueden explorar los restos de las antiguas estructuras de piedra, incluyendo paredes, torres y la puerta principal, que fueron construidas hace más de 2.500 años. El yacimiento también alberga un centro de interpretación que proporciona información sobre la vida y la cultura de la población que habitó el lugar en la antigüedad. Ses Païsses es un lugar fascinante para los visitantes que buscan explorar la rica historia y cultura de la isla de Mallorca.",
+      "openingHours": [
+        "Mo-Fr 10:00-17:00",
+        "Sa 10:00-14:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Artà",
+        "addressRegion": "ES",
+        "postalCode": "07570",
+        "streetAddress": "Lloc Poligon 13"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.7250624",
+        "longitude": "3.3908581"
+        
+      },
+      "telephone": "619070010",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "reviewCount": "498"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular",
+          "description": "Entrada general al yacimiento",
+          "url": "https://www.esbaluard.org/visita/#rates",
+          "offers": {
+            "@type": "Offer",
+            "price": 2.00,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.illesbalears.travel/recurso-turistico/es/mallorca/yacimiento-arqueologico-poblat-talaiotic-de-ses-paisses",
+      "sameAs": "https://www.turismepetit.com/lugares-por-epoca-del-ano/invierno/poblado-talayotico-de-ses-paises-en-arta/",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.turismepetit.com/wp-content/uploads/2021/03/interior-poblado-ses-paises.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.turismepetit.com/wp-content/uploads/2021/03/interior-poblado-talayotico.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.turismepetit.com/wp-content/uploads/2021/03/entrada-ses-paises.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Ses Païsses",
+            "contentUrl": "https://www.youtube.com/watch?v=A5AV5HAKjh0"
+          }
+        ]
+      }
+    },
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "Castillo de Capdepera",
+      "description": "El Castillo de Capdepera es un castillo situado en la cima de una colina en la localidad de Capdepera, en la costa este de Mallorca, España. Construido en el siglo XIV, el castillo ha sido testigo de importantes eventos históricos y ha servido como refugio defensivo durante siglos. El castillo cuenta con una muralla con torres, una entrada monumental y un patio interior. Desde la cima de la colina, los visitantes pueden disfrutar de vistas panorámicas impresionantes de la costa y el paisaje circundante. En la actualidad, el castillo es uno de los principales atractivos turísticos de la región, y es visitado tanto por los turistas que buscan explorar la historia de la isla, como por los residentes que desean disfrutar de las vistas y el ambiente único del lugar.",
+      "openingHours": [
+        "Mo-Sn 10:00-17:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Capdepera",
+        "addressRegion": "ES",
+        "postalCode": "07580",
+        "streetAddress": "Carrer Castell, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.7049",
+        "longitude": "3.4295"
+        
+      },
+      "telephone": "971818746",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "6865"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular",
+          "description": "Entrada general al castillo",
+          "url": "https://www.capdeperacastell.com/ca/contacte",
+          "offers": {
+            "@type": "Offer",
+            "price": 5.00,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.capdeperacastell.com/",
+      "sameAs": "https://es.wikipedia.org/wiki/Castillo_de_Capdepera",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://www.capdeperacastell.com/panel/img/galeria/Castell-Capdepera-49NkjXwHWwnWwWT.jpeg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.capdeperacastell.com/panel/img/galeria/Castell-Capdepera-KMXrVPPc6vGknwd.jpeg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.capdeperacastell.com/panel/img/galeria/Castell-Capdepera-gQQNwztzhd54gyp.jpeg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.capdeperacastell.com/panel/img/galeria/Castell-Capdepera-4R1mYYM5G7ZyxQB.jpeg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.capdeperacastell.com/panel/img/galeria/Castell-Capdepera-TrQntx5zrMrNXXg.jpeg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Capdepera_-_Castell_de_Capdepera_07_ies.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video del Castillo",
+            "contentUrl": "https://www.youtube.com/watch?v=OTgLjsgRtj8"
+          }
+        ]
+      }
+    },
+
+
+
+    {
+      "@type": "CivicStructure",
+      "name": "Cuevas del Drach",
+      "description": "Las Cuevas del Drach son un espectacular sistema de cuevas situado en la costa este de Mallorca. Conocidas por sus impresionantes estalactitas y estalagmitas, así como por su lago subterráneo, son uno de los principales atractivos turísticos de la isla. Las cuevas cuentan con diversas salas que han sido iluminadas de forma cuidadosa, lo que les da un ambiente mágico y de ensueño. Además, durante la visita se puede disfrutar de un concierto de música clásica en vivo en el lago subterráneo, lo que añade un toque especial a la experiencia. Sin duda, las Cuevas del Drach son una visita obligada para cualquier persona que viaje a Mallorca.",
+      "openingHours": [
+        "Mo-Sn 10:00-17:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Manacor",
+        "addressRegion": "ES",
+        "postalCode": "07680",
+        "streetAddress": "Ctra. de les Coves, s/n"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.53574",
+        "longitude": "3.33062"
+        
+      },
+      "telephone": "971820753",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "39919"
+      },
+      "isAccessibleForFree": false,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Entrada Regular Adulto",
+          "description": "Entrada general a las cuevas del drach. Adulto",
+          "url": "https://www.cuevasdeldrach.com/venta-entradas.php",
+          "offers": {
+            "@type": "Offer",
+            "price": 16.50,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Entrada Regular Niño",
+          "description": "Entrada general a las cuevas del drach. Niños entre 3 y 12 años",
+          "url": "https://www.cuevasdeldrach.com/venta-entradas.php",
+          "offers": {
+            "@type": "Offer",
+            "price": 9.50,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.cuevasdeldrach.com/index.php",
+      "sameAs": "https://es.wikipedia.org/wiki/Cuevas_del_Drach",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://media.traveler.es/photos/61376c64b57001fc862c832b/master/w_1600%2Cc_limit/139932.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Cuevas_del_Drach.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.cuevasdeldrach.com/images/descubre-la-cueva/concierto-2.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.excursionesenmallorca.es/wp-content/uploads/2023/03/cuevas-drach.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://www.mediopenique.com/wp-content/uploads/2019/02/visita-cuevas-drach.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2018/09/Cuevas-arta-03.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Coves del Drach",
+            "contentUrl": "https://youtu.be/PeLk4v-C9N4"
+          }
+        ]
+      }
+    }
     
 
 
