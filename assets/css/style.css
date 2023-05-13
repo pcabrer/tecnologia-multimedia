@@ -2344,7 +2344,34 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# Temperatura
+--------------------------------------------------------------*/
 
+.card {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color:#eee
+  
+}
+
+.card-header {
+  background-color: #d9232d;
+  color:white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+}
+/*************************************************************/
 
 .mitexto {
   text-align: justify;
@@ -2532,6 +2559,11 @@ section {
 --------------------------------------------------------------*/
 
 #map { height: 600px; }
+
+#mapaMon { 
+
+  height: 320px;
+}
 
 /*--------------------------------------------------------------
 # Lista Monumentos cartas

@@ -36,22 +36,20 @@ function obtenerTemperatura(latitud, longitud) {
                 <p>Humedad: ${humedad}%</p>
                 <p>Velocidad del viento: ${velocidadViento} km/h</p>
                 `;
-            /*
-            const temperatura = data.main.temp;
-            const icono = data.weather[0].icon;
-            const descripcion = data.weather[0].description;
-
-            const temperaturaElemento = document.getElementById('temperatura');
-            temperaturaElemento.innerHTML = `
-                <img src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
-                ${temperatura}°C
-                `;
-            */
         })
         .catch(error => {
             console.error('Ocurrió un error al obtener la temperatura:', error);
         });
 }
+
+function mapaLeaflet() {
+    // div que contiene la lista de monumentos
+
+
+}
+
+
+
 
 function cargaMonumento(idxMonumento) {
     // div que contiene la lista de monumentos
@@ -78,8 +76,8 @@ function cargaMonumento(idxMonumento) {
             const puebloMonumento = document.getElementById('puebloMonumento');
             puebloMonumento.innerText = monumento.address.addressLocality;;
 
-            
-            
+
+
 
             const val = document.getElementById('valoracion');
             // creamos el elemento span con clase "rating" y contenido de texto "4,1"
@@ -111,8 +109,8 @@ function cargaMonumento(idxMonumento) {
 
             }
 
-            var numValoraciones= document.createElement("span");
-            numValoraciones.innerText = monumento.aggregateRating.reviewCount+" Valoraciones";
+            var numValoraciones = document.createElement("span");
+            numValoraciones.innerText = monumento.aggregateRating.reviewCount + " Valoraciones";
             numValoraciones.classList.add("valoracionesTexto");
             val.appendChild(numValoraciones);
 
@@ -167,10 +165,28 @@ function cargaMonumento(idxMonumento) {
             //Para el Tiempo
             obtenerTemperatura(monumento.geo.latitude, monumento.geo.longitude);
 
+            //Para el mapa
+
+            var mymap = L.map('mapaMon').setView([monumento.geo.latitude, monumento.geo.longitude], 9.5);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                maxZoom: 18,
+            }).addTo(mymap);
+            const marker = L.marker([monumento.geo.latitude, monumento.geo.longitude]).addTo(mymap);
+
+            // Crear el popup con la información del monumento
+            const popupContent = `
+                <div>
+                <h2>${monumento.name}</h2>
+                <img src="${monumento.image[0].url}" style="width: 100%;" >
+                </div>
+            `;
+            marker.bindPopup(popupContent);
+
             // Actividades
 
             const seccionActividades = document.getElementById('actividades');
-           
+
             if (monumento.event) {
 
                 // Crear el elemento <section>
@@ -198,7 +214,7 @@ function cargaMonumento(idxMonumento) {
                 section.appendChild(divContainer);
 
                 // Agregar el código HTML generado al documento
-               seccionActividades.appendChild(section);
+                seccionActividades.appendChild(section);
 
 
                 const contenedorActividades = document.getElementById('contenedorActividades');
