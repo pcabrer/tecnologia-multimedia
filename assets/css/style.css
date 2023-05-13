@@ -541,6 +541,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 30px 0;
+  padding-bottom: 40px;
   overflow: hidden;
 }
 
@@ -1109,7 +1110,7 @@ section {
 .pricing .box {
   
   padding: 20px;
-  background: #f9f9f9;
+
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
@@ -1125,7 +1126,7 @@ section {
   font-weight: 400;
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #777777;
   background: #f8f8f8;
@@ -1135,7 +1136,7 @@ section {
   font-size: 25px;
   color: #d9232d;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+
   margin-bottom: 20px;
 }
 
@@ -1152,9 +1153,9 @@ section {
 }
 
 .pricing p {
-  font-size: 14px;
+ 
   
-  font-family: "Poppins", sans-serif;
+
   margin-bottom: 20px;
 }
 
@@ -2357,7 +2358,7 @@ section {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  background-color:#eee
+  background: #f9f9f9;
   
 }
 
@@ -2767,6 +2768,17 @@ section {
 }
 
 /*--------------------------------------------------------------
+# video monumento
+--------------------------------------------------------------*/
+
+.videoMonumento{
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # coomentarios
 --------------------------------------------------------------*/
 
@@ -2783,9 +2795,7 @@ section {
 .tituloSection{
 
 padding-bottom: 20px;
-font-size: 30px;
-font-weight: bold;
-color: #727272;
+text-transform: uppercase;
 
 }
 
@@ -2794,14 +2804,6 @@ color: #727272;
 # Monumento
 --------------------------------------------------------------*/
 
-#horario{
-
- padding: 20px;
-
-
-
-
-}
 
 /*--------------------------------------------------------------
 # monumentoInfo

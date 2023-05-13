@@ -167,7 +167,7 @@ function cargaMonumento(idxMonumento) {
 
             //Para el mapa
 
-            var mymap = L.map('mapaMon').setView([monumento.geo.latitude, monumento.geo.longitude], 9.5);
+            var mymap = L.map('mapaMon').setView([monumento.geo.latitude, monumento.geo.longitude], 15);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
                 maxZoom: 18,
@@ -201,7 +201,7 @@ function cargaMonumento(idxMonumento) {
                 // Crear el elemento <h2> con la clase "tituloSection"
                 var h2 = document.createElement("h2");
                 h2.className = "tituloSection";
-                h2.textContent = "Actividades";
+                h2.textContent = "actividades";
 
                 // Crear el elemento <div> con la clase "row g-5" y el id "contenedorActividades"
                 var divRow = document.createElement("div");
