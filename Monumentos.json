@@ -21,13 +21,12 @@
         "@type": "GeoCoordinates",
         "latitude": "39.56741356378317",
         "longitude": "2.6482931797436122"
-        
       },
       "telephone": "971713133",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.7",
-        "reviewCount": "40047"
+        "reviewCount": "41067"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -103,18 +102,10 @@
             "name": "Video Catedral",
             "contentUrl": "https://www.youtube.com/watch?v=jo6EsPC1mFo"
           }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio Catedral",
-            "contentUrl": "https://go.ivoox.com/rf/84954408"
-          }
         ]
+        
       }
     },
-
-
     {
       "@type": "CivicStructure",
       "name": "Castillo de Bellver",
@@ -134,13 +125,12 @@
         "@type": "GeoCoordinates",
         "latitude": "39.56381292628105",
         "longitude": "2.619454029416261"
-        
       },
       "telephone": "971735065",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "1.2",
-        "reviewCount": "16654"
+        "ratingValue": "4.5",
+        "reviewCount": "19966"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -148,7 +138,7 @@
           "@type": "Event",
           "name": "Entrada Regular",
           "description": "Entrada regular adulto para ver el interior del castillo de Bellver",
-          "url": "https://catedraldemallorca.org/visitas/horarios/",
+          "url": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76695&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247",
           "offers": {
             "@type": "Offer",
             "price": 4.00,
@@ -159,7 +149,6 @@
           "@type": "Event",
           "name": "Entrada gratuita domingo",
           "description": "En domingo se puede interior del castillo de Bellver de forma gratuita",
-          "url": "https://catedraldemallorca.org/visitas/horarios/",
           "offers": {
             "@type": "Offer",
             "price": 0,
@@ -186,8 +175,6 @@
           "@type": "ImageObject",
           "url": "https://fotografias.lasexta.com/clipping/cmsimages01/2021/09/12/3C479A82-E8DF-4961-8A02-816BEDCA119E/98.jpg?crop=1920,1080,x0,y32&width=1900&height=1069&optimize=high&format=webply"
         }
-
-        
       ],
       "subjectOf": {
         "@type": "CreativeWork",
@@ -195,19 +182,11 @@
           {
             "@type": "VideoObject",
             "name": "Vídeo Castillo de Bellver",
-            "contentUrl": "https://www.youtube.com/watch?v=9jfPqK1O0XU&ab_channel=VisitPalma"
-          }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio Castillo de Bellver",
-            "contentUrl": "https://castelldebellver.palma.cat/portal/PALMA/castelldebellver/contenedor1.jsp?seccion=s_fdes_d4_v1.jsp&contenido=76703&tipo=6&nivel=1400&layout=contenedor1.jsp&codResi=1&language=es&codMenu=2247"
+            "contentUrl": "https://www.youtube.com/watch?v=9jfPqK1O0XU"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Ciudad Romana de Pollentia",
@@ -230,8 +209,8 @@
       "telephone": "971547004",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "2.6",
-        "reviewCount": "0"
+        "ratingValue": "4.2",
+        "reviewCount": "1184"
       },
       "isAccessibleForFree": true,
       "mainEntityOfPage": "https://www.alcudia.net/Pollentia/es/la-ciutat-romana/",
@@ -248,8 +227,11 @@
         {
           "@type": "ImageObject",
           "url": "https://tusdestinos.net/wp-content/uploads/2021/02/MG_9276-1200x799.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://uh.gsstatic.es/sfAttachPlugin/2324453.jpg"
         }
-        
       ],
       "subjectOf": {
         "@type": "CreativeWork",
@@ -257,12 +239,11 @@
           {
             "@type": "VideoObject",
             "name": "Vídeo Ciudad Romana de Pollentia",
-            "contentUrl": "https://www.youtube.com/watch?v=EZvLe7uxQIM&ab_channel=PollentiaCiudadRomana"
+            "contentUrl": "https://www.youtube.com/watch?v=EZvLe7uxQIM"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Santuario de Lluc",
@@ -282,12 +263,11 @@
         "latitude": "39.82250976599997",
         "longitude": "2.8842204021515614"
       },
-       
       "telephone": "971871525",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "3.1",
-        "reviewCount": "5551"
+        "ratingValue": "4.4",
+        "reviewCount": "5628"
       },
       "isAccessibleForFree": true,
       "event": [
@@ -314,18 +294,13 @@
           "@type": "ImageObject",
           "url": "https://www.turismepetit.com/wp-content/uploads/2020/05/santuari-de-lluc.jpg"
         },
-     
         {
           "@type": "ImageObject",
-          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/06/monasterio-de-lluc-mallorca.jpg"
+          "url": "https://www.viajablog.com/wp-content/uploads/2021/10/monasterio-lluc-mallorca-min.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://perdidoenmallorca.files.wordpress.com/2016/03/dsc05612-2.jpg?w=460"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://fotos.hoteles.net/articulos/santuario-lluc-mallorca-5881-3.jpg"
+          "url": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/86000/86692-Lluc-Monastery.jpg"
         }
       ],
       "subjectOf": {
@@ -333,20 +308,13 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo Castillo de Bellver",
+            "name": "Vídeo Santuario de LLuc",
             "contentUrl": "https://www.youtube.com/watch?v=QMFAJQOnFIs"
           }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio Santuario de Lluc",
-            "contentUrl": "https://go.ivoox.com/rf/88221942"
-          }
         ]
+       
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Cartuja de Valldemossa",
@@ -367,12 +335,11 @@
         "latitude": "39.7094564106832",
         "longitude": "2.622373595271531"
       },
-      
       "telephone": "971612106",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "2760"
+        "ratingValue": "4.4",
+        "reviewCount": "2827"
       },
       "isAccessibleForFree": true,
       "event": [
@@ -400,7 +367,7 @@
         }
       ],
       "mainEntityOfPage": "https://cartoixadevalldemossa.com/",
-      "sameAs": "https://es.wikipedia.org/wiki/Monasterio_de_Lluch",
+      "sameAs": "https://es.wikipedia.org/wiki/Cartuja_de_Valldemosa",
       "image": [
         {
           "@type": "ImageObject",
@@ -412,7 +379,7 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://media.mallorca-touristguide.com/imagenes/1360/la%20cartuja%206.9.19%20-%20009.jpg"
+          "url": "https://static.seetheworld.com/image_uploader/photos/f3/original/the-royal-carthusian-monastery-valldemossa-valldemossa.jpg"
         },
         {
           "@type": "ImageObject",
@@ -420,7 +387,7 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://tuhobbietuviaje.files.wordpress.com/2016/10/valldemossa-3.jpg"
+          "url": "https://www.cartoixadevalldemossa.com/wp-content/uploads/2018/04/boveda.jpg"
         }
       ],
       "subjectOf": {
@@ -428,24 +395,16 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo Castillo de Bellver",
+            "name": "Vídeo Cartuja de Valldemossa ",
             "contentUrl": "https://www.youtube.com/watch?v=rDIDJflo7Tw"
-          }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio La Cartuja de Valldemossa y la visita de Chopin y George Sand",
-            "contentUrl": "https://cadenaser.com/audio/001RD010000005730618/?ssm=tw"
           }
         ]
       }
     },
-   
     {
       "@type": "CivicStructure",
       "name": "Basílica de San Francisco",
-      "description": "La Basílica de San Francisco de Palma es un templo católico situado en el centro histórico de Palma de Mallorca, en la isla de Mallorca. La iglesia es de estilo gótico y fue construida en el siglo XIII, aunque ha sufrido varias modificaciones a lo largo de los siglos. En su interior se pueden encontrar numerosas obras de arte, entre ellas la imagen de la Virgen de la Soledad, patrona de Palma.\n\nTambién destaca el retablo mayor, obra del artista mallorquín Miquel Barceló. La basílica es famosa por sus famosos claustros, que están considerados como uno de los patios góticos más bonitos de Europa. La Basílica de San Francisco de Palma es uno de los lugares más visitados de la ciudad y es un importante centro de culto para la comunidad católica de la isla. ​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
+      "description": "La Basílica de San Francisco de Palma es un templo católico situado en el centro histórico de Palma. La iglesia es de estilo gótico y fue construida en el siglo XIII, aunque ha sufrido varias modificaciones a lo largo de los siglos. En su interior se pueden encontrar numerosas obras de arte, entre ellas la imagen de la Virgen de la Soledad, patrona de Palma.\n\nTambién destaca el retablo mayor, obra del artista mallorquín Miquel Barceló. La basílica es famosa por sus famosos claustros, que están considerados como uno de los patios góticos más bonitos de Europa. La Basílica de San Francisco de Palma es uno de los lugares más visitados de la ciudad y es un importante centro de culto para la comunidad católica de la isla. ​El 4 de febrero de 1881 el claustro gótico del convento fue declarado Monumento Nacional.",
       "openingHours": [
         "Mo-Sa 10:00-18:00",
         "Su 10:30-13:30"
@@ -461,12 +420,12 @@
         "@type": "GeoCoordinates",
         "latitude": "39.56882092467238",
         "longitude": "2.652908337691012"
-      }, 
+      },
       "telephone": "971712695",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "2.5",
-        "reviewCount": "718"
+        "ratingValue": "4.5",
+        "reviewCount": "720"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -517,7 +476,6 @@
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Santuario Sant Salvador",
@@ -540,12 +498,11 @@
         "latitude": "39.45551277808182",
         "longitude": "3.185837385720501"
       },
-
       "telephone": "971827282",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "3.7",
-        "reviewCount": "4852"
+        "ratingValue": "4.7",
+        "reviewCount": "4905"
       },
       "isAccessibleForFree": true,
       "event": [
@@ -562,23 +519,21 @@
       ],
       "sameAs": "https://mallorqueando.com/pueblos-y-lugares/santuario-de-sant-salvador/",
       "image": [
-
-        {
-          "@type": "ImageObject",
-          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2020/06/monasterio-sant-salvador-felanitx-1.jpg"
-        },
         {
           "@type": "ImageObject",
           "url": "https://e8s3v3w7.rocketcdn.me/wp-content/uploads/2017/11/spanien-blick-auf-den-hucc88gel-des-klosters-sant-salvador-mit-dem-steinkreuz-creu-des-picot-und-dem-christkocc88nig-monument-mallorca-spanien-james-camel-franks-travelbox.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://www.holamallorca.com/images/es/mallorca/guia-de-viaje/lugares-de-interes/historicos-edificios/santuari-de-sant-salvador/santuari-de-sant-salvador-monasterio-felanitx-mallorca-imagen-1.jpg"
+          "url": "https://tripkay.com/destination-guides/wp-content/uploads/2016/04/murallas-del-Puig-San-Salvador.jpg"
         },
-    
         {
           "@type": "ImageObject",
           "url": "https://www.hotel.de/de/media/image/f4/48/15/Sant_Salvador_Petit_Hotel_Hostatgeria-Felanitx-Ausblick-5-455011_600x600@2x.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://uh.gsstatic.es/sfAttachPlugin/980073.jpg"
         }
       ],
       "subjectOf": {
@@ -587,16 +542,15 @@
           {
             "@type": "VideoObject",
             "name": "Vídeo Santuario Sant Salvador",
-            "contentUrl": "https://www.youtube.com/watch?v=Sf9d2X3f_WU&ab_channel=NEGRITADRONEFILMS"
+            "contentUrl": "https://www.youtube.com/watch?v=Sf9d2X3f_WU"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "S'Almudaina",
-      "description": "La Almudaina de Palma es un antiguo palacio real situado en el casco antiguo de la ciudad de Palma, en la isla de Mallorca. El edificio fue construido durante la época musulmana, pero después de la conquista de la isla por parte de los catalanes, se convirtió en la residencia de los monarcas de Mallorca y de la Corona de Aragón. La Almudaina es un magnífico ejemplo de la arquitectura gótica, con su impresionante patio de armas, sus salones de estilo renacentista y sus magníficas bóvedas de crucería.\n\nEn su interior se pueden admirar numerosas obras de arte, entre ellas una gran colección de tapices flamencos. Además, la Almudaina también cuenta con hermosos jardines que ofrecen una vista panorámica de la ciudad y de la bahía de Palma. Hoy en día, la Almudaina es la residencia oficial de la Familia Real Española en Mallorca y está abierta al público para visitas turísticas.",
+      "description": "La Almudaina de Palma es un antiguo palacio real situado en el casco antiguo de la ciudad de Palma. El edificio fue construido durante la época musulmana, pero después de la conquista de la isla por parte de los catalanes, se convirtió en la residencia de los monarcas de Mallorca y de la Corona de Aragón. La Almudaina es un magnífico ejemplo de la arquitectura gótica, con su impresionante patio de armas, sus salones de estilo renacentista y sus magníficas bóvedas de crucería.\n\nEn su interior se pueden admirar numerosas obras de arte, entre ellas una gran colección de tapices flamencos. Además, la Almudaina también cuenta con hermosos jardines que ofrecen una vista panorámica de la ciudad y de la bahía de Palma. Hoy en día, la Almudaina es la residencia oficial de la Familia Real Española en Mallorca y está abierta al público para visitas turísticas.",
       "openingHours": [
         "Mo-Su 10:00-19:00"
       ],
@@ -616,7 +570,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "4620"
+        "reviewCount": "4701"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -632,8 +586,8 @@
           }
         }
       ],
-      "mainEntityOfPage": "https://www.spiritualmallorca.com/santfrancesc",
-      "sameAs": "https://es.wikipedia.org/wiki/Convento_de_San_Francisco_(Palma_de_Mallorca)",
+      "mainEntityOfPage": "https://www.patrimonionacional.es/visita/palacio-real-de-la-almudaina",
+      "sameAs": "https://es.wikipedia.org/wiki/Palacio_Real_de_la_Almudaina",
       "image": [
         {
           "@type": "ImageObject",
@@ -661,24 +615,23 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo Basílica Palacio de la Almudaina",
+            "name": "Vídeo Palacio de la Almudaina",
             "contentUrl": "https://www.youtube.com/watch?v=DEXknGOMjGo"
           }
         ],
         "audio": [
           {
             "@type": "AudioObject",
-            "name": "Audio Castillo de Bellver",
+            "name": "Audio Palacio de la Almudaina",
             "contentUrl": "https://www.audioguia.org/static/es_200049.mp3"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "La Lonja",
-      "description": "La Lonja de Palma es un impresionante edificio de estilo gótico situado en el centro histórico de la ciudad de Palma, en la isla de Mallorca. Fue construido en el siglo XV como una sede de la poderosa gremial de mercaderes de la ciudad, y destaca por su impresionante arquitectura, especialmente en su fachada principal y en su amplio salón central, que cuenta con un techo abovedado y varias columnas decoradas con intrincados detalles.\n\nAdemás de su belleza arquitectónica, la Lonja de Palma también es famosa por su historia como centro comercial y por ser un lugar de reunión para los mercaderes y comerciantes de la ciudad. Actualmente, la Lonja es un centro cultural y es utilizado como espacio para exposiciones y otros eventos culturales.",
+      "description": "La Lonja de Palma es un impresionante edificio de estilo gótico situado en el centro histórico de la ciudad de Palma. Fue construido en el siglo XV como una sede de la poderosa gremial de mercaderes de la ciudad, y destaca por su impresionante arquitectura, especialmente en su fachada principal y en su amplio salón central, que cuenta con un techo abovedado y varias columnas decoradas con intrincados detalles.\n\nAdemás de su belleza arquitectónica, la Lonja de Palma también es famosa por su historia como centro comercial y por ser un lugar de reunión para los mercaderes y comerciantes de la ciudad. Actualmente, la Lonja es un centro cultural y es utilizado como espacio para exposiciones y otros eventos culturales.",
       "openingHours": [
         "Tu-Sa 10:30-13:30",
         "Tu-Sa 17:30-21:00"
@@ -699,7 +652,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "3526"
+        "reviewCount": "3572"
       },
       "isAccessibleForFree": true,
       "mainEntityOfPage": "https://www.palma.cat/portal/PALMA/contenedor1.jsp?seccion=s_floc_d4_v1.jsp&contenido=319&tipo=1&nivel=1400&codResi=1&language=es",
@@ -715,15 +668,11 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_pal.jpg"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Llotja_palma.jpg"
-        },
-        {
-          "@type": "ImageObject",
           "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/lonja-palma_mallorca_888.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://1.bp.blogspot.com/-zoCNhRgDvlw/XRvnexr-coI/AAAAAAAAiLk/S2eqX9RAGOcujHjek2S9msmT8g2WRFWagCEwYBhgL/s1600/2161%2B2%2BGillerm%2BSagrera-Lonja%2BPalma%2Bde%2BMallorca.jpg"
         }
       ],
       "subjectOf": {
@@ -734,17 +683,9 @@
             "name": "Vídeo La Lonja de Palma",
             "contentUrl": "https://www.youtube.com/watch?v=u5qt-CsmyCI"
           }
-        ],
-        "audio": [
-          {
-            "@type": "AudioObject",
-            "name": "Audio de La Lonja",
-            "contentUrl": "https://soundcloud.com/sofia-azorin-moreno/la-lonja-de-palma-azorin-moreno-sofia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-          }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Torre de Canyamel",
@@ -770,28 +711,27 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.3",
-        "reviewCount": "274"
+        "reviewCount": "280"
       },
       "isAccessibleForFree": false,
       "event": [
-          {
-            "@type": "Event",
-            "name": "Entrada General",
-            "description": "Entrada general, visita libre",
-            "offers": {
-              "@type": "Offer",
-              "price": 10,
-              "priceCurrency": "EUR"
-            }
+        {
+          "@type": "Event",
+          "name": "Entrada General",
+          "description": "Entrada general, visita libre",
+          "offers": {
+            "@type": "Offer",
+            "price": 10,
+            "priceCurrency": "EUR"
           }
-        ],
+        }
+      ],
       "mainEntityOfPage": "https://www.torredecanyamel.com/",
       "sameAs": "https://mallorca-touristguide.com/que-visitar/capdepera-torre-de-canyamel",
       "image": [
-
         {
           "@type": "ImageObject",
-          "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20001.JPG"
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Capdepera_-_Torre_de_Canyamel_07_ies.jpg/2560px-Capdepera_-_Torre_de_Canyamel_07_ies.jpg"
         },
         {
           "@type": "ImageObject",
@@ -800,14 +740,10 @@
         {
           "@type": "ImageObject",
           "url": "https://visitcapdepera.com/wp-content/uploads/2021/03/torre-canyamel-muralla.jpg"
-        },         
-        {
-          "@type": "ImageObject",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Capdepera_-_Torre_de_Canyamel_07_ies.jpg/2560px-Capdepera_-_Torre_de_Canyamel_07_ies.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://media.mallorca-touristguide.com/imagenes/1179/torre%20canyamel%2013.12.18%20-%20011.JPG"
+          "url": "https://calle-gastronomia.fra1.digitaloceanspaces.com/assets/media/fotojet-2020-03-12t193859782.jpg"
         }
       ],
       "subjectOf": {
@@ -815,13 +751,12 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo La Lonja de Palma",
-            "contentUrl": "https://youtu.be/r9S6KtFSmYA"
+            "name": "Vídeo Torre de Canyamel",
+            "contentUrl": "https://www.youtube.com/watch?v=r9S6KtFSmYA"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Iglesia de Santa Eulalia",
@@ -846,29 +781,23 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "372"
+        "reviewCount": "373"
       },
       "isAccessibleForFree": true,
       "mainEntityOfPage": "https://www.conferenciaepiscopal.es/parroquias-de-la-diocesis-de-mallorca/",
       "sameAs": "https://es.wikipedia.org/wiki/Iglesia_de_Santa_Eulalia_(Palma_de_Mallorca)",
       "image": [
-
         {
           "@type": "ImageObject",
           "url": "https://live.staticflickr.com/8530/8597940661_7ef935da66_b.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://life-globe.com/image/cache/catalog/spain/mallorca/church-santa-eulalia/iglesia-santa-eulalia-palma-mallorca-3-500x326.jpg"
+          "url": "https://uh.gsstatic.es/sfAttachPlugin/5858.jpg"
         },
         {
           "@type": "ImageObject",
           "url": "https://www.visitpalma.com/media/site1/cache/images/35m-7903.jpg"
-        },
-       
-        {
-          "@type": "ImageObject",
-          "url": "https://media.voicemap.me/uploads/sound_bite/image/54022/original/24-La-Iglesia-de-Santa-Eulalia.jpg"
         },
         {
           "@type": "ImageObject",
@@ -886,14 +815,13 @@
         ]
       }
     },
-   
     {
       "@type": "CivicStructure",
       "name": "Baños Árabes",
-      "description": "Los Baños Árabes de Palma son un vestigio de la época islámica en la ciudad de Palma de Mallorca. Se trata de una construcción de estilo mudéjar que data del siglo X y que se utilizaba como baño público. Los baños están compuestos por varias salas, entre las que destacan la sala fría, la sala templada y la sala caliente, todas ellas decoradas con arcos de herradura y motivos geométricos.\n\nEn el centro de los baños se encuentra una cúpula de estilo bizantino que permitía la entrada de luz natural. Los Baños Árabes de Palma son un ejemplo excepcional de la arquitectura islámica en la isla de Mallorca y son uno de los monumentos más visitados de la ciudad. Además, su excelente estado de conservación permite imaginar cómo era la vida cotidiana en la época islámica y disfrutar de un lugar de gran belleza y valor histórico.",
+      "description": "Los Baños Árabes de Palma son un vestigio de la época islámica en la ciudad de Palma. Se trata de una construcción de estilo mudéjar que data del siglo X y que se utilizaba como baño público. Los baños están compuestos por varias salas, entre las que destacan la sala fría, la sala templada y la sala caliente, todas ellas decoradas con arcos de herradura y motivos geométricos.\n\nEn el centro de los baños se encuentra una cúpula de estilo bizantino que permitía la entrada de luz natural. Los Baños Árabes de Palma son un ejemplo excepcional de la arquitectura islámica en la isla de Mallorca y son uno de los monumentos más visitados de la ciudad. Además, su excelente estado de conservación permite imaginar cómo era la vida cotidiana en la época islámica y disfrutar de un lugar de gran belleza y valor histórico.",
       "openingHours": [
         "Mo-Sa 10:00-18:30",
-        "Sn 10:00-18:00"
+        "Su 10:00-18:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -904,33 +832,32 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.5685",
-        "longitude": "2.6475"
+        "latitude": "39.5668715981417",
+        "longitude": "2.6511746585341256"
       },
       "telephone": "637046534",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "3.7",
-        "reviewCount": "3942"
+        "reviewCount": "3954"
       },
       "isAccessibleForFree": false,
       "event": [
-          {
-            "@type": "Event",
-            "name": "Entrada General",
-            "description": "Entrada general a los baños árabes ",
-            "url": "https://www.illesbalears.travel/articulo/es/mallorca/los-banos-arabes-de-palma-de-mallorca",
-            "offers": {
-              "@type": "Offer",
-              "price": 2,
-              "priceCurrency": "EUR"
-            }
+        {
+          "@type": "Event",
+          "name": "Entrada General",
+          "description": "Entrada general a los baños árabes ",
+          "url": "https://www.illesbalears.travel/articulo/es/mallorca/los-banos-arabes-de-palma-de-mallorca",
+          "offers": {
+            "@type": "Offer",
+            "price": 2,
+            "priceCurrency": "EUR"
           }
-        ],
+        }
+      ],
       "mainEntityOfPage": "https://www.illesbalears.travel/articulo/es/mallorca/los-banos-arabes-de-palma-de-mallorca",
       "sameAs": "https://es.wikipedia.org/wiki/Ba%C3%B1os_%C3%A1rabes_(Palma_de_Mallorca)",
       "image": [
-
         {
           "@type": "ImageObject",
           "url": "https://www.visitpalma.com/media/site1/cache/images/banos-arabes-interior.jpg"
@@ -943,30 +870,29 @@
           "@type": "ImageObject",
           "url": "https://www.caleiatalayotspahotel.com/wp-content/blogs.dir/1564/files/cultura/BANOS_ARABES.jpg"
         },
-       
         {
           "@type": "ImageObject",
-          "url": "https://www.hotelpalladium.com/static/bloques/listados_noticias/noticias/599.m.jpg?1610652714"
+          "url": "https://froala-editor.s3.amazonaws.com/8829e40431898af467bf30934bc2001bda0b32b5.jpg"
         }
+       
       ],
       "subjectOf": {
         "@type": "CreativeWork",
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "name": "Vídeo Baños Árabes",
             "contentUrl": "https://www.youtube.com/watch?v=X20OZidNows"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Torre del Verger",
-      "description": "La Torre del Verger es una torre de vigilancia costera situada en la costa norte de la isla de Mallorca, en las Islas Baleares, España. Construida en el siglo XVI, la torre fue utilizada para defender la costa y alertar a la población ante la llegada de piratas y corsarios. De forma circular, cuenta con dos pisos y una terraza en la parte superior, desde la que se puede disfrutar de impresionantes vistas panorámicas del mar Mediterráneo y de la costa mallorquina. Actualmente, la torre está abierta al público y es un lugar popular para los visitantes que buscan explorar la rica historia de la isla.",
+      "description": "La Torre del Verger es una torre de vigilancia costera situada en la costa norte de la isla. Construida en el siglo XVI, la torre fue utilizada para defender la costa y alertar a la población ante la llegada de piratas y corsarios. De forma circular, cuenta con dos pisos y una terraza en la parte superior, desde la que se puede disfrutar de impresionantes vistas panorámicas del mar Mediterráneo y de la costa mallorquina. Actualmente, la torre está abierta al público y es un lugar popular para los visitantes que buscan explorar la rica historia de la isla.",
       "openingHours": [
-        "Mo-Sn 00:00-23:59"
+        "Mo-Su 00:00-23:59"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -977,25 +903,24 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.6915",
-        "longitude": "2.6475"
+        "latitude": "39.68403575926033",
+        "longitude": "2.499985253438239"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.6",
-        "reviewCount": "2076"
+        "reviewCount": "2087"
       },
       "isAccessibleForFree": true,
       "sameAs": "https://ca.wikipedia.org/wiki/Talaia_de_ses_%C3%80nimes",
       "image": [
-
         {
           "@type": "ImageObject",
           "url": "https://www.ruralzoom.com/wp-content/uploads/2020/01/Torre-del-Vergel.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://img.remediosdigitales.com/2ef47d/mir2/1366_2000.jpg"
+          "url": "https://www.gancarczyk.com/wp-content/uploads/2019/03/mirador-de-ses-animes.jpg"
         },
         {
           "@type": "ImageObject",
@@ -1007,17 +932,16 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo de la Iglesia de Sta Eulalia",
+            "name": "Vídeo Torre del Verger",
             "contentUrl": "https://www.holamallorca.com/images/es/mallorca/guia-de-viaje/lugares-de-interes/miradores/torredelverger/torre-del-verger.mp4"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Iglesia de Santa Maria",
-      "description": "La iglesia de Santa María la Mayor es una iglesia gótica ubicada en el centro de Inca, una ciudad en el centro de Mallorca, España. Construida en el siglo XIII, la iglesia presenta una impresionante fachada de estilo neoclásico y cuenta con numerosas capillas laterales, algunas de las cuales están adornadas con frescos y esculturas de gran valor artístico e histórico. Destacan también sus vidrieras, que iluminan la nave central y los detalles arquitectónicos de estilo gótico, como los arcos ojivales y las bóvedas de crucería. La iglesia de Santa María es uno de los lugares de culto más importantes de la isla y es frecuentada tanto por residentes como por visitantes que buscan admirar su belleza y rica historia.",
+      "description": "La iglesia de Santa María la Mayor es una iglesia gótica ubicada en el centro de Inca, en el centro de Mallorca. Construida en el siglo XIII, la iglesia presenta una impresionante fachada de estilo neoclásico y cuenta con numerosas capillas laterales, algunas de las cuales están adornadas con frescos y esculturas de gran valor artístico e histórico. Destacan también sus vidrieras, que iluminan la nave central y los detalles arquitectónicos de estilo gótico, como los arcos ojivales y las bóvedas de crucería.\n\n La iglesia de Santa María es uno de los lugares de culto más importantes de la isla y es frecuentada tanto por residentes como por visitantes que buscan admirar su belleza y rica historia.",
       "openingHours": [
         "Mo-Sa 10:00-13:30",
         "Mo-Sa 18:30-20:30"
@@ -1031,20 +955,19 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.5685",
-        "longitude": "2.6475"
+        "latitude": "39.72137999015024",
+        "longitude": "2.9117145463688954"
       },
       "telephone": "671643548",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.3",
-        "reviewCount": "192"
+        "ratingValue": "4.4",
+        "reviewCount": "193"
       },
       "isAccessibleForFree": true,
       "mainEntityOfPage": "https://upmarededeu.com/",
       "sameAs": "https://ca.wikipedia.org/wiki/Santa_Maria_la_Major_d%27Inca",
       "image": [
-
         {
           "@type": "ImageObject",
           "url": "https://www.ferrocaib.org/wp-content/uploads/2013/06/inc_iglesia_maria.jpg"
@@ -1052,27 +975,31 @@
         {
           "@type": "ImageObject",
           "url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/01/interior-santa-maria-la-mayor.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": " https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/9c/c4/10/the-church-from-teh-square.jpg?w=1200&h=-1&s=1"
         }
+       
       ],
       "subjectOf": {
         "@type": "CreativeWork",
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Vídeo de la Iglesia de Sta Eulalia",
-            "contentUrl": "https://youtu.be/-a2KoeP7q-A"
+            "name": "Vídeo Iglesia de Santa Maria",
+            "contentUrl": "https://www.youtube.com/watch?v=0k3mxc5M3U0"
           }
         ]
       }
     },
-
     {
       "@type": "CivicStructure",
       "name": "Es Baluard",
-      "description": "Es Baluard es un museo de arte moderno y contemporáneo ubicado en Palma de Mallorca, España. El museo se encuentra dentro de las antiguas murallas de la ciudad, y cuenta con una amplia colección de arte, incluyendo obras de artistas locales e internacionales. El edificio que alberga el museo es en sí mismo una obra de arte moderna, con una arquitectura sorprendente que combina el uso del vidrio, acero y hormigón. Desde su terraza, los visitantes pueden disfrutar de impresionantes vistas del puerto de Palma y del casco antiguo de la ciudad. Es Baluard es un lugar popular para los amantes del arte y los visitantes que buscan explorar la vibrante escena artística de Mallorca.",
+      "description": "Es Baluard es un museo de arte moderno y contemporáneo ubicado en Palma. El museo se encuentra dentro de las antiguas murallas de la ciudad, y cuenta con una amplia colección de arte, incluyendo obras de artistas locales e internacionales. El edificio que alberga el museo es en sí mismo una obra de arte moderna, con una arquitectura sorprendente que combina el uso del vidrio, acero y hormigón. Desde su terraza, los visitantes pueden disfrutar de impresionantes vistas del puerto de Palma y del casco antiguo de la ciudad. Es Baluard es un lugar popular para los amantes del arte y los visitantes que buscan explorar la vibrante escena artística de Mallorca.",
       "openingHours": [
         "Mo-Sa 10:00-20:05",
-        "Sn 10:00-15:00"
+        "Su 10:00-15:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -1083,15 +1010,14 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.5668856",
-        "longitude": "2.6468759"
-        
+        "latitude": "39.570179779741",
+        "longitude": "2.641195339857915" 
       },
       "telephone": "971908200",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.3",
-        "reviewCount": "3300"
+        "ratingValue": "4.2",
+        "reviewCount": "3314"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -1136,11 +1062,11 @@
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://www.esbaluard.org/wp-content/uploads/2020/05/reobertura-1024x682.jpg"
+          "url": "https://www.esbaluard.org/wp-content/uploads/2020/01/e3ce4a56-db90-4582-9518-402f18aec387.jpg"
         },
         {
           "@type": "ImageObject",
-          "url": "https://img.remediosdigitales.com/ae9ac7/esbaluard2/1366_2000.jpg"
+          "url": "https://www.hoyesarte.com/wp-content/uploads/2020/09/P1050299-baixa-2-scaled.jpg"
         },
         {
           "@type": "ImageObject",
@@ -1162,12 +1088,10 @@
         ]
       }
     },
-
-
     {
       "@type": "CivicStructure",
       "name": "Ses Païsses",
-      "description": "Ses Païsses es un yacimiento arqueológico en la ciudad de Artà, en la costa este de Mallorca, España. El sitio contiene los restos de una antigua ciudad prehistórica, que data de la Edad del Hierro, y es considerado uno de los sitios arqueológicos más importantes de Mallorca. Los visitantes pueden explorar los restos de las antiguas estructuras de piedra, incluyendo paredes, torres y la puerta principal, que fueron construidas hace más de 2.500 años. El yacimiento también alberga un centro de interpretación que proporciona información sobre la vida y la cultura de la población que habitó el lugar en la antigüedad. Ses Païsses es un lugar fascinante para los visitantes que buscan explorar la rica historia y cultura de la isla de Mallorca.",
+      "description": "Ses Païsses es un yacimiento arqueológico en la ciudad de Artà. El sitio contiene los restos de una antigua ciudad prehistórica, que data de la Edad del Hierro, y es considerado uno de los sitios arqueológicos más importantes de Mallorca. Los visitantes pueden explorar los restos de las antiguas estructuras de piedra, incluyendo paredes, torres y la puerta principal, que fueron construidas hace más de 2.500 años. El yacimiento también alberga un centro de interpretación que proporciona información sobre la vida y la cultura de la población que habitó el lugar en la antigüedad. Ses Païsses es un lugar fascinante para los visitantes que buscan explorar la rica historia y cultura de la isla de Mallorca.",
       "openingHours": [
         "Mo-Fr 10:00-17:00",
         "Sa 10:00-14:00"
@@ -1181,9 +1105,9 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.7250624",
-        "longitude": "3.3908581"
-        
+        "latitude": " 39.68714682612235",
+        "longitude": "3.355115896058524"
+    
       },
       "telephone": "619070010",
       "aggregateRating": {
@@ -1197,7 +1121,6 @@
           "@type": "Event",
           "name": "Entrada Regular",
           "description": "Entrada general al yacimiento",
-          "url": "https://www.esbaluard.org/visita/#rates",
           "offers": {
             "@type": "Offer",
             "price": 2.00,
@@ -1227,19 +1150,17 @@
           {
             "@type": "VideoObject",
             "name": "Video Ses Païsses",
-            "contentUrl": "https://www.youtube.com/watch?v=A5AV5HAKjh0"
+            "contentUrl": "https://www.youtube.com/watch?v=Y2NbHKUdPos"
           }
         ]
       }
     },
-
-
     {
       "@type": "CivicStructure",
       "name": "Castillo de Capdepera",
       "description": "El Castillo de Capdepera es un castillo situado en la cima de una colina en la localidad de Capdepera, en la costa este de Mallorca, España. Construido en el siglo XIV, el castillo ha sido testigo de importantes eventos históricos y ha servido como refugio defensivo durante siglos. El castillo cuenta con una muralla con torres, una entrada monumental y un patio interior. Desde la cima de la colina, los visitantes pueden disfrutar de vistas panorámicas impresionantes de la costa y el paisaje circundante. En la actualidad, el castillo es uno de los principales atractivos turísticos de la región, y es visitado tanto por los turistas que buscan explorar la historia de la isla, como por los residentes que desean disfrutar de las vistas y el ambiente único del lugar.",
       "openingHours": [
-        "Mo-Sn 10:00-17:00"
+        "Mo-Su 10:00-17:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -1250,15 +1171,15 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.7049",
-        "longitude": "3.4295"
-        
+        "latitude": " 39.704116035893975",
+        "longitude": " 3.4332910836195345"
+       
       },
       "telephone": "971818746",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "6865"
+        "reviewCount": "6881"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -1307,21 +1228,18 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Video del Castillo",
+            "name": "Video del Castillo de Capdepera",
             "contentUrl": "https://www.youtube.com/watch?v=OTgLjsgRtj8"
           }
         ]
       }
     },
-
-
-
     {
       "@type": "CivicStructure",
       "name": "Cuevas del Drach",
       "description": "Las Cuevas del Drach son un espectacular sistema de cuevas situado en la costa este de Mallorca. Conocidas por sus impresionantes estalactitas y estalagmitas, así como por su lago subterráneo, son uno de los principales atractivos turísticos de la isla. Las cuevas cuentan con diversas salas que han sido iluminadas de forma cuidadosa, lo que les da un ambiente mágico y de ensueño. Además, durante la visita se puede disfrutar de un concierto de música clásica en vivo en el lago subterráneo, lo que añade un toque especial a la experiencia. Sin duda, las Cuevas del Drach son una visita obligada para cualquier persona que viaje a Mallorca.",
       "openingHours": [
-        "Mo-Sn 10:00-17:00"
+        "Mo-Su 10:00-17:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -1332,15 +1250,15 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.53574",
-        "longitude": "3.33062"
+        "latitude": "39.53584109980008",
+        "longitude": "3.330426082186971"
         
       },
       "telephone": "971820753",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.3",
-        "reviewCount": "39919"
+        "reviewCount": "40012"
       },
       "isAccessibleForFree": false,
       "event": [
@@ -1388,10 +1306,6 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://www.mediopenique.com/wp-content/uploads/2019/02/visita-cuevas-drach.jpg"
-        },
-        {
-          "@type": "ImageObject",
           "url": "https://abcmallorcastorage.blob.core.windows.net/images/2018/09/Cuevas-arta-03.jpg"
         }
       ],
@@ -1401,14 +1315,11 @@
           {
             "@type": "VideoObject",
             "name": "Video Coves del Drach",
-            "contentUrl": "https://youtu.be/PeLk4v-C9N4"
+            "contentUrl": "https://www.youtube.com/watch?v=PeLk4v-C9N4"
           }
         ]
       }
     },
-
-
-
     {
       "@type": "CivicStructure",
       "name": "Castillo del Santueri",
@@ -1425,15 +1336,15 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "39.4427649",
-        "longitude": "3.1616772"
+        "latitude": "39.431497864139004",
+        "longitude": "3.1870450379983737"
         
       },
       "telephone": "971820753",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.3",
-        "reviewCount": "39919"
+        "ratingValue": "4.1",
+        "reviewCount": "310"
       },
       "isAccessibleForFree": true,
       "event": [
@@ -1466,7 +1377,7 @@
         },
         {
           "@type": "ImageObject",
-          "url": "https://i.ytimg.com/vi/aB98bOusFsk/maxresdefault.jpg"
+          "url": "https://www.castillosdeespaña.es/sites/castillosdeespana.es/files/images/castillo-de-santueri-2013.jpg"
         }
       ],
       "subjectOf": {
@@ -1474,21 +1385,18 @@
         "video": [
           {
             "@type": "VideoObject",
-            "name": "Video Coves del Drach",
+            "name": "Castillo del Santueri",
             "contentUrl": "https://www.youtube.com/watch?v=WOf2K7W9Zj8"
           }
         ]
       }
     },
-
-
-
     {
       "@type": "CivicStructure",
       "name": "S'Albufera",
-      "description": "El Parque Natural de la Albufera de Alcudia es una reserva natural ubicada en el noreste de Mallorca. Este parque es el hogar de una gran variedad de fauna y flora autóctona, y es uno de los humedales más importantes de Europa. La Albufera cuenta con una gran cantidad de lagunas, pantanos, dunas y bosques de pinos, así como una extensa playa. Además, en la Albufera se pueden avistar más de 200 especies de aves diferentes, algunas de ellas migratorias, lo que convierte a este parque en un lugar ideal para el avistamiento de aves. La Albufera es también un importante destino para los amantes del senderismo y el ciclismo, ya que cuenta con diversas rutas y senderos para explorar la naturaleza de la zona. En definitiva, la Albufera de Alcudia es un lugar mágico y lleno de vida que vale la pena visitar para disfrutar de la naturaleza en todo su esplendor.",
+      "description": "El Parque Natural de la Albufera de Alcudia es una reserva natural ubicada en el noreste de Mallorca. Este parque es el hogar de una gran variedad de fauna y flora autóctona, y es uno de los humedales más importantes de Europa. La Albufera cuenta con una gran cantidad de lagunas, pantanos, dunas y bosques de pinos, así como una extensa playa. Además, en la Albufera se pueden avistar más de 200 especies de aves diferentes, algunas de ellas migratorias, lo que convierte a este parque en un lugar ideal para el avistamiento de aves. \n\nLa Albufera es también un importante destino para los amantes del senderismo y el ciclismo, ya que cuenta con diversas rutas y senderos para explorar la naturaleza de la zona. En definitiva, la Albufera de Alcudia es un lugar mágico y lleno de vida que vale la pena visitar para disfrutar de la naturaleza en todo su esplendor.",
       "openingHours": [
-        "Mo-St 9:00-18:00"
+        "Mo-Sa 9:00-18:00"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -1501,13 +1409,12 @@
         "@type": "GeoCoordinates",
         "latitude": "39.783834",
         "longitude": "3.093109"
-        
       },
       "telephone": "971892250",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.4",
-        "reviewCount": "2102"
+        "reviewCount": "2104"
       },
       "isAccessibleForFree": true,
       "event": [
@@ -1553,9 +1460,155 @@
           }
         ]
       }
+    },
+    {
+      "@type": "CivicStructure",
+      "name": "Santuario de Cura",
+      "description": "El Santuario de Cura es un lugar sagrado situado en la cima de la montaña Puig de Randa, en el sur de Mallorca. Ofrece vistas panorámicas impresionantes de la zona circundante. El edificio principal es de piedra ocre y combina elementos góticos y renacentistas. En su interior, encontrarás una iglesia con capillas y altares decorados. El santuario es un refugio tranquilo y espiritual, visitado por peregrinos y turistas en busca de paz. También cuenta con un restaurante que sirve comida local y una tienda de souvenirs. Es un lugar ideal para la reflexión personal y la conexión con la naturaleza y la historia de Mallorca.",
+      "openingHours": [
+        "Mo-Sa 10:00-13:00",
+        "Mo-Sa 15:30-18:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Randa",
+        "addressRegion": "ES",
+        "postalCode": "07629",
+        "streetAddress": "Puig de Randa, S/N"
+      
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": " 39.52708408557362",
+        "longitude": "2.926196067252682"
+       
+      },
+      "telephone": "971120260",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "2720"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Precio de entrada",
+          "description": "La orden Franciscana es una orden mendicante, la entrada es gratuita, pero usted debe pagar su ofrenda al visitar el museo.",
+          "url": "https://www.santuaridecura.com/es/",
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Hospedería de Cura",
+          "description": "Para los viajeros en busca de mística y serenidad, es posible mantenerse en una habitación individual en la hospedería de Cura.",
+          "url": "https://www.santuaridecura.com/es/",
+          "offers": {
+            "@type": "Offer",
+            "price": 60,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.santuaridecura.com/es/",
+      "sameAs": "https://ca.wikipedia.org/wiki/Santuari_de_Cura",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://santuaridecura.com/backoffice/images/242-130santuaricura1300x870.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://abcmallorcastorage.blob.core.windows.net/images/2020/06/santuari-de-cura-cafeteria.jpg"
+        },
+      
+        {
+          "@type": "ImageObject",
+          "url": "https://santuaridecura.com/backoffice/images/140-65santuaricura1300x870.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Santuario de Cura",
+            "contentUrl": "https://www.youtube.com/watch?v=1GplQOcLKco"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "CivicStructure",
+      "name": "Capocorb Vell",
+      "description": "Capocorb Vell es un impresionante yacimiento arqueológico situado cerca del pueblo de Llucmajor, en el sur de la isla. Se trata de un conjunto prehistórico de talayots, que son construcciones en forma de torre características de la cultura talayótica que habitó en la isla hace miles de años. \n\nEl yacimiento de Capocorb Vell cuenta con una serie de talayots bien conservados que ofrecen una fascinante visión de la historia antigua de Mallorca. Estas estructuras eran utilizadas como viviendas, torres de vigilancia o lugares de culto por las antiguas comunidades que habitaban la isla.\n\n Lo más notable de Capocorb Vell es su impresionante tamaño y su estado de conservación. Los talayots son construcciones de piedra que se levantan sobre el paisaje y que destacan por su robustez y solidez. Además, en el sitio se pueden encontrar otros elementos arquitectónicos como murallas, recintos y restos de viviendas, lo que brinda una visión más completa de cómo era la vida en la época talayótica.",
+      "openingHours": [
+        "Su-We 10:00-17:00",
+        "Fr-Sa 10:00-17:00"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Llucmajor",
+        "addressRegion": "ES",
+        "postalCode": "07620",
+        "streetAddress": "Ma-6014, Km. 23"
+      
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.39769219360268",
+        "longitude": "2.8237673501557143"
+      },
+      "telephone": "971180155",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "reviewCount": "418"
+      },
+      "isAccessibleForFree": true,
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Precio de entrada",
+          "description": "Precio entrada visita ruinas",
+          "url": "https://talaiotscapocorbvell.com/",
+          "offers": {
+            "@type": "Offer",
+            "price": 3,
+            "priceCurrency": "EUR"
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://talaiotscapocorbvell.com/",
+      "sameAs": "https://es.wikipedia.org/wiki/Capocorb_Vell",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://visitllucmajor.com/wp-content/uploads/2017/03/R-20135_r2_c1.jpg"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://i0.wp.com/balearesantigua.com/wp-content/uploads/2018/12/IMG_7834-Editar-Editar-Editar.jpg?fit=1200%2C800&ssl=1"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/9b/c6/61/caption.jpg"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [
+          {
+            "@type": "VideoObject",
+            "name": "Video Capocorb Vell",
+            "contentUrl": "https://www.youtube.com/watch?v=192aBhe-xVE"
+          }
+        ]
+      }
     }
-    
-
-
   ]
 }

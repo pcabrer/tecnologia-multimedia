@@ -183,6 +183,28 @@ function cargaMonumento(idxMonumento) {
             `;
             marker.bindPopup(popupContent);
 
+
+            // Horario
+
+
+            // Video
+
+            const contenedorVideo = document.getElementById('contenedorVideo');
+
+            var iframe = document.createElement("iframe");
+            iframe.className = "videoMonumento";
+            var url =  monumento.subjectOf.video[0].contentUrl;
+            console.log(url);
+            var nuevaUrl = url.replace("/watch?v=", "/embed/");
+            iframe.src =  nuevaUrl;
+            iframe.title = "YouTube video player";
+            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+            iframe.allowFullscreen = true;
+
+            // Asegúrate de que haya un elemento en el DOM donde quieras insertar el iframe
+       
+            contenedorVideo.appendChild(iframe);
+
             // Actividades
 
             const seccionActividades = document.getElementById('actividades');
@@ -265,10 +287,9 @@ function cargaMonumento(idxMonumento) {
 
                 });
 
-            } else {
-
-                console.log("La lista de eventos está vacía.");
             }
+
+
 
 
 
