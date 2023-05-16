@@ -52,17 +52,16 @@ function mapaLeaflet() {
 
 
 function cargaMonumento(idxMonumento) {
-    // div que contiene la lista de monumentos
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "Monumentos.json", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            //console.log(xhr.responseText);
+
             var datos = JSON.parse(xhr.responseText);
 
             const monumento = datos.itemListElement[idxMonumento];
-            console.log(monumento.name);
+
 
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
@@ -184,8 +183,7 @@ function cargaMonumento(idxMonumento) {
             marker.bindPopup(popupContent);
 
 
-            // Horario
-
+         
 
             // Video
 
@@ -193,17 +191,55 @@ function cargaMonumento(idxMonumento) {
 
             var iframe = document.createElement("iframe");
             iframe.className = "videoMonumento";
-            var url =  monumento.subjectOf.video[0].contentUrl;
+            var url = monumento.subjectOf.video[0].contentUrl;
             console.log(url);
             var nuevaUrl = url.replace("/watch?v=", "/embed/");
-            iframe.src =  nuevaUrl;
+            iframe.src = nuevaUrl;
             iframe.title = "YouTube video player";
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
             iframe.allowFullscreen = true;
 
             // Asegúrate de que haya un elemento en el DOM donde quieras insertar el iframe
-       
+
             contenedorVideo.appendChild(iframe);
+
+            // horario
+
+
+            const contenedorHorario = document.getElementById('contenedorHorario');
+            // Crear la tabla con la clase "table table-striped text-center"
+      
+
+            // Definir los datos de la tabla
+            var data = obtenerDatosTabla(monumento.openingHours);
+            var tbody = document.createElement("tbody");
+            for (var i = 0; i < data.length; i++) {
+                var row = document.createElement("tr");
+
+                for (var j = 0; j < data[i].length; j++) {
+                    var cell = document.createElement("td");
+                    var cellData = document.createTextNode(data[i][j]);
+                    cell.appendChild(cellData);
+                    row.appendChild(cell);
+                }
+
+                if (diaActual()==i) {
+                    if(estaAbierto(monumento.openingHours)){
+                        row.className = "bg-success";
+                    }else{
+                        row.className = "bg-danger";
+                    }
+                  
+                }
+
+               tbody.appendChild(row);
+            }
+
+            contenedorHorario.appendChild(tbody);
+
+         
+
+
 
             // Actividades
 
@@ -299,3 +335,132 @@ function cargaMonumento(idxMonumento) {
 
     xhr.send();
 }
+
+function obtenerDatosTabla(openingHoursMonumento) {
+
+
+    var data = [
+      ["Lunes", "cerrado"],
+      ["Martes", "cerrado"],
+      ["Miércoles", "cerrado"],
+      ["Jueves", "cerrado"],
+      ["Viernes", "cerrado"],
+      ["Sábado", "cerrado"],
+      ["Domingo", "cerrado"]
+    ];
+
+
+
+
+    for (let i = 0; i < openingHoursMonumento.length; i++) {
+
+        console.log(openingHoursMonumento[i]);
+        const cadenadias = openingHoursMonumento[i].split(" "); // separar la cadena en dos partes utilizando el espacio como separador
+
+        const dias = cadenadias[0]; // primera parte de la cadena
+        const horas = cadenadias[1]; // segunda parte de la cadena
+
+    
+
+        if (dias.includes('-')) {
+
+            const diasSemanaRango = dias.split("-");
+            const indiceDia1 = obtenerNumeroDiaSemana(diasSemanaRango[0]);
+            const indiceDia2 = obtenerNumeroDiaSemana(diasSemanaRango[1]);
+
+          
+
+            if (indiceDia1 != -1 && indiceDia2 != -1) {
+
+                var diaSemana = indiceDia1;
+                var indicefinal = (indiceDia2 + 1) % 7;
+
+                do {
+
+                    if(data[diaSemana][1]==="cerrado"){
+
+                        data[diaSemana][1]=horas;
+        
+                    }else{
+        
+                        data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
+        
+                    }
+
+                    diaSemana = (diaSemana + 1) % 7;
+
+                } while (diaSemana != indicefinal);
+
+            }
+
+            
+        } else if (dias.includes(',')) {
+
+            const diasSemanaIndice = dias.split(",");
+
+            for (let j = 0; j < diasSemanaIndice.length; j++) {
+
+                const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
+                if(data[diaSemana][1]==="cerrado"){
+
+                    data[diaSemana][1]=horas;
+    
+                }else{
+    
+                    data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
+    
+                } 
+            }
+
+        } else {
+
+           
+
+            var diaSemana = obtenerNumeroDiaSemana(dias);
+            if(data[diaSemana][1]==="cerrado"){
+
+                data[diaSemana][1]=horas;
+
+            }else{
+
+                data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
+
+            }
+           
+         
+        }
+
+
+    }
+    
+
+ 
+
+  
+    return data;
+  }
+
+  function diaActual() {
+
+   
+    const dateActual = new Date();
+    const diaActual = dateActual.getDay();
+    
+
+    if(diaActual!=0){
+
+        return diaActual-1;
+    }else{
+        return 6;
+
+    }
+  
+  
+  }
+
+  function obtenerNumeroDiaSemana(diaSemana) {
+    var dias = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+    var indice = dias.indexOf(diaSemana);
+    
+   return indice;
+  }

@@ -14,24 +14,6 @@ function cargaListaMonumentos() {
             datos.itemListElement.forEach(function (monumento, idx) {
 
 
-
-                /*
-                <div class="col-lg-4 col-md-6 portfolio-item filter-palma">
-                    <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/monumento1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <a href="catedral.html">
-                        <h4>Catedral de Palma</h4>
-                        </a>
-                        <p>Palma</p>
-                        <div class="portfolio-links">
-                        <a href="assets/img/portfolio/monumento1.jpg" data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-              */
                 // Crear elemento div con clases col-12 col-md-12 col-lg-6 mr-lg-3 justify-content-center
                 const div = document.createElement('div');
                 div.classList.add('col-12', 'col-md-12', 'col-lg-6', 'mr-lg-3', 'justify-content-center');
@@ -54,7 +36,7 @@ function cargaListaMonumentos() {
                 const divContenido = document.createElement('div');
                 divContenido.classList.add('monumentos-card-contenido');
 
-                // Crear título h4 con clase monumentos-card-titulo y texto Catedral de Palma
+                // Crear título h4 con clase monumentos-card-titulo y texto el nombre del monumento
                 const titulo1 = document.createElement('h4');
                 titulo1.classList.add('monumentos-card-titulo');
                 titulo1.textContent = monumento.name;
@@ -86,8 +68,6 @@ function cargaListaMonumentos() {
                     openStatusElement.textContent = "Cerrado";
 
                 }
-
-
 
                 // creamos el elemento div con clase "stars"
                 const starsDiv = document.createElement("div");
@@ -121,9 +101,6 @@ function cargaListaMonumentos() {
 
 
                 }
-
-
-
 
                 // Agregar todos los elementos creados a sus elementos contenedores correspondientes
                 divContenido.appendChild(titulo1);
@@ -219,7 +196,7 @@ function estaAbierto(horario) {
 
             const diasSemanaT = dias.split(",");
 
-            for (let j = 0; j < diasSemana.length; j++) {
+            for (let j = 0; j < diasSemanaT.length; j++) {
                 console.log(diasSemanaT[j]);
                 const indiceDia12 = diasSemana.indexOf(diasSemanaT[j]);
 
