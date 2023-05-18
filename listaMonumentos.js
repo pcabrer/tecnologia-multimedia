@@ -1,5 +1,3 @@
-
-
 function cargaListaMonumentos() {
     // div que contiene la lista de monumentos
 
