@@ -1478,6 +1478,27 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+.miComentario{
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+}
+
+.comentario-nombre{
+
+
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.estrellasComentario{
+
+  padding-top: 10px;
+  text-align: right;
+}
+
+
 .blog .entry .entry-img {
   max-height: 440px;
   margin: -30px -30px 20px -30px;
@@ -2782,11 +2803,6 @@ section {
 # coomentarios
 --------------------------------------------------------------*/
 
-.comentario-nombre{
-
-
-  font-weight: bold;
-}
 
 
 /*--------------------------------------------------------------

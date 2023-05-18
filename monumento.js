@@ -315,19 +315,11 @@ function cargaMonumento(idxMonumento) {
 
                     divCol.appendChild(divBox);
 
-
                     contenedorActividades.appendChild(divCol);
-
-
-
 
                 });
 
             }
-
-
-
-
 
         };
 
@@ -348,8 +340,6 @@ function obtenerDatosTabla(openingHoursMonumento) {
       ["Sábado", "cerrado"],
       ["Domingo", "cerrado"]
     ];
-
-
 
 
     for (let i = 0; i < openingHoursMonumento.length; i++) {
@@ -414,7 +404,6 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
         } else {
 
-           
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
             if(data[diaSemana][1]==="cerrado"){
