@@ -332,13 +332,13 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
 
     var data = [
-      ["Lunes", "cerrado"],
-      ["Martes", "cerrado"],
-      ["Miércoles", "cerrado"],
-      ["Jueves", "cerrado"],
-      ["Viernes", "cerrado"],
-      ["Sábado", "cerrado"],
-      ["Domingo", "cerrado"]
+      ["Lunes", "Cerrado"],
+      ["Martes", "Cerrado"],
+      ["Miércoles", "Cerrado"],
+      ["Jueves", "Cerrado"],
+      ["Viernes", "Cerrado"],
+      ["Sábado", "Cerrado"],
+      ["Domingo", "Cerrado"]
     ];
 
 
@@ -367,7 +367,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
                 do {
 
-                    if(data[diaSemana][1]==="cerrado"){
+                    if(data[diaSemana][1]==="Cerrado"){
 
                         data[diaSemana][1]=horas;
         
@@ -391,7 +391,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
             for (let j = 0; j < diasSemanaIndice.length; j++) {
 
                 const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
-                if(data[diaSemana][1]==="cerrado"){
+                if(data[diaSemana][1]==="Cerrado"){
 
                     data[diaSemana][1]=horas;
     
@@ -406,7 +406,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
-            if(data[diaSemana][1]==="cerrado"){
+            if(data[diaSemana][1]==="Cerrado"){
 
                 data[diaSemana][1]=horas;
 
