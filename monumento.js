@@ -419,19 +419,11 @@ function cargaMonumento(idxMonumento) {
 
                     divCol.appendChild(divBox);
 
-
                     contenedorActividades.appendChild(divCol);
-
-
-
 
                 });
 
             }
-
-
-
-
 
         };
 
@@ -444,16 +436,14 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
 
     var data = [
-        ["Lunes", "cerrado"],
-        ["Martes", "cerrado"],
-        ["Miércoles", "cerrado"],
-        ["Jueves", "cerrado"],
-        ["Viernes", "cerrado"],
-        ["Sábado", "cerrado"],
-        ["Domingo", "cerrado"]
+      ["Lunes", "cerrado"],
+      ["Martes", "cerrado"],
+      ["Miércoles", "cerrado"],
+      ["Jueves", "cerrado"],
+      ["Viernes", "cerrado"],
+      ["Sábado", "cerrado"],
+      ["Domingo", "cerrado"]
     ];
-
-
 
 
     for (let i = 0; i < openingHoursMonumento.length; i++) {
@@ -481,7 +471,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
                 do {
 
-                    if (data[diaSemana][1] === "cerrado") {
+                    if(data[diaSemana][1]==="cerrado"){
 
                         data[diaSemana][1] = horas;
 
@@ -505,7 +495,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
             for (let j = 0; j < diasSemanaIndice.length; j++) {
 
                 const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
-                if (data[diaSemana][1] === "cerrado") {
+                if(data[diaSemana][1]==="cerrado"){
 
                     data[diaSemana][1] = horas;
 
@@ -518,10 +508,10 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
         } else {
 
-
+           
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
-            if (data[diaSemana][1] === "cerrado") {
+            if(data[diaSemana][1]==="cerrado"){
 
                 data[diaSemana][1] = horas;
 
