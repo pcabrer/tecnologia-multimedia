@@ -11,6 +11,8 @@ function ObtenerNumeroMonumento() {
     return urlParams.get('monumento');
 }
 
+
+
 function obtenerTemperatura(latitud, longitud) {
     var apiKey = '91f45d91a911c4e90b86b1d46fdee1cc';
     var url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latitud + '&lon=' + longitud + '&units=metric&appid=' + apiKey;
@@ -42,14 +44,111 @@ function obtenerTemperatura(latitud, longitud) {
         });
 }
 
-function mapaLeaflet() {
-    // div que contiene la lista de monumentos
+
+function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open("GET", "cafeterias.json", true);
+    xhr2.onreadystatechange = function () {
+        if (xhr2.readyState === 4 && xhr2.status === 200) {
+            //console.log(xhr.responseText);
+            var datos = JSON.parse(xhr2.responseText);
 
 
+            const cafesFiltrados = datos.itemListElement.filter(cafe => {
+                
+                const distancia = calcularDistancia(monumentoLatitud, monumentoLongitud, cafe.geo.latitude, cafe.geo.longitude);
+                return distancia <= 1; // Considerar las cafeterías dentro del radio de 15 km
+            });
+
+            const brownIcon = L.icon({
+                iconUrl: 'assets/img/marcadorCafe.png', // Ruta a la imagen del ícono marrón
+                iconSize: [32, 32], // Tamaño del ícono
+                iconAnchor: [16, 32] // Anclaje del ícono
+            });
+
+            // Crear los marcadores de las cafeterías filtradas
+            cafesFiltrados.forEach((cafe, idx) => {
+                const marker = L.marker([cafe.geo.latitude, cafe.geo.longitude], { icon: brownIcon }).addTo(mymap);
+                console.log(cafe);
+
+                // Crear el popup con la información del café
+                const popupContent = `
+                  <div>
+                    <h2>${cafe.name}</h2>
+                    <p>Dirección: ${cafe.address.streetAddress}</p>
+                    <p><a href="${cafe.url}" target="_blank">Más información</a></p>
+                  </div>
+                `;
+                marker.bindPopup(popupContent);
+            });
+        }
+    };
+    xhr2.send();
+}
+
+function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open("GET", "hotel.json", true);
+    xhr2.onreadystatechange = function () {
+        if (xhr2.readyState === 4 && xhr2.status === 200) {
+            //console.log(xhr.responseText);
+            var datos = JSON.parse(xhr2.responseText);
+
+
+            const hotelesFiltrados = datos.itemListElement.filter(hotel => {
+                
+                const distancia = calcularDistancia(monumentoLatitud, monumentoLongitud, hotel.geo.latitude, hotel.geo.longitude);
+                return distancia <= 10; // Considerar las cafeterías dentro del radio de 15 km
+            });
+
+            const hotelIcon = L.icon({
+                iconUrl: 'assets/img/marcadorHotel.png', // Ruta a la imagen del ícono marrón
+                iconSize: [32, 40], // Tamaño del ícono
+                iconAnchor: [16, 32] // Anclaje del ícono
+            });
+
+            // Crear los marcadores de las cafeterías filtradas
+            hotelesFiltrados.forEach((hotel, idx) => {
+                const marker = L.marker([hotel.geo.latitude, hotel.geo.longitude], { icon: hotelIcon }).addTo(mymap);
+                console.log(hotel);
+
+                // Crear el popup con la información del café
+                const popupContent = `
+                  <div>
+                    <h2>${hotel.name}</h2>
+                    <p>Dirección: ${hotel.address.streetAddress}</p>
+                  </div>
+                `;
+                marker.bindPopup(popupContent);
+            });
+        }
+    };
+    xhr2.send();
 }
 
 
+// Función para calcular la distancia entre dos puntos en la Tierra (fórmula de Haversine)
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+    console.log(lat1, lon1, lat2, lon2);
+    const R = 6371; // Radio de la Tierra en kilómetros
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distancia = R * c;
+    console.log(distancia);
+    return distancia;
+    
+}
 
+
+// Función para convertir grados a radianes
+function toRad(grados) {
+    return grados * Math.PI / 180;
+}
 
 function cargaMonumento(idxMonumento) {
 
@@ -182,8 +281,13 @@ function cargaMonumento(idxMonumento) {
             `;
             marker.bindPopup(popupContent);
 
+            //Cargamos las cafeterias a traves de su función
+            cargaCafeterias(monumento.geo.latitude, monumento.geo.longitude, mymap);
 
+            //Cargamos los Hoteles a través de su función.
+            cargaHoteles(monumento.geo.latitude, monumento.geo.longitude, mymap)
          
+
 
             // Video
 
@@ -208,7 +312,7 @@ function cargaMonumento(idxMonumento) {
 
             const contenedorHorario = document.getElementById('contenedorHorario');
             // Crear la tabla con la clase "table table-striped text-center"
-      
+
 
             // Definir los datos de la tabla
             var data = obtenerDatosTabla(monumento.openingHours);
@@ -223,21 +327,21 @@ function cargaMonumento(idxMonumento) {
                     row.appendChild(cell);
                 }
 
-                if (diaActual()==i) {
-                    if(estaAbierto(monumento.openingHours)){
+                if (diaActual() == i) {
+                    if (estaAbierto(monumento.openingHours)) {
                         row.className = "bg-success";
-                    }else{
+                    } else {
                         row.className = "bg-danger";
                     }
-                  
+
                 }
 
-               tbody.appendChild(row);
+                tbody.appendChild(row);
             }
 
             contenedorHorario.appendChild(tbody);
 
-         
+
 
 
 
@@ -340,13 +444,13 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
 
     var data = [
-      ["Lunes", "cerrado"],
-      ["Martes", "cerrado"],
-      ["Miércoles", "cerrado"],
-      ["Jueves", "cerrado"],
-      ["Viernes", "cerrado"],
-      ["Sábado", "cerrado"],
-      ["Domingo", "cerrado"]
+        ["Lunes", "cerrado"],
+        ["Martes", "cerrado"],
+        ["Miércoles", "cerrado"],
+        ["Jueves", "cerrado"],
+        ["Viernes", "cerrado"],
+        ["Sábado", "cerrado"],
+        ["Domingo", "cerrado"]
     ];
 
 
@@ -360,7 +464,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
         const dias = cadenadias[0]; // primera parte de la cadena
         const horas = cadenadias[1]; // segunda parte de la cadena
 
-    
+
 
         if (dias.includes('-')) {
 
@@ -368,7 +472,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
             const indiceDia1 = obtenerNumeroDiaSemana(diasSemanaRango[0]);
             const indiceDia2 = obtenerNumeroDiaSemana(diasSemanaRango[1]);
 
-          
+
 
             if (indiceDia1 != -1 && indiceDia2 != -1) {
 
@@ -377,14 +481,14 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
                 do {
 
-                    if(data[diaSemana][1]==="cerrado"){
+                    if (data[diaSemana][1] === "cerrado") {
 
-                        data[diaSemana][1]=horas;
-        
-                    }else{
-        
-                        data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
-        
+                        data[diaSemana][1] = horas;
+
+                    } else {
+
+                        data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
+
                     }
 
                     diaSemana = (diaSemana + 1) % 7;
@@ -393,7 +497,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
             }
 
-            
+
         } else if (dias.includes(',')) {
 
             const diasSemanaIndice = dias.split(",");
@@ -401,66 +505,66 @@ function obtenerDatosTabla(openingHoursMonumento) {
             for (let j = 0; j < diasSemanaIndice.length; j++) {
 
                 const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
-                if(data[diaSemana][1]==="cerrado"){
+                if (data[diaSemana][1] === "cerrado") {
 
-                    data[diaSemana][1]=horas;
-    
-                }else{
-    
-                    data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
-    
-                } 
+                    data[diaSemana][1] = horas;
+
+                } else {
+
+                    data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
+
+                }
             }
 
         } else {
 
-           
+
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
-            if(data[diaSemana][1]==="cerrado"){
+            if (data[diaSemana][1] === "cerrado") {
 
-                data[diaSemana][1]=horas;
+                data[diaSemana][1] = horas;
 
-            }else{
+            } else {
 
-                data[diaSemana][1]=data[diaSemana][1]+ "  |  "+ horas;
+                data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
 
             }
-           
-         
+
+
         }
 
 
     }
-    
 
- 
 
-  
+
+
+
     return data;
-  }
+}
 
-  function diaActual() {
+function diaActual() {
 
-   
+
     const dateActual = new Date();
     const diaActual = dateActual.getDay();
-    
 
-    if(diaActual!=0){
 
-        return diaActual-1;
-    }else{
+    if (diaActual != 0) {
+
+        return diaActual - 1;
+    } else {
         return 6;
 
     }
-  
-  
-  }
 
-  function obtenerNumeroDiaSemana(diaSemana) {
+
+}
+
+function obtenerNumeroDiaSemana(diaSemana) {
     var dias = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
     var indice = dias.indexOf(diaSemana);
-    
-   return indice;
-  }
+
+    return indice;
+}
