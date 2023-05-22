@@ -9,6 +9,8 @@ function cargaListaMonumentos() {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
+            var listaElementos = [];
+
             datos.itemListElement.forEach(function (monumento, idx) {
 
 
@@ -88,10 +90,10 @@ function cargaListaMonumentos() {
                     starSpan.classList.add("star");
                     if (i < entero) {
                         starSpan.classList.add("checked");
-                        
-                    } else if(decimal>=5) {
+
+                    } else if (decimal >= 5) {
                         starSpan.classList.add("halfchecked");
-                        decimal=0;
+                        decimal = 0;
 
                     }
                     starSpan.innerHTML = "&#9733;";
@@ -114,7 +116,36 @@ function cargaListaMonumentos() {
                 monumentList.appendChild(div);
 
 
+
+                if (listaElementos.includes(monumento.address.addressLocality)) {
+                    console.log('El elemento ya existe en la lista: ' + monumento.address.addressLocality);
+                } else {
+                    // Añadir el elemento al arreglo
+                    listaElementos.push(monumento.address.addressLocality);
+                    console.log('Elemento añadido: ' + monumento.address.addressLocality);
+                }
+
+
             });
+
+            const listaMunicipios = document.getElementById('listaMunicipios');
+
+            listaElementos.sort();
+
+
+            for (var i = 0; i < listaElementos.length; i++) {
+
+                // Crear el elemento <option>
+                var option = document.createElement("option");
+
+                // Establecer el texto dentro del <option>
+                option.textContent =  listaElementos[i];
+
+           
+                listaMunicipios.appendChild(option);
+            }
+
+
 
 
 
@@ -219,3 +250,4 @@ function estaAbierto(horario) {
 
     return false;
 }
+
