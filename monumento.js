@@ -409,7 +409,7 @@ function cargaMonumento(idxMonumento) {
                     h4.appendChild(span);
 
                     var a = document.createElement("a");
-                    a.href = "https://catedraldemallorca.org/visitas/horarios/";
+                    a.href = evento.url;
                     a.textContent = "Más información";
 
                     divBox.appendChild(h3);
