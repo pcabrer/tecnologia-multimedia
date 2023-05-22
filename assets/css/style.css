@@ -2877,12 +2877,9 @@ text-transform: uppercase;
 
 
 .misFiltros{
-
-  padding: 50px;
-  padding-bottom: 70px;
-
-
-
+  padding-top: 50px;
+  padding: 70px;
+  padding-bottom: 60px;
 }
 
 .misFiltros .tituloFiltro {
