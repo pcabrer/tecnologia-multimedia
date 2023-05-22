@@ -2869,3 +2869,41 @@ text-transform: uppercase;
 
 }
 
+
+/*--------------------------------------------------------------
+# Filtros
+--------------------------------------------------------------*/
+
+
+
+.misFiltros{
+
+  padding: 50px;
+  padding-bottom: 70px;
+
+  position: relative;
+
+}
+
+.misFiltros .tituloFiltro {
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 120px;
+  
+}
+
+.separador {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.miCheck{
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 100px;
+  margin: 0;
+
+}
