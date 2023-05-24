@@ -26,11 +26,14 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="assets/vendor/jquery/jquery-3.7.0.js"></script>
   <script src="./listaMonumentos.js"></script>
+
+
 
   <!-- =======================================================
   * Template Name: Sailor
@@ -94,7 +97,7 @@
 
           <h3 class="tituloFiltro">Municipio:</h3>
           <div class="form-group">
-            <select class="form-control" id="listaMunicipios">
+            <select class="form-select" id="selectorMunicipios">
               <option>Todos</option>
             </select>
           </div>
@@ -103,11 +106,13 @@
         <div class="col-lg-3">
 
           <h3 class="tituloFiltro">Ordenar:</h3>
-          <div class="form-group">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Por valoración</option>
-              <option>Por nombre</option>
+          <div class="form-group mi-form-group">
+            <select class="form-select" id="selectorOrdenar">
+             
+              <option>Nombre</option>
+              <option>Valoración</option>
             </select>
+        
           </div>
           </div><!-- End sidebar search formn-->
         </div>
@@ -116,7 +121,7 @@
 
       <div class="miCheck">
         <label for="scales">solo Abiertos</label>
-        <input type="checkbox" id="scales" name="scales" checked>
+        <input type="checkbox" id="miCheckBox" name="scales">
         
       </div>
      
@@ -127,15 +132,14 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
 
-      
-
       <div class="container">
 
-        <div class="row g-5" id="contenedor-monumentos">
-
+        <div class="row g-5 grid" id="contenedor-monumentos">
+  
 
 
         </div>
+       
 
       </div>
 
@@ -219,6 +223,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>

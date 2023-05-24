@@ -14,9 +14,15 @@ function cargaListaMonumentos() {
             datos.itemListElement.forEach(function (monumento, idx) {
 
 
+                var abierto = estaAbierto(monumento.openingHours);
                 // Crear elemento div con clases col-12 col-md-12 col-lg-6 mr-lg-3 justify-content-center
                 const div = document.createElement('div');
-                div.classList.add('col-12', 'col-md-12', 'col-lg-6', 'mr-lg-3', 'justify-content-center');
+
+                div.classList.add('col-12', 'col-md-12', 'col-lg-6', 'mr-lg-3', 'justify-content-center', 'itemMonumento');
+                div.setAttribute('data-valor', `${monumento.aggregateRating.ratingValue}`);
+                div.setAttribute('data-nombre', `${monumento.name}`);
+                div.setAttribute('data-categoria', `${monumento.address.addressLocality}`);
+                div.setAttribute('data-horario', `${abierto}`);
 
                 // Crear enlace con atributos href y clase monumentos-card-link
                 const enlace = document.createElement('a');
@@ -57,7 +63,7 @@ function cargaListaMonumentos() {
                 // Crear el elemento para mostrar si está abierto o cerrado
                 const openStatusElement = document.createElement("p");
 
-                if (estaAbierto(monumento.openingHours)) {
+                if (abierto) {
                     openStatusElement.classList.add("monumentos-card-abierto");
                     openStatusElement.textContent = "Abierto";
 
@@ -128,7 +134,7 @@ function cargaListaMonumentos() {
 
             });
 
-            const listaMunicipios = document.getElementById('listaMunicipios');
+            const listaMunicipios = document.getElementById('selectorMunicipios');
 
             listaElementos.sort();
 
@@ -139,22 +145,25 @@ function cargaListaMonumentos() {
                 var option = document.createElement("option");
 
                 // Establecer el texto dentro del <option>
-                option.textContent =  listaElementos[i];
+                option.textContent = listaElementos[i];
 
-           
+
                 listaMunicipios.appendChild(option);
             }
 
-
-
-
-
         }
+
+        ordenarPorNombre();
 
     };
 
+
     xhr.send();
+
+
+
 }
+
 
 function estaAbierto(horario) {
 
@@ -249,5 +258,117 @@ function estaAbierto(horario) {
     }
 
     return false;
+}
+
+$(document).ready(function () {
+
+    var categoriaSeleccionada = 'Todos';
+    var soloAbierto = false;
+
+    // Seleccionar el elemento select por su ID
+    $('#selectorOrdenar').change(function () {
+        // Obtener el valor de la opción seleccionada
+        var opcionSeleccionada = $(this).val();
+
+        // Hacer algo con la opción seleccionada
+        console.log('Se seleccionó la opción: ' + opcionSeleccionada);
+
+        // Ejecutar una función o realizar otras acciones según la opción seleccionada
+        if (opcionSeleccionada === 'Nombre') {
+
+            ordenarPorNombre();
+
+        } else if (opcionSeleccionada === 'Valoración') {
+
+            ordenarPorValoracion();
+
+        }
+    });
+
+    $('#selectorMunicipios').on('change', function () {
+        categoriaSeleccionada = $(this).val(); // Obtener el valor de la opción seleccionada
+        filtros(categoriaSeleccionada,soloAbierto);
+    });
+
+    $('#miCheckBox').on('change', function () {
+         soloAbierto = $(this).is(':checked'); // Obtener el estado del checkbox
+        filtros(categoriaSeleccionada,soloAbierto);
+    });
+});
+
+
+function filtros(categoria, soloAbierto) {
+
+    $('.itemMonumento').hide(); // Ocultar todos los divs
+
+    if (categoria === 'Todos') {
+
+        if (soloAbierto) {
+
+            $('.itemMonumento[data-horario="true"]').show();
+
+        } else {
+            $('.itemMonumento').show(); // Mostrar todos los divs si se selecciona "Todos"
+        }
+
+    } else {
+
+        if (soloAbierto) {
+
+            $('.itemMonumento[data-horario="true"][data-categoria="' + categoria+ '"]').show();
+
+        } else {
+            $('.itemMonumento[data-categoria="' + categoria+ '"]').show();
+        }
+
+
+    }
+
+
+}
+
+
+
+
+function ordenarPorValoracion() {
+
+    var $list = $('#contenedor-monumentos');
+    var $items = $list.children('.itemMonumento');
+
+    $items.sort(function (a, b) {
+        var valorA = parseFloat($(a).data('valor'));
+        var valorB = parseFloat($(b).data('valor'));
+
+        return valorB - valorA; // Orden ascendente
+        // Para orden descendente, usar: return valorB - valorA;
+    });
+
+    // Agregar los divs ordenados nuevamente a la lista
+    $list.append($items);
+}
+
+function ordenarPorNombre() {
+
+
+
+    var $list = $('#contenedor-monumentos');
+    var $items = $list.children('.itemMonumento');
+
+    $items.sort(function (a, b) {
+        var nombreA = $(a).data('nombre').toUpperCase();
+        var nombreB = $(b).data('nombre').toUpperCase();
+
+
+        if (nombreA < nombreB) {
+            return -1; // a debe colocarse antes que b
+        } else if (nombreA > nombreB) {
+            return 1; // a debe colocarse después que b
+        } else {
+            return 0; // el orden de a y b no cambia
+        }
+    });
+
+    // Agregar los divs ordenados nuevamente a la lista
+    $list.append($items);
 }
 
