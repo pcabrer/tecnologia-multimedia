@@ -153,7 +153,6 @@ function cargaListaMonumentos() {
 
         }
 
-        ordenarPorNombre();
 
     };
 
@@ -277,12 +276,15 @@ $(document).ready(function () {
         if (opcionSeleccionada === 'Nombre') {
 
             ordenarPorNombre();
+            filtros(categoriaSeleccionada,soloAbierto);
 
         } else if (opcionSeleccionada === 'Valoración') {
 
             ordenarPorValoracion();
+            filtros(categoriaSeleccionada,soloAbierto);
 
         }
+
     });
 
     $('#selectorMunicipios').on('change', function () {
@@ -299,39 +301,36 @@ $(document).ready(function () {
 
 function filtros(categoria, soloAbierto) {
 
-    $('.itemMonumento').hide(); // Ocultar todos los divs
+    $('.itemMonumento').fadeOut(); // Ocultar todos los divs
 
     if (categoria === 'Todos') {
 
         if (soloAbierto) {
 
-            $('.itemMonumento[data-horario="true"]').show();
+            $('.itemMonumento[data-horario="true"]').fadeIn("slow");
 
         } else {
-            $('.itemMonumento').show(); // Mostrar todos los divs si se selecciona "Todos"
+            $('.itemMonumento').fadeIn("slow");// Mostrar todos los divs si se selecciona "Todos"
         }
 
     } else {
 
         if (soloAbierto) {
 
-            $('.itemMonumento[data-horario="true"][data-categoria="' + categoria+ '"]').show();
+            $('.itemMonumento[data-horario="true"][data-categoria="' + categoria+ '"]').fadeIn("slow");
 
         } else {
-            $('.itemMonumento[data-categoria="' + categoria+ '"]').show();
+            $('.itemMonumento[data-categoria="' + categoria+ '"]').fadeIn("slow");
         }
 
-
     }
-
 
 }
 
 
-
-
 function ordenarPorValoracion() {
 
+    $('.itemMonumento').hide(); // Ocultar todos los divs
     var $list = $('#contenedor-monumentos');
     var $items = $list.children('.itemMonumento');
 
@@ -345,12 +344,12 @@ function ordenarPorValoracion() {
 
     // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
+    
 }
 
 function ordenarPorNombre() {
 
-
-
+    $('.itemMonumento').hide(); // Ocultar todos los divs
     var $list = $('#contenedor-monumentos');
     var $items = $list.children('.itemMonumento');
 
@@ -370,5 +369,7 @@ function ordenarPorNombre() {
 
     // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
+ 
 }
+
 
