@@ -55,7 +55,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
 
 
             const cafesFiltrados = datos.itemListElement.filter(cafe => {
-                
+
                 const distancia = calcularDistancia(monumentoLatitud, monumentoLongitud, cafe.geo.latitude, cafe.geo.longitude);
                 return distancia <= 1; // Considerar las cafeterías dentro del radio de 15 km
             });
@@ -96,7 +96,7 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
 
 
             const hotelesFiltrados = datos.itemListElement.filter(hotel => {
-                
+
                 const distancia = calcularDistancia(monumentoLatitud, monumentoLongitud, hotel.geo.latitude, hotel.geo.longitude);
                 return distancia <= 10; // Considerar las cafeterías dentro del radio de 15 km
             });
@@ -141,7 +141,7 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
     const distancia = R * c;
     console.log(distancia);
     return distancia;
-    
+
 }
 
 
@@ -286,7 +286,7 @@ function cargaMonumento(idxMonumento) {
 
             //Cargamos los Hoteles a través de su función.
             cargaHoteles(monumento.geo.latitude, monumento.geo.longitude, mymap)
-         
+
 
 
             // Video
@@ -425,6 +425,119 @@ function cargaMonumento(idxMonumento) {
 
             }
 
+            // ---- Apartado información extra
+
+            const contenedorInformacion = document.getElementById('contenedorInformacion');
+            // teléfono
+            if (monumento.telephone) {
+
+                // Crear el elemento div principal con la clase "col-md-4 mt-4 mt-md-0"
+                const divElement = document.createElement('div');
+                divElement.className = 'col-md-4 mt-4 mt-md-0';
+
+                // Crear el elemento div con la clase "icon-box" dentro del div principal
+                const iconBoxElement = document.createElement('div');
+                iconBoxElement.className = 'icon-box';
+
+                // Crear el elemento <i> con la clase "bi bi-telephone" dentro del div icon-box
+                const iElement = document.createElement('i');
+                iElement.className = 'bi bi-telephone';
+                iconBoxElement.appendChild(iElement);
+
+                // Crear el elemento <h4> con un enlace dentro del div icon-box
+                const h4Element = document.createElement('h4');
+                const aElement = document.createElement('a');
+                aElement.href = '#';
+                aElement.textContent = 'Teléfono';
+                h4Element.appendChild(aElement);
+                iconBoxElement.appendChild(h4Element);
+
+                // Crear el elemento <p> con el texto de contacto dentro del div icon-box
+                const pElement = document.createElement('p');
+                pElement.textContent = 'Teléfono de contacto:'+monumento.telephone;
+                iconBoxElement.appendChild(pElement);
+
+                // Agregar el div icon-box al div principal
+                divElement.appendChild(iconBoxElement);
+
+                contenedorInformacion.appendChild(divElement);
+
+            }
+
+            // Página oficial
+            if (monumento.mainEntityOfPage) {
+
+                // Crear el elemento div principal con la clase "col-md-4 mt-4 mt-md-0"
+                const divElement = document.createElement('div');
+                divElement.className = 'col-md-4 mt-4 mt-md-0';
+
+                // Crear el elemento div con la clase "icon-box" dentro del div principal
+                const iconBoxElement = document.createElement('div');
+                iconBoxElement.className = 'icon-box';
+
+                // Crear el elemento <i> con la clase "bi bi-telephone" dentro del div icon-box
+                const iElement = document.createElement('i');
+                iElement.className = 'bi bi-bank';
+                iconBoxElement.appendChild(iElement);
+
+                // Crear el elemento <h4> con un enlace dentro del div icon-box
+                const h4Element = document.createElement('h4');
+                const aElement = document.createElement('a');
+                aElement.href = monumento.mainEntityOfPage;
+                aElement.textContent = 'Página web oficial';
+                h4Element.appendChild(aElement);
+                iconBoxElement.appendChild(h4Element);
+
+                // Crear el elemento <p> con el texto de contacto dentro del div icon-box
+                const pElement = document.createElement('p');
+                pElement.textContent = 'Visita la página web oficial del monumento';
+                iconBoxElement.appendChild(pElement);
+
+                // Agregar el div icon-box al div principal
+                divElement.appendChild(iconBoxElement);
+
+                contenedorInformacion.appendChild(divElement);
+
+
+            }
+
+            // Más información
+            if (monumento.sameAs) {
+
+                 // Crear el elemento div principal con la clase "col-md-4 mt-4 mt-md-0"
+                 const divElement = document.createElement('div');
+                 divElement.className = 'col-md-4 mt-4 mt-md-0';
+ 
+                 // Crear el elemento div con la clase "icon-box" dentro del div principal
+                 const iconBoxElement = document.createElement('div');
+                 iconBoxElement.className = 'icon-box';
+ 
+                 // Crear el elemento <i> con la clase "bi bi-telephone" dentro del div icon-box
+                 const iElement = document.createElement('i');
+                 iElement.className = 'bi bi-info-circle';
+                 iconBoxElement.appendChild(iElement);
+ 
+                 // Crear el elemento <h4> con un enlace dentro del div icon-box
+                 const h4Element = document.createElement('h4');
+                 const aElement = document.createElement('a');
+                 aElement.href = monumento.sameAs;
+                 aElement.textContent = 'Información adicional';
+                 h4Element.appendChild(aElement);
+                 iconBoxElement.appendChild(h4Element);
+ 
+                 // Crear el elemento <p> con el texto de contacto dentro del div icon-box
+                 const pElement = document.createElement('p');
+                 pElement.textContent = 'Visita más información sobre este monumento';
+                 iconBoxElement.appendChild(pElement);
+ 
+                 // Agregar el div icon-box al div principal
+                 divElement.appendChild(iconBoxElement);
+ 
+                 contenedorInformacion.appendChild(divElement);
+
+
+            }
+
         };
 
     }
@@ -436,13 +549,13 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
 
     var data = [
-      ["Lunes", "Cerrado"],
-      ["Martes", "Cerrado"],
-      ["Miércoles", "Cerrado"],
-      ["Jueves", "Cerrado"],
-      ["Viernes", "Cerrado"],
-      ["Sábado", "Cerrado"],
-      ["Domingo", "Cerrado"]
+        ["Lunes", "Cerrado"],
+        ["Martes", "Cerrado"],
+        ["Miércoles", "Cerrado"],
+        ["Jueves", "Cerrado"],
+        ["Viernes", "Cerrado"],
+        ["Sábado", "Cerrado"],
+        ["Domingo", "Cerrado"]
     ];
 
 
@@ -471,7 +584,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
                 do {
 
-                    if(data[diaSemana][1]==="Cerrado"){
+                    if (data[diaSemana][1] === "Cerrado") {
 
                         data[diaSemana][1] = horas;
 
@@ -495,7 +608,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
             for (let j = 0; j < diasSemanaIndice.length; j++) {
 
                 const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
-                if(data[diaSemana][1]==="Cerrado"){
+                if (data[diaSemana][1] === "Cerrado") {
 
                     data[diaSemana][1] = horas;
 
@@ -508,10 +621,10 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
         } else {
 
-           
+
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
-            if(data[diaSemana][1]==="Cerrado"){
+            if (data[diaSemana][1] === "Cerrado") {
 
                 data[diaSemana][1] = horas;
 

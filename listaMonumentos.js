@@ -276,14 +276,16 @@ $(document).ready(function () {
         if (opcionSeleccionada === 'Nombre') {
 
             ordenarPorNombre();
-            filtros(categoriaSeleccionada,soloAbierto);
+            
 
         } else if (opcionSeleccionada === 'Valoración') {
 
             ordenarPorValoracion();
-            filtros(categoriaSeleccionada,soloAbierto);
+           
 
         }
+
+        filtros(categoriaSeleccionada,soloAbierto);
 
     });
 
