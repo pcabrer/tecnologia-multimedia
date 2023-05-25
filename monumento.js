@@ -490,7 +490,7 @@ function cargaMonumento(idxMonumento) {
 
                 // Crear el elemento <p> con el texto de contacto dentro del div icon-box
                 const pElement = document.createElement('p');
-                pElement.textContent = 'Visita la página web oficial del monumento';
+                pElement.textContent = 'Visita la página web oficial del monumento.';
                 iconBoxElement.appendChild(pElement);
 
                 // Agregar el div icon-box al div principal
@@ -527,7 +527,7 @@ function cargaMonumento(idxMonumento) {
  
                  // Crear el elemento <p> con el texto de contacto dentro del div icon-box
                  const pElement = document.createElement('p');
-                 pElement.textContent = 'Visita más información sobre este monumento';
+                 pElement.textContent = 'Visita más información sobre este monumento.';
                  iconBoxElement.appendChild(pElement);
  
                  // Agregar el div icon-box al div principal
