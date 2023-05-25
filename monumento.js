@@ -69,7 +69,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
             // Crear los marcadores de las cafeterías filtradas
             cafesFiltrados.forEach((cafe, idx) => {
                 const marker = L.marker([cafe.geo.latitude, cafe.geo.longitude], { icon: brownIcon }).addTo(mymap);
-                console.log(cafe);
+             
 
                 // Crear el popup con la información del café
                 const popupContent = `
@@ -110,7 +110,6 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
             // Crear los marcadores de las cafeterías filtradas
             hotelesFiltrados.forEach((hotel, idx) => {
                 const marker = L.marker([hotel.geo.latitude, hotel.geo.longitude], { icon: hotelIcon }).addTo(mymap);
-                console.log(hotel);
 
                 // Crear el popup con la información del café
                 const popupContent = `
@@ -126,10 +125,53 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.send();
 }
 
+function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open("GET", "supermercat.json", true);
+    xhr2.onreadystatechange = function () {
+        if (xhr2.readyState === 4 && xhr2.status === 200) {
+            //console.log(xhr.responseText);
+            var datos = JSON.parse(xhr2.responseText);
+
+
+            const supermercadosFiltrados = datos.itemListElement.filter(supermercado => {
+
+                const distancia = calcularDistancia(monumentoLatitud, monumentoLongitud, supermercado.geo.latitude, supermercado.geo.longitude);
+                return distancia <= 10; // Considerar las cafeterías dentro del radio de 15 km
+            });
+
+            const brownIcon = L.icon({
+                iconUrl: 'assets/img/marcadorSupermercado.png', // Ruta a la imagen del ícono marrón
+                iconSize: [32, 32], // Tamaño del ícono
+                iconAnchor: [16, 32] // Anclaje del ícono
+            });
+
+            console.log(supermercadosFiltrados);
+            // Crear los marcadores de las cafeterías filtradas
+            supermercadosFiltrados.forEach((supermercado, idx) => {
+                const marker = L.marker([supermercado.geo.latitude, supermercado.geo.longitude], { icon: brownIcon }).addTo(mymap);
+                console.log(supermercado);
+                console.log("caca4");
+
+                // Crear el popup con la información del café
+                const popupContent = `
+                  <div>
+                    <h2>${supermercado.name}</h2>
+                    <p>Dirección: ${supermercado.address.streetAddress}</p>
+                    <img src="${supermercado.url}" style="width: 100%;" >
+                  </div>
+                `;
+                marker.bindPopup(popupContent);
+                console.log(supermercado.name);
+            });
+        }
+    };
+    xhr2.send();
+}
+
 
 // Función para calcular la distancia entre dos puntos en la Tierra (fórmula de Haversine)
 function calcularDistancia(lat1, lon1, lat2, lon2) {
-    console.log(lat1, lon1, lat2, lon2);
     const R = 6371; // Radio de la Tierra en kilómetros
     const dLat = toRad(lat2 - lat1);
     const dLon = toRad(lon2 - lon1);
@@ -139,7 +181,6 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
         Math.sin(dLon / 2) * Math.sin(dLon / 2);
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     const distancia = R * c;
-    console.log(distancia);
     return distancia;
 
 }
@@ -161,7 +202,7 @@ function cargaMonumento(idxMonumento) {
 
             const monumento = datos.itemListElement[idxMonumento];
 
-
+            
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
 
@@ -173,9 +214,6 @@ function cargaMonumento(idxMonumento) {
 
             const puebloMonumento = document.getElementById('puebloMonumento');
             puebloMonumento.innerText = monumento.address.addressLocality;;
-
-
-
 
             const val = document.getElementById('valoracion');
             // creamos el elemento span con clase "rating" y contenido de texto "4,1"
@@ -285,7 +323,10 @@ function cargaMonumento(idxMonumento) {
             cargaCafeterias(monumento.geo.latitude, monumento.geo.longitude, mymap);
 
             //Cargamos los Hoteles a través de su función.
-            cargaHoteles(monumento.geo.latitude, monumento.geo.longitude, mymap)
+            cargaHoteles(monumento.geo.latitude, monumento.geo.longitude, mymap);
+
+            //Cargamos los Supermercados a través de su función.
+            cargaSupermercados(monumento.geo.latitude, monumento.geo.longitude, mymap);
 
 
 
@@ -454,7 +495,7 @@ function cargaMonumento(idxMonumento) {
 
                 // Crear el elemento <p> con el texto de contacto dentro del div icon-box
                 const pElement = document.createElement('p');
-                pElement.textContent = 'Teléfono de contacto:'+monumento.telephone;
+                pElement.innerHTML = 'Teléfono de contacto: <br>'+monumento.telephone;
                 iconBoxElement.appendChild(pElement);
 
                 // Agregar el div icon-box al div principal
