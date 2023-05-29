@@ -69,7 +69,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
             // Crear los marcadores de las cafeterías filtradas
             cafesFiltrados.forEach((cafe, idx) => {
                 const marker = L.marker([cafe.geo.latitude, cafe.geo.longitude], { icon: brownIcon }).addTo(mymap);
-             
+
 
                 // Crear el popup con la información del café
                 const popupContent = `
@@ -202,7 +202,7 @@ function cargaMonumento(idxMonumento) {
 
             const monumento = datos.itemListElement[idxMonumento];
 
-            
+
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
 
@@ -495,7 +495,7 @@ function cargaMonumento(idxMonumento) {
 
                 // Crear el elemento <p> con el texto de contacto dentro del div icon-box
                 const pElement = document.createElement('p');
-                pElement.innerHTML = 'Teléfono de contacto: <br>'+monumento.telephone;
+                pElement.innerHTML = 'Teléfono de contacto: <br>' + monumento.telephone;
                 iconBoxElement.appendChild(pElement);
 
                 // Agregar el div icon-box al div principal
@@ -545,36 +545,36 @@ function cargaMonumento(idxMonumento) {
             // Más información
             if (monumento.sameAs) {
 
-                 // Crear el elemento div principal con la clase "col-md-4 mt-4 mt-md-0"
-                 const divElement = document.createElement('div');
-                 divElement.className = 'col-md-4 mt-4 mt-md-0';
- 
-                 // Crear el elemento div con la clase "icon-box" dentro del div principal
-                 const iconBoxElement = document.createElement('div');
-                 iconBoxElement.className = 'icon-box';
- 
-                 // Crear el elemento <i> con la clase "bi bi-telephone" dentro del div icon-box
-                 const iElement = document.createElement('i');
-                 iElement.className = 'bi bi-info-circle';
-                 iconBoxElement.appendChild(iElement);
- 
-                 // Crear el elemento <h4> con un enlace dentro del div icon-box
-                 const h4Element = document.createElement('h4');
-                 const aElement = document.createElement('a');
-                 aElement.href = monumento.sameAs;
-                 aElement.textContent = 'Información adicional';
-                 h4Element.appendChild(aElement);
-                 iconBoxElement.appendChild(h4Element);
- 
-                 // Crear el elemento <p> con el texto de contacto dentro del div icon-box
-                 const pElement = document.createElement('p');
-                 pElement.textContent = 'Visita más información sobre este monumento.';
-                 iconBoxElement.appendChild(pElement);
- 
-                 // Agregar el div icon-box al div principal
-                 divElement.appendChild(iconBoxElement);
- 
-                 contenedorInformacion.appendChild(divElement);
+                // Crear el elemento div principal con la clase "col-md-4 mt-4 mt-md-0"
+                const divElement = document.createElement('div');
+                divElement.className = 'col-md-4 mt-4 mt-md-0';
+
+                // Crear el elemento div con la clase "icon-box" dentro del div principal
+                const iconBoxElement = document.createElement('div');
+                iconBoxElement.className = 'icon-box';
+
+                // Crear el elemento <i> con la clase "bi bi-telephone" dentro del div icon-box
+                const iElement = document.createElement('i');
+                iElement.className = 'bi bi-info-circle';
+                iconBoxElement.appendChild(iElement);
+
+                // Crear el elemento <h4> con un enlace dentro del div icon-box
+                const h4Element = document.createElement('h4');
+                const aElement = document.createElement('a');
+                aElement.href = monumento.sameAs;
+                aElement.textContent = 'Información adicional';
+                h4Element.appendChild(aElement);
+                iconBoxElement.appendChild(h4Element);
+
+                // Crear el elemento <p> con el texto de contacto dentro del div icon-box
+                const pElement = document.createElement('p');
+                pElement.textContent = 'Visita más información sobre este monumento.';
+                iconBoxElement.appendChild(pElement);
+
+                // Agregar el div icon-box al div principal
+                divElement.appendChild(iconBoxElement);
+
+                contenedorInformacion.appendChild(divElement);
 
 
             }
@@ -712,3 +712,76 @@ function obtenerNumeroDiaSemana(diaSemana) {
 
     return indice;
 }
+
+
+function getMousePosition(event) {
+
+    var rangoMinimo = 0; // El número mínimo en el nuevo rango
+    var rangoMaximo = 10; // El número máximo en el nuevo rango
+
+    var boundingRect = event.currentTarget.getBoundingClientRect();
+    var mouseX = event.clientX - boundingRect.left;
+ 
+
+    var numeroConvertido = (mouseX / 128) * (rangoMaximo - rangoMinimo) + rangoMinimo;
+
+    if(numeroConvertido>=0){
+
+
+        var numeroEstrellas = numeroConvertido / 2;
+    numeroEstrellas = redondearNumero(numeroEstrellas);
+        var enteroEstrellas = Math.floor(numeroEstrellas); // Obtener la parte entera del número
+        var decimalEstrellas = numeroEstrellas - enteroEstrellas; // Obtener la parte decimal del número
+    
+      console.log(decimalEstrellas);
+      console.log(enteroEstrellas);
+        var estrellas = document.getElementsByClassName("mistar");
+    
+        // Eliminar todas las clases "selected"
+        for (var i = 0; i < estrellas.length; i++) {
+            estrellas[i].classList.remove("checked");
+            estrellas[i].classList.remove("halfchecked");
+        }
+    
+        var indice=0;
+    
+        for (var i = 0; i < enteroEstrellas; i++) {
+    
+            estrellas[i].classList.add("checked");
+            indice = i;
+        }
+    
+        if(decimalEstrellas>=0.5&&enteroEstrellas<5){
+    
+            estrellas[i].classList.add("halfchecked");
+        }
+    
+        
+    
+        var numeroValoracion = document.getElementById("numeroValoracion");
+        var numero = Math.abs(redondearNumero(numeroEstrellas));
+        numeroValoracion.textContent = numero.toFixed(1);
+    
+
+
+    }
+
+
+   
+
+
+
+}
+
+function redondearNumero(numero) {
+    // Multiplica el número por 2 para que el redondeo sea a múltiplos de 0.5
+    var multiplicadoPorDos = numero * 2;
+  
+    // Redondea al número entero más cercano
+    var redondeado = Math.round(multiplicadoPorDos);
+  
+    // Divide el número redondeado entre 2 para obtener el resultado final
+    var resultado = redondeado / 2;
+  
+    return resultado;
+  }

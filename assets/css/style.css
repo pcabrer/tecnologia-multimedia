@@ -1499,6 +1499,28 @@ section {
   text-align: right;
 }
 
+.valoracionEstrellas{
+
+  text-align: right;
+  padding-right: 10px;
+}
+
+.mi-a{
+
+  text-decoration: none;
+  color: #111;
+  width: 124px;
+
+
+}
+
+
+.mi-a:hover {
+  
+  text-decoration: none;
+  color: #111;
+  transform: scale(1.5);
+}
 
 .blog .entry .entry-img {
   max-height: 440px;
