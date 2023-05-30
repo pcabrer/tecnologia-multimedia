@@ -263,6 +263,7 @@ $(document).ready(function () {
 
     var categoriaSeleccionada = 'Todos';
     var soloAbierto = false;
+    var texto = '';
 
     // Seleccionar el elemento select por su ID
     $('#selectorOrdenar').change(function () {
@@ -276,58 +277,106 @@ $(document).ready(function () {
         if (opcionSeleccionada === 'Nombre') {
 
             ordenarPorNombre();
-            
+
 
         } else if (opcionSeleccionada === 'Valoración') {
 
             ordenarPorValoracion();
-           
+
 
         }
 
-        filtros(categoriaSeleccionada,soloAbierto);
+        filtros(categoriaSeleccionada, soloAbierto, texto);
 
     });
 
     $('#selectorMunicipios').on('change', function () {
         categoriaSeleccionada = $(this).val(); // Obtener el valor de la opción seleccionada
-        filtros(categoriaSeleccionada,soloAbierto);
+        filtros(categoriaSeleccionada, soloAbierto, texto);
     });
 
     $('#miCheckBox').on('change', function () {
-         soloAbierto = $(this).is(':checked'); // Obtener el estado del checkbox
-        filtros(categoriaSeleccionada,soloAbierto);
+        soloAbierto = $(this).is(':checked'); // Obtener el estado del checkbox
+        filtros(categoriaSeleccionada, soloAbierto, texto);
     });
+
+    $('#Buscador').on('change', function () {
+        texto = $(this).val(); // Obtener el valor de la opción seleccionada
+        filtros(categoriaSeleccionada, soloAbierto, texto);
+
+    });
+
+
 });
 
 
-function filtros(categoria, soloAbierto) {
+
+function filtros(categoria, soloAbierto, texto) {
+
 
     $('.itemMonumento').fadeOut(); // Ocultar todos los divs
 
     if (categoria === 'Todos') {
-
         if (soloAbierto) {
-
-            $('.itemMonumento[data-horario="true"]').fadeIn("slow");
-
+            $('.itemMonumento[data-horario="true"]').fadeIn("slow", function () {
+                filtradoPorNombre(texto);
+            });
         } else {
-            $('.itemMonumento').fadeIn("slow");// Mostrar todos los divs si se selecciona "Todos"
+            $('.itemMonumento').fadeIn("slow", function () {
+                filtradoPorNombre(texto);
+            });
         }
-
     } else {
-
         if (soloAbierto) {
-
-            $('.itemMonumento[data-horario="true"][data-categoria="' + categoria+ '"]').fadeIn("slow");
-
+            $('.itemMonumento[data-horario="true"][data-categoria="' + categoria + '"]').fadeIn("slow", function () {
+                filtradoPorNombre(texto);
+            });
         } else {
-            $('.itemMonumento[data-categoria="' + categoria+ '"]').fadeIn("slow");
+            $('.itemMonumento[data-categoria="' + categoria + '"]').fadeIn("slow", function () {
+                filtradoPorNombre(texto);
+            });
         }
-
     }
 
+
+
 }
+
+function filtradoPorNombre(texto) {
+
+    if (texto.length > 0) {
+        console.log("------------------------------------------------------------------------------------------------------------------------");
+        var $list = $('#contenedor-monumentos');
+        var $items = $list.children('.itemMonumento:visible');
+        $items.each(function (index, element) {
+            // Accede a cada monumento visible individualmente dentro del bucle
+            var $item = $(element);
+
+            var textoMonumento = $item.data('nombre').toLowerCase().replace(/\s/g, '');
+
+
+            var textoBuscador = texto.toLowerCase().replace(/\s/g, '');
+
+            if (textoMonumento.indexOf(textoBuscador) === -1) {
+
+                $item.fadeOut(0);
+                console.log(textoMonumento);
+                console.log("eliminado");
+
+
+            } else {
+
+
+                console.log(textoMonumento);
+                console.log("Lo incluye")
+            }
+
+        });
+    }
+
+
+}
+
 
 
 function ordenarPorValoracion() {
@@ -346,7 +395,7 @@ function ordenarPorValoracion() {
 
     // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
-    
+
 }
 
 function ordenarPorNombre() {
@@ -371,7 +420,7 @@ function ordenarPorNombre() {
 
     // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
- 
+
 }
 
 
