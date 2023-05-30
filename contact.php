@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
     $mensaje = $_POST['mensaje'];
 
     // Configura los detalles del correo electrónico
-    $destinatario = 'tudirecciondecorreo@example.com'; // Cambia esto por tu dirección de correo electrónico
+    $destinatario = 'p.cabrer.007@hotmail.es'; 
     $asunto = 'Nuevo mensaje de contacto';
 
     // Construye el cuerpo del mensaje
