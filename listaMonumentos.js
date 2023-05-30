@@ -151,6 +151,7 @@ function cargaListaMonumentos() {
                 listaMunicipios.appendChild(option);
             }
 
+            imprimirNumeroResultados();
         }
 
 
@@ -158,6 +159,8 @@ function cargaListaMonumentos() {
 
 
     xhr.send();
+
+    
 
 
 
@@ -265,6 +268,7 @@ $(document).ready(function () {
     var soloAbierto = false;
     var texto = '';
 
+
     // Seleccionar el elemento select por su ID
     $('#selectorOrdenar').change(function () {
         // Obtener el valor de la opción seleccionada
@@ -287,22 +291,26 @@ $(document).ready(function () {
         }
 
         filtros(categoriaSeleccionada, soloAbierto, texto);
+        
 
     });
 
     $('#selectorMunicipios').on('change', function () {
         categoriaSeleccionada = $(this).val(); // Obtener el valor de la opción seleccionada
         filtros(categoriaSeleccionada, soloAbierto, texto);
+        
     });
 
     $('#miCheckBox').on('change', function () {
         soloAbierto = $(this).is(':checked'); // Obtener el estado del checkbox
         filtros(categoriaSeleccionada, soloAbierto, texto);
+        
     });
 
     $('#Buscador').on('change', function () {
         texto = $(this).val(); // Obtener el valor de la opción seleccionada
         filtros(categoriaSeleccionada, soloAbierto, texto);
+       
 
     });
 
@@ -320,20 +328,24 @@ function filtros(categoria, soloAbierto, texto) {
         if (soloAbierto) {
             $('.itemMonumento[data-horario="true"]').fadeIn("slow", function () {
                 filtradoPorNombre(texto);
+                imprimirNumeroResultados();
             });
         } else {
             $('.itemMonumento').fadeIn("slow", function () {
                 filtradoPorNombre(texto);
+                imprimirNumeroResultados();
             });
         }
     } else {
         if (soloAbierto) {
             $('.itemMonumento[data-horario="true"][data-categoria="' + categoria + '"]').fadeIn("slow", function () {
                 filtradoPorNombre(texto);
+                imprimirNumeroResultados();
             });
         } else {
             $('.itemMonumento[data-categoria="' + categoria + '"]').fadeIn("slow", function () {
                 filtradoPorNombre(texto);
+                imprimirNumeroResultados();
             });
         }
     }
@@ -359,7 +371,7 @@ function filtradoPorNombre(texto) {
 
             if (textoMonumento.indexOf(textoBuscador) === -1) {
 
-                $item.fadeOut(0);
+                $item.hide();
                 console.log(textoMonumento);
                 console.log("eliminado");
 
@@ -373,6 +385,8 @@ function filtradoPorNombre(texto) {
 
         });
     }
+
+    
 
 
 }
@@ -420,6 +434,37 @@ function ordenarPorNombre() {
 
     // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
+
+}
+
+function imprimirNumeroResultados() {
+
+    var resultado = 0;
+
+    var $list = $('#contenedor-monumentos');
+    var $items = $list.children('.itemMonumento:visible');
+    $items.each(function (index, element) {
+
+        resultado++;
+    });
+
+    var miParrafo = document.getElementById('textoNumeroMonumentos');
+    if (resultado > 0) {
+
+        if (resultado === 1) {
+
+            miParrafo.textContent = resultado + " Resultado";
+        } else {
+            miParrafo.textContent = resultado + " Resultados";
+
+        }
+
+    } else {
+        miParrafo.textContent = "No hay monumentos con estas características";
+
+    }
+
+
 
 }
 
