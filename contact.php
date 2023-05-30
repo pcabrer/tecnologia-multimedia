@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     // Recopila los datos del formulario
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
     $mensaje = $_POST['mensaje'];
 
     // Configura los detalles del correo electrónico
-    $destinatario = 'p.cabrer.007@hotmail.es'; 
+    $destinatario = 'p.cabrer.007@hotmail.es';
     $asunto = 'Nuevo mensaje de contacto';
 
     // Construye el cuerpo del mensaje
@@ -21,5 +21,9 @@ if(isset($_POST['submit'])) {
 
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 }
 ?>
