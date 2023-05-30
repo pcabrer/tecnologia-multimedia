@@ -58,7 +58,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.svg" alt="" height="60"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -248,9 +248,9 @@
         <div class="col-lg-6">
           <div class="container">
             <div>
-              <video width="100%">
-                <source src="assets/video/presentación.mp4" type="video/mp4">
-                <source src="assets/video/presentación.ogg" type="video/ogg">
+              <video controls width="100%">
+                <source src="assets/video/presentacion.mp4" type="video/mp4">
+                <source src="assets/video/presentacion.webm" type="video/webm">
               Your browser does not support the video tag.
               </video>
             </div>
@@ -283,8 +283,7 @@
         </div>
 
         <div class="col-lg-8 mt-5 mt-lg-0">
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="nombre" class="form-control" id="name" placeholder="Tu Nombre" required>
@@ -304,11 +303,9 @@
               <div class="error-message"></div>
               <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
             </div>
-            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            <div class="text-center"><button type="submit" name="submit">Enviar mensaje</button></div>
           </form>
-
         </div>
-
       </div>
 
     </div>

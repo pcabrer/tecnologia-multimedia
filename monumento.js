@@ -202,6 +202,9 @@ function cargaMonumento(idxMonumento) {
 
             const monumento = datos.itemListElement[idxMonumento];
 
+            //JSON-LD
+            initJSONLD(monumento);
+
 
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
@@ -721,53 +724,53 @@ function getMousePosition(event) {
 
     var boundingRect = event.currentTarget.getBoundingClientRect();
     var mouseX = event.clientX - boundingRect.left;
- 
+
 
     var numeroConvertido = (mouseX / 128) * (rangoMaximo - rangoMinimo) + rangoMinimo;
 
-    if(numeroConvertido>=0){
+    if (numeroConvertido >= 0) {
 
 
         var numeroEstrellas = numeroConvertido / 2;
-    numeroEstrellas = redondearNumero(numeroEstrellas);
+        numeroEstrellas = redondearNumero(numeroEstrellas);
         var enteroEstrellas = Math.floor(numeroEstrellas); // Obtener la parte entera del número
         var decimalEstrellas = numeroEstrellas - enteroEstrellas; // Obtener la parte decimal del número
-    
-      console.log(decimalEstrellas);
-      console.log(enteroEstrellas);
+
+        console.log(decimalEstrellas);
+        console.log(enteroEstrellas);
         var estrellas = document.getElementsByClassName("mistar");
-    
+
         // Eliminar todas las clases "selected"
         for (var i = 0; i < estrellas.length; i++) {
             estrellas[i].classList.remove("checked");
             estrellas[i].classList.remove("halfchecked");
         }
-    
-        var indice=0;
-    
+
+        var indice = 0;
+
         for (var i = 0; i < enteroEstrellas; i++) {
-    
+
             estrellas[i].classList.add("checked");
             indice = i;
         }
-    
-        if(decimalEstrellas>=0.5&&enteroEstrellas<5){
-    
+
+        if (decimalEstrellas >= 0.5 && enteroEstrellas < 5) {
+
             estrellas[i].classList.add("halfchecked");
         }
-    
-        
-    
+
+
+
         var numeroValoracion = document.getElementById("numeroValoracion");
         var numero = Math.abs(redondearNumero(numeroEstrellas));
         numeroValoracion.textContent = numero.toFixed(1);
-    
+
 
 
     }
 
 
-   
+
 
 
 
@@ -776,12 +779,20 @@ function getMousePosition(event) {
 function redondearNumero(numero) {
     // Multiplica el número por 2 para que el redondeo sea a múltiplos de 0.5
     var multiplicadoPorDos = numero * 2;
-  
+
     // Redondea al número entero más cercano
     var redondeado = Math.round(multiplicadoPorDos);
-  
+
     // Divide el número redondeado entre 2 para obtener el resultado final
     var resultado = redondeado / 2;
-  
+
     return resultado;
-  }
+}
+
+//JSON-LD
+function initJSONLD(monumento) {
+    console.log(monumento);
+    const schema = Object.assign({ '@context': 'http://www.schema.org' }, monumento);
+    document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(schema, null, 2);
+    
+}

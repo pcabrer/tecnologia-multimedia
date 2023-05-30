@@ -9,6 +9,8 @@ function cargaListaMonumentos() {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
+            initJSONLD(datos.itemListElement);
+
             var listaElementos = [];
 
             datos.itemListElement.forEach(function (monumento, idx) {
@@ -468,4 +470,10 @@ function imprimirNumeroResultados() {
 
 }
 
-
+//JSON-LD
+function initJSONLD(monumentos) {
+    console.log(monumentos);
+    const schema = Object.assign({ '@context': 'http://www.schema.org' }, monumentos);
+    document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(schema, null, 2);
+    
+}
