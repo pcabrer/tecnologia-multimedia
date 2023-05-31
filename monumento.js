@@ -50,7 +50,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "cafeterias.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-            //console.log(xhr.responseText);
+        
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -91,7 +91,7 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "hotel.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-            //console.log(xhr.responseText);
+       
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -130,7 +130,7 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "supermercat.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-            //console.log(xhr.responseText);
+          
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -146,12 +146,11 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
                 iconAnchor: [16, 32] // Anclaje del ícono
             });
 
-            console.log(supermercadosFiltrados);
+        
             // Crear los marcadores de las cafeterías filtradas
             supermercadosFiltrados.forEach((supermercado, idx) => {
                 const marker = L.marker([supermercado.geo.latitude, supermercado.geo.longitude], { icon: brownIcon }).addTo(mymap);
-                console.log(supermercado);
-                console.log("caca4");
+            
 
                 // Crear el popup con la información del café
                 const popupContent = `
@@ -162,7 +161,7 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
                   </div>
                 `;
                 marker.bindPopup(popupContent);
-                console.log(supermercado.name);
+           
             });
         }
     };
@@ -227,7 +226,7 @@ function cargaMonumento(idxMonumento) {
             var numero = parseFloat(monumento.aggregateRating.ratingValue);
             var entero = Math.floor(numero); // obtiene la parte entera (4)
             var decimal = parseInt((numero - entero) * 10); // obtiene la parte decimal (7)
-            console.log(numero);
+         
             val.appendChild(ratingSpan);
 
             // creamos cinco elementos span con clase "star", de los cuales los primeros cuatro tienen clase "checked" y contenido de texto "&#9733;"
@@ -340,7 +339,7 @@ function cargaMonumento(idxMonumento) {
             var iframe = document.createElement("iframe");
             iframe.className = "videoMonumento";
             var url = monumento.subjectOf.video[0].contentUrl;
-            console.log(url);
+       
             var nuevaUrl = url.replace("/watch?v=", "/embed/");
             iframe.src = nuevaUrl;
             iframe.title = "YouTube video player";
@@ -426,7 +425,7 @@ function cargaMonumento(idxMonumento) {
                 const contenedorActividades = document.getElementById('contenedorActividades');
 
 
-                console.log("La lista de eventos no está vacía.");
+            
                 monumento.event.forEach(function (evento, idx) {
 
 
@@ -582,8 +581,148 @@ function cargaMonumento(idxMonumento) {
 
             }
 
+
+            // Comentarios
+            cargarComentarios(monumento);
+
         };
 
+    }
+
+    xhr.send();
+}
+
+function cargarComentarios(monumento) {
+
+    console.log("hola")
+
+    const contenedorComentarios = document.getElementById('contenedorComentarios');
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "valoraciones.json", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+            console.log("hey")
+            console.log(xhr.responseText);
+            var datos = JSON.parse(xhr.responseText);
+
+            initJSONLD(datos.itemListElement);
+
+            var numComentarios=0;
+
+            datos.itemListElement.forEach(function (comentario, idx) {
+
+                if (comentario.itemReviewed.name === monumento.name) {
+
+                    numComentarios++;
+
+                    var commentDiv = document.createElement('div');
+                    commentDiv.className = 'comment';
+
+                    var dFlexDiv = document.createElement('div');
+                    dFlexDiv.className = 'd-flex';
+
+                    var miComentarioDiv = document.createElement('div');
+                    miComentarioDiv.className = 'miComentario';
+
+                    var containerDiv = document.createElement('div');
+                    containerDiv.className = 'container';
+
+                    var rowDiv = document.createElement('div');
+                    rowDiv.className = 'row';
+
+                    var colLg9Div = document.createElement('div');
+                    colLg9Div.className = 'col-lg-9';
+
+                    var comentarioNombreH5 = document.createElement('h5');
+                    comentarioNombreH5.className = 'comentario-nombre';
+                    comentarioNombreH5.textContent = comentario.author;
+
+                    colLg9Div.appendChild(comentarioNombreH5);
+                    rowDiv.appendChild(colLg9Div);
+
+                    var colLg3Div = document.createElement('div');
+                    colLg3Div.className = 'col-lg-3';
+
+                    var estrellasComentarioDiv = document.createElement('div');
+                    estrellasComentarioDiv.className = 'estrellasComentario';
+                    estrellasComentarioDiv.id = 'va';
+
+
+
+                    var numero = parseFloat(comentario.reviewRating.ratingValue);
+                    var entero = Math.floor(numero); // obtiene la parte entera (4)
+                    var decimal = parseInt((numero - entero) * 10); // obtiene la parte decimal (7)
+          
+    
+                    // creamos cinco elementos span con clase "star", de los cuales los primeros cuatro tienen clase "checked" y contenido de texto "&#9733;"
+                    for (var i = 0; i < 5; i++) {
+                        var starSpan = document.createElement("span");
+                        starSpan.classList.add("star");
+                        if (i < entero) {
+                            starSpan.classList.add("checked");
+    
+                        } else if (decimal >= 5) {
+                            starSpan.classList.add("halfchecked");
+                            decimal = 0;
+    
+                        }
+                        starSpan.innerHTML = "&#9733;";
+                        estrellasComentarioDiv.appendChild(starSpan);
+    
+                    }
+
+                    colLg3Div.appendChild(estrellasComentarioDiv);
+                    rowDiv.appendChild(colLg3Div);
+
+                    containerDiv.appendChild(rowDiv);
+
+                    var dateTime = document.createElement('time');
+                    dateTime.setAttribute('datetime', comentario.datePublished);
+                    dateTime.textContent = comentario.datePublished;
+
+                    var paragraph = document.createElement('p');
+                    paragraph.textContent = comentario.reviewBody;
+
+                    containerDiv.appendChild(dateTime);
+                    containerDiv.appendChild(paragraph);
+
+                    miComentarioDiv.appendChild(containerDiv);
+
+                    dFlexDiv.appendChild(miComentarioDiv);
+
+                    commentDiv.appendChild(dFlexDiv);
+
+               
+                    contenedorComentarios.appendChild(commentDiv);
+
+
+                }
+
+
+
+
+            });
+
+            const contadorComentarios = document.getElementById('contadorComentarios');
+
+            if(numComentarios>0){
+
+                if(numComentarios===1){
+                    contadorComentarios.textContent= numComentarios+" Comentario";
+
+                }else{
+                    contadorComentarios.textContent= numComentarios+" Comentarios";
+
+                }
+
+            }else{
+
+                contadorComentarios.textContent= " No hay comentarios";
+
+            }
+           
+        }
     }
 
     xhr.send();
@@ -605,7 +744,7 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
     for (let i = 0; i < openingHoursMonumento.length; i++) {
 
-        console.log(openingHoursMonumento[i]);
+ 
         const cadenadias = openingHoursMonumento[i].split(" "); // separar la cadena en dos partes utilizando el espacio como separador
 
         const dias = cadenadias[0]; // primera parte de la cadena
@@ -736,8 +875,7 @@ function getMousePosition(event) {
         var enteroEstrellas = Math.floor(numeroEstrellas); // Obtener la parte entera del número
         var decimalEstrellas = numeroEstrellas - enteroEstrellas; // Obtener la parte decimal del número
 
-        console.log(decimalEstrellas);
-        console.log(enteroEstrellas);
+     
         var estrellas = document.getElementsByClassName("mistar");
 
         // Eliminar todas las clases "selected"
@@ -791,8 +929,8 @@ function redondearNumero(numero) {
 
 //JSON-LD
 function initJSONLD(monumento) {
-    console.log(monumento);
+   
     const schema = Object.assign({ '@context': 'http://www.schema.org' }, monumento);
     document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(schema, null, 2);
-    
+
 }

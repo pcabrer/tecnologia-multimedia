@@ -1,0 +1,53 @@
+{
+    "@context": "https://schema.org",
+    "@type": "itemList",
+    "itemListElement": [
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "John Doe",
+            "datePublished": "2015-04-01",
+            "reviewBody": "Este supermercado es el mejor de la zona, tiene de todo y a buen precio. Lo recomiendo.",
+            "itemReviewed": {
+                "@type": "CivicStructure",
+                "name": "Catedral de Palma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.5"
+            }
+           
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Marc Melià",
+            "datePublished": "2013-04-01",
+            "reviewBody": "El pescado fresco y a buen precio. Además, la atención al cliente es excelente.",
+            "itemReviewed": {
+                "@type": "CivicStructure",
+                "name": "Catedral de Palma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.0"
+            }
+        },
+        {
+            "@contxt": "http://schema.org",
+            "@type": "Review",
+            "author": "Pedro El Carnicero",
+            "datePublished": "2012-04-01",
+            "reviewBody": "La carne de este supermercado es de excelente calidad. Siempre fresca y a buen precio.",
+            "itemReviewed": {
+                "@type": "CivicStructure",
+                "name": "Castillo de Bellver"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.7"
+            }
+        }
+        
+    ]
+}
