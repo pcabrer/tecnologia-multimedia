@@ -21,8 +21,8 @@
     $to = "p.cabrer.007@hotmail.es";
     $subject = "Checking PHP mail";
     $message = "PHP mail works just fine";
-    mail($to,$subject,$message);
-    //echo "The email message was sent.";
+    mail($to,$sujeto,$mensaje);
+    echo "The email message was sent.";
 
 
     /*
