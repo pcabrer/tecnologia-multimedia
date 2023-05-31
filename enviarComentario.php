@@ -37,9 +37,6 @@ $data['itemListElement'][] = $newItem;
 $newJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 file_put_contents('../public/valoraciones.json', $newJson);
 
-
-
-
 // Cargar el JSON existente
 $jsonMonumento = file_get_contents('../public/Monumentos.json');
 $dataMonumento = json_decode($jsonMonumento, true);
@@ -57,6 +54,7 @@ foreach ($dataMonumento['itemListElement'] as &$item) {
         $numeroValoraciones++;
 
         $item['aggregateRating']['ratingValue'] = $nuevaMedia;
+        $item['aggregateRating']['ratingValue'] = '4.4';
         $item['aggregateRating']['reviewCount'] =  $numeroValoraciones;
     }
 }
