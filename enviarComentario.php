@@ -54,7 +54,6 @@ foreach ($dataMonumento['itemListElement'] as &$item) {
         $numeroValoraciones++;
 
         $item['aggregateRating']['ratingValue'] = $nuevaMedia;
-        $item['aggregateRating']['ratingValue'] = '4.4';
         $item['aggregateRating']['reviewCount'] =  $numeroValoraciones;
     }
 }
