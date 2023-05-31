@@ -6,8 +6,8 @@
             "@context": "http://schema.org",
             "@type": "Review",
             "author": "John Doe",
-            "datePublished": "2015-04-01",
-            "reviewBody": "Este supermercado es el mejor de la zona, tiene de todo y a buen precio. Lo recomiendo.",
+            "datePublished": "2023-04-01",
+            "reviewBody": "La catedral de palma",
             "itemReviewed": {
                 "@type": "CivicStructure",
                 "name": "Catedral de Palma"
@@ -21,33 +21,33 @@
         {
             "@context": "http://schema.org",
             "@type": "Review",
-            "author": "Marc Melià",
-            "datePublished": "2013-04-01",
-            "reviewBody": "El pescado fresco y a buen precio. Además, la atención al cliente es excelente.",
+            "author": "Maria Rodriguez",
+            "datePublished": "2022-05-29",
+            "reviewBody": "La Catedral de Palma es una joya arquitectónica. Su diseño y detalles son impresionantes. Es un lugar muy especial para disfrutar de la historia y la belleza de Palma.",
             "itemReviewed": {
                 "@type": "CivicStructure",
                 "name": "Catedral de Palma"
             },
             "reviewRating": {
                 "@type": "Rating",
-                "ratingValue": "4.0"
+                "ratingValue": "4.7"
             }
         },
         {
-            "@contxt": "http://schema.org",
+            "@context": "http://schema.org",
             "@type": "Review",
-            "author": "Pedro El Carnicero",
-            "datePublished": "2012-04-01",
-            "reviewBody": "La carne de este supermercado es de excelente calidad. Siempre fresca y a buen precio.",
+            "author": "Jane Smith",
+            "datePublished": "2015-05-31",
+            "reviewBody": "La Catedral de Palma es una obra maestra arquitectónica. Su belleza gótica es impresionante y su historia es fascinante. Sin duda, uno de los lugares más destacados para visitar en Palma.",
             "itemReviewed": {
                 "@type": "CivicStructure",
-                "name": "Castillo de Bellver"
+                "name": "Catedral de Palma"
             },
             "reviewRating": {
                 "@type": "Rating",
-                "ratingValue": "4.7"
+                "ratingValue": "5"
             }
         }
-        
+       
     ]
 }
