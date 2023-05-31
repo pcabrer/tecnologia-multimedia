@@ -1112,8 +1112,8 @@
       "telephone": "619070010",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.2",
-        "reviewCount": "498"
+        "ratingValue": "0",
+        "reviewCount": "0"
       },
       "isAccessibleForFree": false,
       "event": [
