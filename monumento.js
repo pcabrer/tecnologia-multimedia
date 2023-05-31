@@ -600,6 +600,8 @@ function cargaMonumento(idxMonumento) {
 
 function prepararFormulario(monumento,idxMonumento){
 
+    console.log("heeeey")
+
     const indiceMonumento = document.getElementById("indiceMonumento");
     indiceMonumento.value = idxMonumento; 
 
