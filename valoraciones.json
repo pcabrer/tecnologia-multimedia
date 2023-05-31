@@ -7,7 +7,7 @@
             "@type": "Review",
             "author": "John Doe",
             "datePublished": "2023-04-01",
-            "reviewBody": "La catedral de palma",
+            "reviewBody": "La catedral de Palma de Mallorca és la única catedral gòtica que es reflecteix sobre el mar Mediterrani. Al construir la ronda entre la catedral i el mar, no van voler perdre aquesta singularitat i l’Ajuntament va fer construir un estanc d’aigua salada entre la ronda i la catedral.",
             "itemReviewed": {
                 "@type": "CivicStructure",
                 "name": "Catedral de Palma"
