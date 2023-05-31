@@ -15,3 +15,31 @@ header('Location: monumento.html?monumento=' . $idx);
 exit();
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar Variables PHP en un Alert</title>
+    <script>
+        window.onload = function() {
+            var idx = '<?php echo $idx; ?>';
+            var name = '<?php echo $name; ?>';
+            var rating = '<?php echo $rating; ?>';
+            var comentario = '<?php echo $comentario; ?>';
+            
+            var mensaje = "Idx: " + idx + "\nNombre: " + name + "\nRating: " + rating + "\nOpinión: " + comentario;
+            
+            alert(mensaje);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
