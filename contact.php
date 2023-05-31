@@ -25,10 +25,10 @@
     
     */
     echo "The email message was sent.";
-    /*
+
     // Envía el correo electrónico
     mail($destinatario, $asunto, $cuerpoMensaje);
-    */
+
 
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
