@@ -10,7 +10,7 @@ $rating = $_GET['rating'];
 $comentario = $_GET['comment'];
 
 // Cargar el JSON existente
-$json = file_get_contents('../valoraciones.json');
+$json = file_get_contents('../public/valoraciones.json');
 $data = json_decode($json, true);
 
 // Crear un nuevo elemento de valoración
@@ -35,7 +35,7 @@ $data['itemListElement'][] = $newItem;
 
 // Convertir el arreglo de PHP en JSON y guardar el archivo
 $newJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-file_put_contents('../valoraciones.json', $newJson);
+file_put_contents('../public/valoraciones.json', $newJson);
 
 header('Location: monumento.html?monumento=' . $idx);
 exit();
