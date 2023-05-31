@@ -6,7 +6,7 @@
     $sujeto = $_POST['sujeto'];
     $mensaje = $_POST['mensaje'];
 
-    /*
+    
     // Configura los detalles del correo electrónico
     $destinatario = 'soporte@monumentosmallorca.com';
     $asunto = 'Nuevo mensaje de contacto';
@@ -16,14 +16,14 @@
     $cuerpoMensaje .= "Email: $email\n";
     $cuerpoMensaje .= "Asunto: $sujeto\n";
     $cuerpoMensaje .= "Mensaje: $mensaje\n";
-    */
-
+    
+    /*
     $to = "p.cabrer.007@hotmail.es";
     $subject = "Checking PHP mail";
     $message = "PHP mail works just fine";
     mail($to,$sujeto,$mensaje);
     echo "The email message was sent.";
-
+    */
 
     /*
     // Envía el correo electrónico
