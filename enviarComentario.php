@@ -43,7 +43,7 @@ $dataMonumento = json_decode($jsonMonumento, true);
 
 // Recorrer las reseñas y buscar el monumento con nombre "Catedral de Palma"
 foreach ($dataMonumento['itemListElement'] as &$item) {
-    if ($item['name'] == $name) {
+    if ($item['name'] == $monumento) {
         // Actualizar los valores de "ratingValue" y "reviewCount"
 
         $mediaValoraciones  = floatval($item['aggregateRating']['ratingValue']);
