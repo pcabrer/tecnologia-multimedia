@@ -30,6 +30,5 @@
 
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
-
-
+    exit();
 ?>
