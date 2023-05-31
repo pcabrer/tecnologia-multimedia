@@ -8,7 +8,7 @@
 
     
     // Configura los detalles del correo electrónico
-    $destinatario = 'soporte@monumentosmallorca.com';
+    $destinatario = 'p.cabrer.007@hotmail.es';
     $asunto = 'Nuevo mensaje de contacto';
 
     // Construye el cuerpo del mensaje
@@ -22,9 +22,9 @@
     $subject = "Checking PHP mail";
     $message = "PHP mail works just fine";
     mail($to,$sujeto,$mensaje);
-    echo "The email message was sent.";
+    
     */
-
+    echo "The email message was sent.";
     /*
     // Envía el correo electrónico
     mail($destinatario, $asunto, $cuerpoMensaje);
