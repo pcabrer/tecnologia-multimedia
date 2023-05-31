@@ -582,17 +582,42 @@ function cargaMonumento(idxMonumento) {
             }
 
 
+            prepararFormulario(monumento,idxMonumento);
             // Comentarios
             cargarComentarios(monumento);
 
-            var indiceMonumento = document.getElementById("indiceMonumento");
-            indiceMonumento.value = idxMonumento; // Cambia el número a 5
+
+
+           
 
         };
 
     }
 
     xhr.send();
+}
+
+
+function prepararFormulario(monumento,idxMonumento){
+
+    const indiceMonumento = document.getElementById("indiceMonumento");
+    indiceMonumento.value = idxMonumento; 
+
+    const nombreMonumento = document.getElementById("comentarioNombre");
+    nombreMonumento.value = monumento.name; 
+
+    var today = new Date();
+
+    var year = today.getFullYear();
+    var month = (today.getMonth() + 1).toString().padStart(2, '0');
+    var day = today.getDate().toString().padStart(2, '0');
+
+var formattedDate = year + '-' + month + '-' + day;
+
+    const fechaMonumento = document.getElementById("comentarioFecha");
+    fechaMonumento.value = formattedDate; // Cambia el número a 5
+
+
 }
 
 function cargarComentarios(monumento) {
