@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submit'])) {
+
     // Recopila los datos del formulario
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -31,6 +31,6 @@ if (isset($_POST['submit'])) {
 
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
-}
+
 
 ?>
