@@ -47,7 +47,23 @@
                 "@type": "Rating",
                 "ratingValue": "5"
             }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Jane Smith",
+            "datePublished": "2015-05-31",
+            "reviewBody": "La Catedral de Palma es",
+            "itemReviewed": {
+                "@type": "CivicStructure",
+                "name": "Catedral de Palma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            }
         }
+       
        
     ]
 }
