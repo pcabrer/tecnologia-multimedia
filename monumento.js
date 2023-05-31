@@ -385,10 +385,6 @@ function cargaMonumento(idxMonumento) {
 
             contenedorHorario.appendChild(tbody);
 
-
-
-
-
             // Actividades
 
             const seccionActividades = document.getElementById('actividades');
@@ -586,10 +582,6 @@ function cargaMonumento(idxMonumento) {
             prepararFormulario(monumento,idxMonumento);
             // Comentarios
             cargarComentarios(monumento);
-
-
-
-           
 
         };
 

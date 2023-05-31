@@ -1,13 +1,13 @@
 <?php
 // Obtener los datos del formulario
-$idx = $_GET['idx'];
+$idx = $_POST['idx'];
 
-$monumento = $_GET['monumento'];
-$date= $_GET['date'];
+$monumento = $_POST['monumento'];
+$date= $_POST['date'];
 
-$name = $_GET['name'];
-$rating = $_GET['rating'];
-$comentario = $_GET['comment'];
+$name = $_POST['name'];
+$rating = $_POST['rating'];
+$comentario = $_POST['comment'];
 
 // Cargar el JSON existente
 $json = file_get_contents('../public/valoraciones.json');
