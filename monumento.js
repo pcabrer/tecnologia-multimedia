@@ -585,6 +585,9 @@ function cargaMonumento(idxMonumento) {
             // Comentarios
             cargarComentarios(monumento);
 
+            var indiceMonumento = document.getElementById("indiceMonumento");
+            indiceMonumento.value = idxMonumento; // Cambia el número a 5
+
         };
 
     }
@@ -902,6 +905,10 @@ function getMousePosition(event) {
         var numeroValoracion = document.getElementById("numeroValoracion");
         var numero = Math.abs(redondearNumero(numeroEstrellas));
         numeroValoracion.textContent = numero.toFixed(1);
+
+        var valorValoracion = document.getElementById("valorValoracion");
+        valorValoracion.value = numero.toFixed(1); // Cambia el número a 5
+
 
 
 

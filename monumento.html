@@ -233,7 +233,7 @@
               <div class="reply-form">
                 <h4>Deja un comentario</h4>
                 <br>
-                <form action="">
+                <form action="enviarComentario.php" method="GET">
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <input name="name" type="text" class="form-control" placeholder="Tu nombre*">
@@ -243,9 +243,10 @@
                       <div class="valoracionEstrellas" id="valoracionEstrellas">
 
                         <span id="numeroValoracion" class="rating-monumento"> 0</span>
+                        <input id="valorValoracion" type="" name="rating">
+                        <input id="indiceMonumento" type="" name="idx">
                         <a id="estrellasValoracion" class="mi-a" href="#" onclick="event.preventDefault();"
                           onmousemove="getMousePosition(event)">
-
                           <span class="star mistar" data-value="1"> &#9733; </span>
                           <span class="star mistar" data-value="2"> &#9733; </span>
                           <span class="star mistar" data-value="3"> &#9733; </span>
