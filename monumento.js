@@ -29,14 +29,15 @@ function obtenerTemperatura(latitud, longitud) {
             const velocidadViento = data.wind.speed;
             const descripcion = data.weather[0].description;
             const icono = data.weather[0].icon;
+        
 
             const temperaturaElemento = document.getElementById('temperatura');
             temperaturaElemento.innerHTML = `
-                <img src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
-                <p>Temperatura: ${temperatura}°C</p>
-                <p>Sensación térmica: ${sensacionTermica}°C</p>
-                <p>Humedad: ${humedad}%</p>
-                <p>Velocidad del viento: ${velocidadViento} km/h</p>
+                <img class="imagenTiempo" src="https://openweathermap.org/img/wn/${icono}.png" alt="${descripcion}">
+                <p class="gradosTemperatura"> ${temperatura}°C</p>
+                <p class="ptiempo">Sensación térmica: ${sensacionTermica}°C</p>
+                <p class="ptiempo">Humedad: ${humedad}%</p>
+                <p class="ptiempo">Velocidad del viento: ${velocidadViento} km/h</p>
                 `;
         })
         .catch(error => {
