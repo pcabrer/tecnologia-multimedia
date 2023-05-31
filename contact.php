@@ -16,14 +16,25 @@ if (isset($_POST['submit'])) {
     $cuerpoMensaje .= "Asunto: $sujeto\n";
     $cuerpoMensaje .= "Mensaje: $mensaje\n";
 
+    $to = "p.cabrer.007@hotmail.es";
+    $subject = "Checking PHP mail";
+    $message = "PHP mail works just fine";
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers);
+    echo "The email message was sent.";
+
+
+    /*
     // Envía el correo electrónico
     mail($destinatario, $asunto, $cuerpoMensaje);
-
+    */
+    
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+
 }
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
