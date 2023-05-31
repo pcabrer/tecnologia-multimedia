@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
     $subject = "Checking PHP mail";
     $message = "PHP mail works just fine";
     $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
+    //mail($to,$subject,$message, $headers);
     echo "The email message was sent.";
 
 
@@ -28,13 +28,9 @@ if (isset($_POST['submit'])) {
     // Envía el correo electrónico
     mail($destinatario, $asunto, $cuerpoMensaje);
     */
-    
+
     // Muestra un mensaje de éxito en tu página HTML
     echo '<script>alert("Tu mensaje ha sido enviado. ¡Gracias!");</script>';
-
-
 }
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 ?>
