@@ -11,7 +11,7 @@ echo "Nombre: " . $name . "<br>";
 echo "Rating: " . $rating . "<br>";
 echo "Opinión: " . $comentario . "<br>";
 
-header('Location: ../index.html');
-exit(); // Asegurarse de que el script se detenga después de la redirección
+header('Location: monumento.html?monumento=' . $idx);
+exit();
 
 ?>
