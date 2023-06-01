@@ -620,7 +620,7 @@ function cargarComentarios(monumento) {
 
     const contenedorComentarios = document.getElementById('contenedorComentarios');
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "valoraciones.json", true);
+    xhr.open("GET", "./assets/json/valoraciones.json", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
