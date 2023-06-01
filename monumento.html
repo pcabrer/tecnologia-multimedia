@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -24,7 +25,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-  <!-- Mapa de Leaflet --><!--MAPA API-->
+  <!-- Mapa de Leaflet -->
+  <!--MAPA API-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
@@ -45,6 +47,16 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8XXS9B6PK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8XXS9B6PK');
+</script>
 
 <body onload="loadedPage()">
 
@@ -182,8 +194,8 @@
         <div class="container">
           <div class="row g-5">
             <div class="col-lg-7">
-              <div id="contenedorMapa"class="container">
-                <div  id="mapaMon"></div>
+              <div id="contenedorMapa" class="container">
+                <div id="mapaMon"></div>
               </div>
             </div>
             <div class="col-lg-5">
@@ -214,7 +226,7 @@
 
 
 
-<!-- Dejar comentario section -->
+    <!-- Dejar comentario section -->
     <section id="dejarComentario" class="blog">
 
       <div class="container" data-aos="fade-up">
@@ -237,9 +249,9 @@
 
                         <span id="numeroValoracion" class="rating-monumento"> 0</span>
                         <input id="valorValoracion" type="hidden" name="rating">
-                        <input id="indiceMonumento" type="hidden" name="idx">  
+                        <input id="indiceMonumento" type="hidden" name="idx">
                         <input id="comentarioNombre" type="hidden" name="monumento">
-                        <input id="comentarioFecha"  type="hidden" name="date">
+                        <input id="comentarioFecha" type="hidden" name="date">
                         <a id="estrellasValoracion" class="mi-a" href="#" onclick="event.preventDefault();"
                           onmousemove="getMousePosition(event)">
                           <span class="star mistar" data-value="1"> &#9733; </span>
@@ -278,7 +290,7 @@
 
     <section id="blog" class="blog">
 
-      
+
       <div class="container" data-aos="fade-up">
         <h4 id="contadorComentarios">1 comentario</h4>
         <div class="row">
@@ -314,11 +326,14 @@
                 <strong>Email:</strong> at.eps@uib.es<br>
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/" class="google-plus"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/" class="twitter" aria-label="Twitter"> <i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/" class="facebook" aria-label="Facebook"> <i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com" class="instagram" aria-label="Instagram"> <i
+                    class="bx bxl-instagram"></i></a>
+                <a href="https://github.com/" class="google-plus" aria-label="Github"> <i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/" class="linkedin" aria-label="Linkedin"> <i
+                    class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -336,17 +351,17 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Quiénes somos</h4>
             <ul>
-              <li><a class="bx bx-chevron-right"></i> <a href="https://github.com/pcabrer">Pablo Cabrer Reinés</a></li>
-              <img src="assets/img/footer/pablo.webp" class="imagen-link-wise" class="img-fluid" alt="Foto de Pablo Cabrer">
-
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/pcabrer">Pablo Cabrer Reinés</a></li>
+              <li><img src="assets/img/footer/pablo.webp" class="imagen-link-wise" class="img-fluid"
+                  alt="Foto de Pablo Cabrer"></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>.</h4>
             <ul>
-              <li><a class="bx bx-chevron-right"></i> <a href="https://github.com/MMFmarc10">Marc Melià Flexas</a></li>
-              <img src="assets/img/footer/marc.webp" class="imagen-link-wise" class="img-fluid" alt="Foto de Marc Melià">
-
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/MMFmarc10">Marc Melià Flexas</a></li>
+              <li><img src="assets/img/footer/marc.webp" class="imagen-link-wise" class="img-fluid"
+                  alt="Foto de Marc Melià"></li>
             </ul>
           </div>
         </div>
@@ -357,18 +372,11 @@
       <div class="copyright">
         &copy; Copyright <strong><span>Monumentos de Mallorca</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-  class="bi bi-arrow-up-short"></i></a>
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -379,7 +387,7 @@
   <!-- JQuery -->
   <script src="assets/vendor/jquery/jquery-3.7.0.js"></script>
 
-   <!-- Scripts propios -->
+  <!-- Scripts propios -->
   <script src="assets/js/monumento.js"></script>
   <script src="assets/js/listaMonumentos.js"></script>
 
