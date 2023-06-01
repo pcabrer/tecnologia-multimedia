@@ -359,10 +359,10 @@ h6 {
 
   width: 100%;
   height: 80vh;
- 
+
   overflow: hidden;
   position: relative;
- 
+
 }
 
 #hero .carousel,
@@ -1109,7 +1109,7 @@ section {
 --------------------------------------------------------------*/
 
 .pricing .box {
-  
+
   padding: 20px;
 
   text-align: center;
@@ -1118,9 +1118,11 @@ section {
   text-align: justify;
   position: relative;
   overflow: hidden;
-  word-wrap: break-word; /* Permite que las palabras se dividan en varias líneas */
+  word-wrap: break-word;
+  /* Permite que las palabras se dividan en varias líneas */
   /* O, en versiones más recientes de CSS, puedes usar la propiedad overflow-wrap: */
-  overflow-wrap: break-word; /* Permite que las palabras se dividan en varias líneas */
+  overflow-wrap: break-word;
+  /* Permite que las palabras se dividan en varias líneas */
 }
 
 .pricing h3 {
@@ -1143,7 +1145,7 @@ section {
 
 .pricing h4 sup {
   font-size: 15px;
- 
+
   padding-left: 2px;
 }
 
@@ -1154,8 +1156,8 @@ section {
 }
 
 .pricing p {
- 
-  
+
+
 
   margin-bottom: 20px;
 }
@@ -1186,7 +1188,7 @@ section {
 }
 
 .pricing .btn-wrap {
- 
+
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -1479,7 +1481,7 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.miComentario{
+.miComentario {
 
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -1487,26 +1489,26 @@ section {
 
 }
 
-.comentario-nombre{
+.comentario-nombre {
 
 
   font-weight: bold;
   padding-top: 15px;
 }
 
-.estrellasComentario{
+.estrellasComentario {
 
   padding-top: 10px;
   text-align: right;
 }
 
-.valoracionEstrellas{
+.valoracionEstrellas {
 
   text-align: right;
   padding-right: 10px;
 }
 
-.mi-a{
+.mi-a {
 
   text-decoration: none;
   color: #111;
@@ -1517,7 +1519,7 @@ section {
 
 
 .mi-a:hover {
-  
+
   text-decoration: none;
   color: #111;
   transform: scale(1.5);
@@ -1787,7 +1789,7 @@ section {
   margin-top: 30px;
   padding: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
- 
+
 }
 
 .blog .blog-comments .reply-form h4 {
@@ -2215,14 +2217,14 @@ section {
 
 #monumento {
 
-  
+
   height: 100vh;
 
   overflow: hidden;
   position: relative;
 
- 
-  
+
+
 }
 
 #monumento .carousel,
@@ -2405,12 +2407,12 @@ section {
   font-size: 16px;
   letter-spacing: 1px;
   background: #f9f9f9;
-  
+
 }
 
 .card-header {
   background-color: #d9232d;
-  color:white;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -2418,6 +2420,7 @@ section {
   margin-bottom: 20px;
 
 }
+
 /*************************************************************/
 
 .mitexto {
@@ -2605,9 +2608,11 @@ section {
 # Mapa
 --------------------------------------------------------------*/
 
-#map { height: 600px; }
+#map {
+  height: 600px;
+}
 
-#mapaMon { 
+#mapaMon {
 
   height: 320px;
 }
@@ -2625,7 +2630,7 @@ section {
 
 .mi-carta {
 
- 
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   align-self: center;
@@ -2697,7 +2702,7 @@ section {
 
   position: absolute;
   transform: translateY(-10%);
- 
+
 }
 
 .monumentos-card-descripcion {
@@ -2707,6 +2712,15 @@ section {
   padding-top: 45px;
   padding-right: 20px;
 }
+
+@media screen and (max-width: 375px) {
+  .monumentos-card-descripcion {
+
+    display: none;
+  }
+}
+
+
 
 .monumentos-card-ciudad {
 
@@ -2755,14 +2769,30 @@ section {
 
 }
 
-.stars-monumento{
+@media screen and (max-width: 500px) {
+  .stars {
+
+    display: none;
+  
+  }  
+
+  .mi-carta:hover .monumentos-card-contenido .stars {
+
+   display: block;
+  
+  }
+
+
+}
+
+.stars-monumento {
 
 
   position: relative;
   text-align: right;
   margin-bottom: 10px;
 
- 
+
 }
 
 
@@ -2783,7 +2813,7 @@ section {
 
 
 .star.halfchecked {
- 
+
   font-weight: bold;
   background-image: linear-gradient(to right, rgb(255, 158, 3) 50%, #9a9a9a 50% 100%);
   -webkit-background-clip: text;
@@ -2791,7 +2821,7 @@ section {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
- 
+
 }
 
 .rating {
@@ -2804,21 +2834,21 @@ section {
 
 }
 
-.rating-monumento{
+.rating-monumento {
 
 
   padding-bottom: 5px;
   font-size: 20px;
- 
+
   margin-right: 10px;
-  
+
 }
 
 /*--------------------------------------------------------------
 # video monumento
 --------------------------------------------------------------*/
 
-.videoMonumento{
+.videoMonumento {
 
   width: 100%;
   height: 100%;
@@ -2834,10 +2864,10 @@ section {
 /*--------------------------------------------------------------
 # titulos secciones
 --------------------------------------------------------------*/
-.tituloSection{
+.tituloSection {
 
-padding-bottom: 20px;
-text-transform: uppercase;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 
 }
 
@@ -2851,18 +2881,18 @@ text-transform: uppercase;
 # monumentoInfo
 --------------------------------------------------------------*/
 
-.monumentoInfo p{
+.monumentoInfo p {
 
   text-align: justify;
 }
 
-.monumentoInfo a{
+.monumentoInfo a {
 
   color: #2f2f2f;
 }
 
 
-.monumentoInfo a:hover{
+.monumentoInfo a:hover {
 
   color: #ff0000;
 
@@ -2885,13 +2915,13 @@ text-transform: uppercase;
 
 }
 
-.valoracionesTexto{
+.valoracionesTexto {
 
   text-align: right;
   display: block;
   font-style: italic;
   font-size: 14px;
-  
+
 
 }
 
@@ -2902,7 +2932,7 @@ text-transform: uppercase;
 
 
 
-.misFiltros{
+.misFiltros {
   padding-top: 50px;
   padding: 70px;
   padding-bottom: 60px;
@@ -2912,7 +2942,7 @@ text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
   padding-right: 120px;
-  
+
 }
 
 .separador {
@@ -2921,30 +2951,30 @@ text-transform: uppercase;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.miCheck{
-  
+.miCheck {
+
 
   text-align: right;
   padding-right: 50px;
- 
+
 }
 
-.grid{
+.grid {
 
   display: flex;
   flex-wrap: wrap;
 }
 
-.textoNumeroMonumentos{
+.textoNumeroMonumentos {
 
 
   color: #1b1b1bb1;
 
   font-weight: bold;
- 
+
 }
 
-.contenedorTiempo{
+.contenedorTiempo {
 
   border-radius: 4px;
   padding: 40px;
@@ -2952,26 +2982,32 @@ text-transform: uppercase;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
 }
 
-.imagenTiempo{
+.imagenTiempo {
 
- 
+
   height: 70px;
   width: 70px;
- 
+
 }
 
-.gradosTemperatura{
+.gradosTemperatura {
 
- 
- font-size: 25px;
- font-weight: bold;
- color: #d9232d;
 
- 
+  font-size: 25px;
+  font-weight: bold;
+  color: #d9232d;
+
+
 }
 
-.ptiempo{
+.ptiempo {
 
- 
- text-align: left;
- }
+
+  text-align: left;
+}
+
+.contenedorMapa {
+
+  height: 450px;
+
+}
