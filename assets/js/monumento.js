@@ -156,7 +156,6 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
                   <div>
                     <h2>${supermercado.name}</h2>
                     <p>Dirección: ${supermercado.address.streetAddress}</p>
-                    <img src="${supermercado.url}" style="width: 100%;" >
                   </div>
                 `;
                 marker.bindPopup(popupContent);
