@@ -205,6 +205,7 @@ function cargaMonumento(idxMonumento) {
             //JSON-LD
             initJSONLD(monumento);
 
+           
 
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
@@ -629,7 +630,7 @@ function cargarComentarios(monumento) {
             console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-            initJSONLD(datos.itemListElement);
+          
 
             var numComentarios=0;
 
