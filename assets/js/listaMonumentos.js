@@ -9,7 +9,7 @@ function cargaListaMonumentos() {
             //console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-            initJSONLD(datos.itemListElement);
+            initJSONLD(datos);
 
             var listaElementos = [];
 
@@ -471,9 +471,10 @@ function imprimirNumeroResultados() {
 }
 
 //JSON-LD
-function initJSONLD(monumentos) {
-    console.log(monumentos);
-    const schema = Object.assign({ '@context': 'http://www.schema.org' }, monumentos);
-    document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(schema, null, 2);
+function initJSONLD(datos) {
+
+
+    document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(datos);
+
     
 }
