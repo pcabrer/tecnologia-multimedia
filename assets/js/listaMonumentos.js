@@ -38,6 +38,7 @@ function cargaListaMonumentos() {
                 // Crear imagen con atributo src y clase monumentos-card-imagen
                 const imagen = document.createElement('img');
                 imagen.setAttribute('src', monumento.image[0].url);
+                imagen.setAttribute('alt', 'Imagen Monumento');
                 imagen.classList.add('monumentos-card-imagen');
 
                 // Crear elemento div con clase monumentos-card-contenido
