@@ -448,8 +448,7 @@ function cargaMonumento(idxMonumento) {
 
                     var a = document.createElement("a");
                     a.href = evento.url;
-                    a.textContent = "Más información";
-                    a.setAttribute('aria-label', 'Url');
+                    a.textContent = "Más información sobre " + evento.name;
 
                     divBox.appendChild(h3);
                     divBox.appendChild(p);
