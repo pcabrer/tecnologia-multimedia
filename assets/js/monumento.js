@@ -46,7 +46,7 @@ function obtenerTemperatura(latitud, longitud) {
 
 function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
     var xhr2 = new XMLHttpRequest();
-    xhr2.open("GET", "cafeterias.json", true);
+    xhr2.open("GET", "./assets/json/cafeterias.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
         
@@ -87,7 +87,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
 
 function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
     var xhr2 = new XMLHttpRequest();
-    xhr2.open("GET", "hotel.json", true);
+    xhr2.open("GET", "./assets/json/hotel.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
        
@@ -126,7 +126,7 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
 
 function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
     var xhr2 = new XMLHttpRequest();
-    xhr2.open("GET", "supermercat.json", true);
+    xhr2.open("GET", "./assets/json/supermercat.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
           
@@ -192,7 +192,7 @@ function toRad(grados) {
 function cargaMonumento(idxMonumento) {
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "Monumentos.json", true);
+    xhr.open("GET", "./assets/json/Monumentos.json", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
 

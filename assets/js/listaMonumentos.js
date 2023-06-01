@@ -3,7 +3,7 @@ function cargaListaMonumentos() {
 
     const monumentList = document.getElementById('contenedor-monumentos');
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "Monumentos.json", true);
+    xhr.open("GET", "./assets/json/Monumentos.json", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             //console.log(xhr.responseText);
