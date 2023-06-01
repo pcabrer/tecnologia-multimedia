@@ -1,6 +1,4 @@
 
-
-
 function loadedPage() {
     const idxMonumento = ObtenerNumeroMonumento();
     cargaMonumento(idxMonumento);
@@ -287,7 +285,7 @@ function cargaMonumento(idxMonumento) {
 
                 // Crear el elemento li
                 var li = document.createElement("li");
-                li.setAttribute("data-bs-target", "#heroCarousel");
+                li.setAttribute("data-bs-target", "#monumentoCarousel");
                 li.setAttribute("data-bs-slide-to", idx);
                 if (idx == 0) {
                     li.className = "active";
