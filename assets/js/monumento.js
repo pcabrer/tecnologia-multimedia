@@ -926,17 +926,7 @@ function getMousePosition(event) {
 
         var valorValoracion = document.getElementById("valorValoracion");
         valorValoracion.value = numero.toFixed(1); // Cambia el número a 5
-
-
-
-
     }
-
-
-
-
-
-
 }
 
 function redondearNumero(numero) {
