@@ -699,14 +699,14 @@ section {
   font-size: 40px;
 }
 
-.services .icon-box h4 {
+.services .icon-box h2 {
   margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .icon-box h4 a {
+.services .icon-box h2 a {
   color: #556270;
   transition: 0.3s;
 }
@@ -717,7 +717,7 @@ section {
   font-size: 14px;
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover h2 a {
   color: #d9232d;
 }
 
@@ -1485,6 +1485,7 @@ section {
 
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 10px;
+
  
 
 }

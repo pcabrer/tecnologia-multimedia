@@ -3,11 +3,10 @@
     "@type": "itemList",
     "itemListElement": [
         {
-            "@context": "http://schema.org",
             "@type": "Review",
             "author": "John Doe",
             "datePublished": "2023-04-01",
-            "reviewBody": "La catedral de Palma de Mallorca és la única catedral gòtica que es reflecteix sobre el mar Mediterrani. Al construir la ronda entre la catedral i el mar, no van voler perdre aquesta singularitat i l’Ajuntament va fer construir un estanc d’aigua salada entre la ronda i la catedral.",
+            "reviewBody": "La catedral de Palma de Mallorca és la única catedral gòtica que es reflecteix sobre el mar Mediterrani.",
             "itemReviewed": {
                 "@type": "CivicStructure",
                 "name": "Catedral de Palma"
@@ -19,7 +18,6 @@
            
         },
         {
-            "@context": "http://schema.org",
             "@type": "Review",
             "author": "Maria Rodriguez",
             "datePublished": "2022-05-29",
@@ -34,7 +32,6 @@
             }
         },
         {
-            "@context": "http://schema.org",
             "@type": "Review",
             "author": "Jane Smith",
             "datePublished": "2015-05-31",
@@ -49,7 +46,6 @@
             }
         },
         {
-            "@context": "http://schema.org",
             "@type": "Review",
             "author": "Jane Smith",
             "datePublished": "2015-05-31",

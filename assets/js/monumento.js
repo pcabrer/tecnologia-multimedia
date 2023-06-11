@@ -483,7 +483,7 @@ function cargaMonumento(idxMonumento) {
                 iconBoxElement.appendChild(iElement);
 
                 // Crear el elemento <h4> con un enlace dentro del div icon-box
-                const h4Element = document.createElement('h4');
+                const h4Element = document.createElement('h2');
                 const aElement = document.createElement('a');
                 aElement.href = '#';
                 aElement.textContent = 'Teléfono';
@@ -519,7 +519,7 @@ function cargaMonumento(idxMonumento) {
                 iconBoxElement.appendChild(iElement);
 
                 // Crear el elemento <h4> con un enlace dentro del div icon-box
-                const h4Element = document.createElement('h4');
+                const h4Element = document.createElement('h2');
                 const aElement = document.createElement('a');
                 aElement.href = monumento.mainEntityOfPage;
                 aElement.textContent = 'Página web oficial';
@@ -556,7 +556,7 @@ function cargaMonumento(idxMonumento) {
                 iconBoxElement.appendChild(iElement);
 
                 // Crear el elemento <h4> con un enlace dentro del div icon-box
-                const h4Element = document.createElement('h4');
+                const h4Element = document.createElement('h2');
                 const aElement = document.createElement('a');
                 aElement.href = monumento.sameAs;
                 aElement.textContent = 'Información adicional';
@@ -653,7 +653,7 @@ function cargarComentarios(monumento) {
                     rowDiv.className = 'row';
 
                     var colLg9Div = document.createElement('div');
-                    colLg9Div.className = 'col-lg-9';
+                    colLg9Div.className = 'col-lg-6';
 
                     var comentarioNombreH5 = document.createElement('h5');
                     comentarioNombreH5.className = 'comentario-nombre';
@@ -663,7 +663,7 @@ function cargarComentarios(monumento) {
                     rowDiv.appendChild(colLg9Div);
 
                     var colLg3Div = document.createElement('div');
-                    colLg3Div.className = 'col-lg-3';
+                    colLg3Div.className = 'col-lg-6';
 
                     var estrellasComentarioDiv = document.createElement('div');
                     estrellasComentarioDiv.className = 'estrellasComentario';

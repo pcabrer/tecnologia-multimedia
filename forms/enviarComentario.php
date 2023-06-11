@@ -15,7 +15,6 @@ $data = json_decode($json, true);
 
 // Crear un nuevo elemento de valoración
 $newItem = array(
-    "@context" => "http://schema.org",
     "@type" => "Review",
     "author" => $name,
     "datePublished" => $date,
