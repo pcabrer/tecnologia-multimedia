@@ -172,7 +172,6 @@ function cargaListaMonumentos() {
 
 function estaAbierto(horario) {
 
-
     const dateActual = new Date();
     const diaActual = dateActual.getDay();
 
@@ -271,30 +270,9 @@ $(document).ready(function () {
     var soloAbierto = false;
     var texto = '';
 
-
-    // Seleccionar el elemento select por su ID
-    $('#selectorOrdenar').change(function () {
-        // Obtener el valor de la opción seleccionada
-        var opcionSeleccionada = $(this).val();
-
-        // Hacer algo con la opción seleccionada
-        console.log('Se seleccionó la opción: ' + opcionSeleccionada);
-
-        // Ejecutar una función o realizar otras acciones según la opción seleccionada
-        if (opcionSeleccionada === 'Nombre') {
-
-            ordenarPorNombre();
-
-
-        } else if (opcionSeleccionada === 'Valoración') {
-
-            ordenarPorValoracion();
-
-
-        }
-
+    $('#Buscador').on('change', function () {
+        texto = $(this).val(); // Obtener el valor de la opción seleccionada
         filtros(categoriaSeleccionada, soloAbierto, texto);
-        
 
     });
 
@@ -310,20 +288,28 @@ $(document).ready(function () {
         
     });
 
-    $('#Buscador').on('change', function () {
-        texto = $(this).val(); // Obtener el valor de la opción seleccionada
+    // Seleccionar el elemento select por su ID
+    $('#selectorOrdenar').change(function () {
+        // Obtener el valor de la opción seleccionada
+        var opcionSeleccionada = $(this).val();
+
+        // Mirar si es por ordenación por Nombre o Valoración
+        if (opcionSeleccionada === 'Nombre') {
+
+            ordenarPorNombre();
+
+        } else if (opcionSeleccionada === 'Valoración') {
+
+            ordenarPorValoracion();
+        }
+
         filtros(categoriaSeleccionada, soloAbierto, texto);
-       
-
     });
-
 
 });
 
 
-
 function filtros(categoria, soloAbierto, texto) {
-
 
     $('.itemMonumento').fadeOut(); // Ocultar todos los divs
 
@@ -352,15 +338,12 @@ function filtros(categoria, soloAbierto, texto) {
             });
         }
     }
-
-
-
 }
 
 function filtradoPorNombre(texto) {
 
     if (texto.length > 0) {
-        console.log("------------------------------------------------------------------------------------------------------------------------");
+       
         var $list = $('#contenedor-monumentos');
         var $items = $list.children('.itemMonumento:visible');
         $items.each(function (index, element) {
@@ -369,29 +352,14 @@ function filtradoPorNombre(texto) {
 
             var textoMonumento = $item.data('nombre').toLowerCase().replace(/\s/g, '');
 
-
             var textoBuscador = texto.toLowerCase().replace(/\s/g, '');
 
             if (textoMonumento.indexOf(textoBuscador) === -1) {
 
                 $item.hide();
-                console.log(textoMonumento);
-                console.log("eliminado");
-
-
-            } else {
-
-
-                console.log(textoMonumento);
-                console.log("Lo incluye")
-            }
-
+            } 
         });
     }
-
-    
-
-
 }
 
 
@@ -406,13 +374,10 @@ function ordenarPorValoracion() {
         var valorA = parseFloat($(a).data('valor'));
         var valorB = parseFloat($(b).data('valor'));
 
-        return valorB - valorA; // Orden ascendente
-        // Para orden descendente, usar: return valorB - valorA;
+        return valorB - valorA; 
     });
 
-    // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
-
 }
 
 function ordenarPorNombre() {
@@ -425,19 +390,16 @@ function ordenarPorNombre() {
         var nombreA = $(a).data('nombre').toUpperCase();
         var nombreB = $(b).data('nombre').toUpperCase();
 
-
         if (nombreA < nombreB) {
-            return -1; // a debe colocarse antes que b
+            return -1; 
         } else if (nombreA > nombreB) {
-            return 1; // a debe colocarse después que b
+            return 1;
         } else {
-            return 0; // el orden de a y b no cambia
+            return 0; 
         }
     });
 
-    // Agregar los divs ordenados nuevamente a la lista
     $list.append($items);
-
 }
 
 function imprimirNumeroResultados() {
@@ -461,14 +423,10 @@ function imprimirNumeroResultados() {
             miParrafo.textContent = resultado + " Resultados";
 
         }
-
     } else {
         miParrafo.textContent = "No hay monumentos con estas características";
 
     }
-
-
-
 }
 
 //JSON-LD

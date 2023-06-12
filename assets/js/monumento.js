@@ -27,7 +27,7 @@ function obtenerTemperatura(latitud, longitud) {
             const velocidadViento = data.wind.speed;
             const descripcion = data.weather[0].description;
             const icono = data.weather[0].icon;
-        
+
 
             const temperaturaElemento = document.getElementById('temperatura');
             temperaturaElemento.innerHTML = `
@@ -49,7 +49,7 @@ function cargaCafeterias(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "./assets/json/cafeterias.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-        
+
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -90,7 +90,7 @@ function cargaHoteles(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "./assets/json/hotel.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-       
+
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -129,7 +129,7 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
     xhr2.open("GET", "./assets/json/supermercat.json", true);
     xhr2.onreadystatechange = function () {
         if (xhr2.readyState === 4 && xhr2.status === 200) {
-          
+
             var datos = JSON.parse(xhr2.responseText);
 
 
@@ -145,11 +145,11 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
                 iconAnchor: [16, 32] // Anclaje del ícono
             });
 
-        
+
             // Crear los marcadores de las cafeterías filtradas
             supermercadosFiltrados.forEach((supermercado, idx) => {
                 const marker = L.marker([supermercado.geo.latitude, supermercado.geo.longitude], { icon: brownIcon }).addTo(mymap);
-            
+
 
                 // Crear el popup con la información del café
                 const popupContent = `
@@ -159,7 +159,7 @@ function cargaSupermercados(monumentoLatitud, monumentoLongitud, mymap) {
                   </div>
                 `;
                 marker.bindPopup(popupContent);
-           
+
             });
         }
     };
@@ -202,8 +202,6 @@ function cargaMonumento(idxMonumento) {
             //JSON-LD
             initJSONLD(monumento);
 
-           
-
             const titulo = document.getElementById('tituloMonumento');
             titulo.innerText = monumento.name;
 
@@ -225,7 +223,7 @@ function cargaMonumento(idxMonumento) {
             var numero = parseFloat(monumento.aggregateRating.ratingValue);
             var entero = Math.floor(numero); // obtiene la parte entera (4)
             var decimal = parseInt((numero - entero) * 10); // obtiene la parte decimal (7)
-         
+
             val.appendChild(ratingSpan);
 
             // creamos cinco elementos span con clase "star", de los cuales los primeros cuatro tienen clase "checked" y contenido de texto "&#9733;"
@@ -338,7 +336,7 @@ function cargaMonumento(idxMonumento) {
             var iframe = document.createElement("iframe");
             iframe.className = "videoMonumento";
             var url = monumento.subjectOf.video[0].contentUrl;
-       
+
             var nuevaUrl = url.replace("/watch?v=", "/embed/");
             iframe.src = nuevaUrl;
             iframe.title = "YouTube video player";
@@ -420,7 +418,7 @@ function cargaMonumento(idxMonumento) {
                 const contenedorActividades = document.getElementById('contenedorActividades');
 
 
-            
+
                 monumento.event.forEach(function (evento, idx) {
 
 
@@ -577,7 +575,7 @@ function cargaMonumento(idxMonumento) {
             }
 
 
-            prepararFormulario(monumento,idxMonumento);
+            prepararFormulario(monumento, idxMonumento);
             // Comentarios
             cargarComentarios(monumento);
 
@@ -589,15 +587,14 @@ function cargaMonumento(idxMonumento) {
 }
 
 
-function prepararFormulario(monumento,idxMonumento){
+function prepararFormulario(monumento, idxMonumento) {
 
-    console.log("heeeey")
 
     const indiceMonumento = document.getElementById("indiceMonumento");
-    indiceMonumento.value = idxMonumento; 
+    indiceMonumento.value = idxMonumento;
 
     const nombreMonumento = document.getElementById("comentarioNombre");
-    nombreMonumento.value = monumento.name; 
+    nombreMonumento.value = monumento.name;
 
     var today = new Date();
 
@@ -605,17 +602,14 @@ function prepararFormulario(monumento,idxMonumento){
     var month = (today.getMonth() + 1).toString().padStart(2, '0');
     var day = today.getDate().toString().padStart(2, '0');
 
-var formattedDate = year + '-' + month + '-' + day;
+    var formattedDate = year + '-' + month + '-' + day;
 
     const fechaMonumento = document.getElementById("comentarioFecha");
     fechaMonumento.value = formattedDate; // Cambia el número a 5
 
-
 }
 
 function cargarComentarios(monumento) {
-
-    console.log("hola")
 
     const contenedorComentarios = document.getElementById('contenedorComentarios');
     var xhr = new XMLHttpRequest();
@@ -623,13 +617,11 @@ function cargarComentarios(monumento) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
-            console.log("hey")
+    
             console.log(xhr.responseText);
             var datos = JSON.parse(xhr.responseText);
 
-          
-
-            var numComentarios=0;
+            var numComentarios = 0;
 
             datos.itemListElement.forEach(function (comentario, idx) {
 
@@ -674,23 +666,23 @@ function cargarComentarios(monumento) {
                     var numero = parseFloat(comentario.reviewRating.ratingValue);
                     var entero = Math.floor(numero); // obtiene la parte entera (4)
                     var decimal = parseInt((numero - entero) * 10); // obtiene la parte decimal (7)
-          
-    
+
+
                     // creamos cinco elementos span con clase "star", de los cuales los primeros cuatro tienen clase "checked" y contenido de texto "&#9733;"
                     for (var i = 0; i < 5; i++) {
                         var starSpan = document.createElement("span");
                         starSpan.classList.add("star");
                         if (i < entero) {
                             starSpan.classList.add("checked");
-    
+
                         } else if (decimal >= 5) {
                             starSpan.classList.add("halfchecked");
                             decimal = 0;
-    
+
                         }
                         starSpan.innerHTML = "&#9733;";
                         estrellasComentarioDiv.appendChild(starSpan);
-    
+
                     }
 
                     colLg3Div.appendChild(estrellasComentarioDiv);
@@ -714,7 +706,7 @@ function cargarComentarios(monumento) {
 
                     commentDiv.appendChild(dFlexDiv);
 
-               
+
                     contenedorComentarios.appendChild(commentDiv);
 
 
@@ -727,22 +719,22 @@ function cargarComentarios(monumento) {
 
             const contadorComentarios = document.getElementById('contadorComentarios');
 
-            if(numComentarios>0){
+            if (numComentarios > 0) {
 
-                if(numComentarios===1){
-                    contadorComentarios.textContent= numComentarios+" Comentario";
+                if (numComentarios === 1) {
+                    contadorComentarios.textContent = numComentarios + " Comentario";
 
-                }else{
-                    contadorComentarios.textContent= numComentarios+" Comentarios";
+                } else {
+                    contadorComentarios.textContent = numComentarios + " Comentarios";
 
                 }
 
-            }else{
+            } else {
 
-                contadorComentarios.textContent= " No hay comentarios";
+                contadorComentarios.textContent = " No hay comentarios";
 
             }
-           
+
         }
     }
 
@@ -765,13 +757,11 @@ function obtenerDatosTabla(openingHoursMonumento) {
 
     for (let i = 0; i < openingHoursMonumento.length; i++) {
 
- 
+
         const cadenadias = openingHoursMonumento[i].split(" "); // separar la cadena en dos partes utilizando el espacio como separador
 
         const dias = cadenadias[0]; // primera parte de la cadena
         const horas = cadenadias[1]; // segunda parte de la cadena
-
-
 
         if (dias.includes('-')) {
 
@@ -779,74 +769,40 @@ function obtenerDatosTabla(openingHoursMonumento) {
             const indiceDia1 = obtenerNumeroDiaSemana(diasSemanaRango[0]);
             const indiceDia2 = obtenerNumeroDiaSemana(diasSemanaRango[1]);
 
-
-
             if (indiceDia1 != -1 && indiceDia2 != -1) {
 
                 var diaSemana = indiceDia1;
                 var indicefinal = (indiceDia2 + 1) % 7;
 
                 do {
-
                     if (data[diaSemana][1] === "Cerrado") {
-
                         data[diaSemana][1] = horas;
-
                     } else {
-
                         data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
-
                     }
-
                     diaSemana = (diaSemana + 1) % 7;
-
                 } while (diaSemana != indicefinal);
-
             }
-
-
         } else if (dias.includes(',')) {
-
             const diasSemanaIndice = dias.split(",");
-
             for (let j = 0; j < diasSemanaIndice.length; j++) {
-
                 const diaSemana = obtenerNumeroDiaSemana(diasSemanaRango[j]);
                 if (data[diaSemana][1] === "Cerrado") {
-
                     data[diaSemana][1] = horas;
-
                 } else {
-
                     data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
-
                 }
             }
-
         } else {
-
-
 
             var diaSemana = obtenerNumeroDiaSemana(dias);
             if (data[diaSemana][1] === "Cerrado") {
-
                 data[diaSemana][1] = horas;
-
             } else {
-
                 data[diaSemana][1] = data[diaSemana][1] + "  |  " + horas;
-
             }
-
-
         }
-
-
     }
-
-
-
-
 
     return data;
 }
@@ -896,7 +852,7 @@ function getMousePosition(event) {
         var enteroEstrellas = Math.floor(numeroEstrellas); // Obtener la parte entera del número
         var decimalEstrellas = numeroEstrellas - enteroEstrellas; // Obtener la parte decimal del número
 
-     
+
         var estrellas = document.getElementsByClassName("mistar");
 
         // Eliminar todas las clases "selected"
@@ -944,8 +900,6 @@ function redondearNumero(numero) {
 
 //JSON-LD
 function initJSONLD(monumento) {
-   
     const schema = Object.assign({ '@context': 'http://www.schema.org' }, monumento);
     document.querySelector("script[type='application/ld+json']").innerHTML = JSON.stringify(schema, null, 2);
-
 }
