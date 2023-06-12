@@ -653,7 +653,7 @@ function cargarComentarios(monumento) {
                     rowDiv.className = 'row';
 
                     var colLg9Div = document.createElement('div');
-                    colLg9Div.className = 'col-lg-6';
+                    colLg9Div.className = 'col-lg-5';
 
                     var comentarioNombreH5 = document.createElement('h5');
                     comentarioNombreH5.className = 'comentario-nombre';
@@ -663,7 +663,7 @@ function cargarComentarios(monumento) {
                     rowDiv.appendChild(colLg9Div);
 
                     var colLg3Div = document.createElement('div');
-                    colLg3Div.className = 'col-lg-6';
+                    colLg3Div.className = 'col-lg-7';
 
                     var estrellasComentarioDiv = document.createElement('div');
                     estrellasComentarioDiv.className = 'estrellasComentario';
